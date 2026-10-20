@@ -1,0 +1,11 @@
+.venv
+runtime
+.env
+__pycache__
+.pytest_cache
+.ruff_cache
+*.egg-info
+
+
+kyc-dashboard/node_modules
+kyc-dashboard/dist

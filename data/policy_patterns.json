@@ -1,0 +1,812 @@
+{
+  "schema_version": "1.3",
+  "document_type": "synthetic_demo_aml_policy_patterns",
+  "title": "AML Transaction-Monitoring Policy Patterns",
+  "global_note": "Every matched pattern produces an alert for human review, not a conclusion that money laundering occurred. Evaluate alerts with customer profile, expected activity, transaction history, supporting documents, and other red flags.",
+  "threshold_policy": {
+    "official_thresholds": "Values explicitly stated in the cited public guidance.",
+    "configurable_demo_thresholds": "Synthetic demo settings created for reproducible generation and evaluation. They are not regulatory thresholds or an actual bank policy.",
+    "default_demo_threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY"
+  },
+  "sources": [
+    {
+      "source_id": "SRC-FFIEC-G",
+      "title": "FFIEC BSA/AML Examination Manual - Appendix G: Structuring",
+      "url": "https://bsaaml.ffiec.gov/docs/manual/10_Appendices/08.pdf"
+    },
+    {
+      "source_id": "SRC-FINCEN-2014-A005",
+      "title": "FinCEN FIN-2014-A005 - Funnel Accounts and Trade-Based Money Laundering",
+      "url": "https://www.fincen.gov/system/files/advisory/FIN-2014-A005.pdf"
+    },
+    {
+      "source_id": "SRC-FINCEN-2010-A001",
+      "title": "FinCEN FIN-2010-A001 - Trade-Based Money Laundering",
+      "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+    }
+  ],
+  "patterns": [
+    {
+      "pattern_id": "TM-01",
+      "pattern_name": "Cash structuring below CTR threshold",
+      "enabled_for_initial_synthesis": true,
+      "alert_only": true,
+      "official_red_flags": [
+        "A currency sum over $10,000 is broken into smaller cash deposits or withdrawals at or below $10,000.",
+        "Structuring may occur across one or more banks and one or more days; a single-day $10,000 breach is not required."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "cash_flag",
+        "direction",
+        "amount",
+        "currency",
+        "branch_id"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "account_id",
+        "customer_type",
+        "occupation_or_industry",
+        "expected_cash_activity"
+      ],
+      "official_thresholds": {
+        "ctr_currency_threshold_usd": 10000
+      },
+      "detection_logic": "For each customer or account, within any 7-day rolling window, generate an alert when at least 3 cash transactions are each between $8,000 and $9,999.99 and their aggregate exceeds $20,000. Compare the activity with expected cash behavior before escalation.",
+      "implementation_hint": "Group cash transactions by customer/account; use a rolling time window; calculate count and aggregate amount.",
+      "legitimate_explanations": [
+        "Routine activity of a documented cash-intensive business.",
+        "Near-threshold transactions separated in time without evidence of avoidance.",
+        "Documented sales proceeds or another verified source of cash."
+      ],
+      "evidence_required": [
+        "Cash-transaction history",
+        "Customer profile and expected cash activity",
+        "Branch and depositor details",
+        "Source-of-funds explanation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FFIEC-G",
+          "pages": "G-1 to G-2",
+          "url": "https://bsaaml.ffiec.gov/docs/manual/10_Appendices/08.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "near_threshold_floor_usd": 8000,
+        "near_threshold_ceiling_usd": 9999.99,
+        "min_txn_count": 3,
+        "window_days": 7,
+        "min_aggregate_usd": 20000
+      }
+    },
+    {
+      "pattern_id": "TM-02",
+      "pattern_name": "Structured monetary instruments",
+      "enabled_for_initial_synthesis": false,
+      "alert_only": true,
+      "official_red_flags": [
+        "Cash is used to buy official checks, money orders, or traveler's checks below applicable recordkeeping or reporting thresholds.",
+        "Deposited instruments are sequentially numbered, bought at multiple locations or on different days, or grouped below relevant thresholds.",
+        "Round-denomination instruments below $3,000 may lack complete payee information."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "instrument_type",
+        "instrument_serial",
+        "amount",
+        "currency",
+        "payee_present_flag",
+        "purchase_location"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "account_id",
+        "customer_type",
+        "expected_instrument_activity"
+      ],
+      "official_thresholds": {
+        "cash_instrument_recordkeeping_usd": 3000,
+        "ctr_currency_threshold_usd": 10000
+      },
+      "detection_logic": "Per account, order deposited monetary instruments by type, date, and serial number. Generate an alert when at least 3 instruments within 7 days have consecutive or near-consecutive serials and are individually below $3,000 or collectively display threshold-avoidance characteristics, especially when amounts are round or payee data is missing.",
+      "implementation_hint": "Build serial-number runs and evaluate instrument count, amount, payee completeness, purchase location, and time window.",
+      "legitimate_explanations": [
+        "Payroll or vendor checks issued sequentially by a legitimate business.",
+        "Money orders purchased for documented rent or bill payments."
+      ],
+      "evidence_required": [
+        "Instrument images",
+        "Purchase dates and locations",
+        "Payee and remitter details",
+        "Customer explanation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FFIEC-G",
+          "pages": "G-1 to G-2",
+          "url": "https://bsaaml.ffiec.gov/docs/manual/10_Appendices/08.pdf"
+        },
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "4",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "min_instruments_in_group": 3,
+        "serial_gap_max": 1,
+        "group_window_days": 7,
+        "round_amount_modulus_usd": 100
+      }
+    },
+    {
+      "pattern_id": "TM-03",
+      "pattern_name": "Funnel account: out-of-region cash deposits",
+      "enabled_for_initial_synthesis": true,
+      "alert_only": true,
+      "official_red_flags": [
+        "An account receives multiple cash deposits below $10,000 at branches outside its home or operating region.",
+        "Business deposits are made far from where the business operates.",
+        "Deposits are made by unidentified persons or non-customers."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "cash_flag",
+        "direction",
+        "amount",
+        "currency",
+        "branch_id",
+        "branch_state",
+        "depositor_id",
+        "depositor_is_customer"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "account_id",
+        "domicile_state",
+        "expected_operating_states",
+        "customer_type",
+        "occupation_or_industry"
+      ],
+      "official_thresholds": {
+        "deposit_amount_below_usd": 10000
+      },
+      "detection_logic": "Within 14 days, generate an alert when an account receives at least 3 sub-$10,000 cash deposits from at least 2 states outside the customer's documented operating region and at least 50% of its cash-deposit count is out of region.",
+      "implementation_hint": "Compare branch state with documented domicile and operating states; aggregate count, distinct states, and out-of-region share.",
+      "legitimate_explanations": [
+        "Documented multi-state operations or traveling sales staff.",
+        "Recent relocation not yet reflected in KYC.",
+        "Known family members or employees depositing for the account holder."
+      ],
+      "evidence_required": [
+        "Depositor identity",
+        "Business-location records",
+        "Customer explanation",
+        "Relationship between depositors and account owner"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2014-A005",
+          "pages": "1 to 3",
+          "url": "https://www.fincen.gov/system/files/advisory/FIN-2014-A005.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "min_distinct_out_of_state_states": 2,
+        "min_deposit_count": 3,
+        "window_days": 14,
+        "min_out_of_region_share": 0.5
+      }
+    },
+    {
+      "pattern_id": "TM-04",
+      "pattern_name": "Funnel account: rapid out-movement and consolidation",
+      "enabled_for_initial_synthesis": true,
+      "alert_only": true,
+      "official_red_flags": [
+        "Funds are withdrawn in a different geographic area with little time between deposits and withdrawals.",
+        "Multiple funnel accounts transfer funds into one consolidated account.",
+        "Wires or checks move from the funnel account to domestic or foreign businesses."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "direction",
+        "txn_type",
+        "amount",
+        "currency",
+        "branch_state",
+        "counterparty_id",
+        "counterparty_account_id",
+        "counterparty_country"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "domicile_state",
+        "expected_operating_states"
+      ],
+      "official_thresholds": {
+        "elapsed_time": null,
+        "out_of_state_deposit_amount_below_usd": 10000
+      },
+      "detection_logic": "For an account matching TM-03 or similar funnel indicators, generate an alert when at least 80% of the relevant inflows leave the same checking account within 72 hours. Consolidation across multiple accounts is outside the initial demo scope.",
+      "implementation_hint": "Match out-of-region cash deposits to subsequent outgoing checks or wires from the same checking account; calculate elapsed hours and the outflow-to-inflow ratio.",
+      "legitimate_explanations": [
+        "Normal supplier payments from a cash-intensive business.",
+        "Documented treasury sweeps among commonly owned accounts."
+      ],
+      "evidence_required": [
+        "Same-account deposit-to-outflow timeline",
+        "Deposit-to-outflow timeline",
+        "Beneficiary relationship",
+        "Business purpose"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2014-A005",
+          "pages": "1 to 2",
+          "url": "https://www.fincen.gov/system/files/advisory/FIN-2014-A005.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "max_hours_deposit_to_outflow": 72,
+        "min_outflow_to_inflow_ratio": 0.8,
+        "min_source_accounts_to_consolidated": 3
+      }
+    },
+    {
+      "pattern_id": "TM-05",
+      "pattern_name": "Business-account activity unrelated to stated business",
+      "enabled_for_initial_synthesis": false,
+      "alert_only": true,
+      "official_red_flags": [
+        "Debits from a business account receiving unusual deposits do not fit the account holder's stated business.",
+        "An import business receives payments from parties outside its expected customer base.",
+        "Checks or wires go to foreign businesses with no apparent relationship to the account holder."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "direction",
+        "txn_type",
+        "amount",
+        "currency",
+        "counterparty_id",
+        "counterparty_industry",
+        "counterparty_country"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "customer_type",
+        "occupation_or_industry",
+        "expected_counterparty_industries",
+        "expected_countries",
+        "expected_monthly_transaction_volume_usd"
+      ],
+      "official_thresholds": null,
+      "detection_logic": "Within 30 days, generate an alert when at least $5,000 and at least 30% of business-account outflows go to counterparties whose industries or countries are outside the customer's documented expected activity.",
+      "implementation_hint": "Join transactions to an allowed industry-country mapping and calculate mismatched amount and share of total outflows.",
+      "legitimate_explanations": [
+        "Documented business expansion or new supplier line.",
+        "Incomplete or outdated customer profile."
+      ],
+      "evidence_required": [
+        "Invoices and contracts",
+        "Updated KYC description",
+        "Counterparty due diligence",
+        "Customer explanation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2014-A005",
+          "pages": "3",
+          "url": "https://www.fincen.gov/system/files/advisory/FIN-2014-A005.pdf"
+        },
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "5",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "min_mismatch_amount_usd": 5000,
+        "min_mismatch_share_of_outflows": 0.3,
+        "lookback_days": 30
+      }
+    },
+    {
+      "pattern_id": "TM-06",
+      "pattern_name": "Small cash deposits followed by foreign ATM withdrawals",
+      "enabled_for_initial_synthesis": false,
+      "alert_only": true,
+      "official_red_flags": [
+        "A checking account receives cash deposits below $1,000 several times a month, followed by ATM withdrawals in foreign countries."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "cash_flag",
+        "direction",
+        "amount",
+        "currency",
+        "channel",
+        "atm_country"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "country_of_residence",
+        "residency_status",
+        "expected_travel_countries",
+        "expected_cash_activity"
+      ],
+      "official_thresholds": {
+        "cash_deposit_below_usd": 1000,
+        "deposit_frequency": "Several per month; no exact numeric value stated."
+      },
+      "detection_logic": "Generate an alert when an account receives at least 3 sub-$1,000 cash deposits in a month and has at least 2 foreign ATM withdrawals, including a withdrawal occurring within 7 days after a qualifying deposit.",
+      "implementation_hint": "Aggregate small deposits monthly and match them to later foreign ATM withdrawals.",
+      "legitimate_explanations": [
+        "Documented frequent international travel.",
+        "A student or worker with legitimate small cash income.",
+        "Documented family-support activity."
+      ],
+      "evidence_required": [
+        "Travel history",
+        "Source of cash deposits",
+        "Customer identity and residence",
+        "ATM locations and timeline"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "5, including footnote 15",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "min_deposits_per_month": 3,
+        "min_foreign_atm_count": 2,
+        "followup_days": 7
+      }
+    },
+    {
+      "pattern_id": "TM-07",
+      "pattern_name": "Pass-through activity with same or nearly same amounts",
+      "enabled_for_initial_synthesis": true,
+      "alert_only": true,
+      "official_red_flags": [
+        "Funds are received and then sent out in the same or nearly the same amounts.",
+        "Origin or destination locations may involve jurisdictions of concern identified in the applicable advisory or current bank risk assessment."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "direction",
+        "txn_type",
+        "amount",
+        "currency",
+        "originator_country",
+        "counterparty_country",
+        "counterparty_id"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "customer_type",
+        "expected_monthly_transaction_volume_usd",
+        "expected_countries",
+        "counterparties.json"
+      ],
+      "official_thresholds": {
+        "amount_tolerance": null,
+        "time_window": null
+      },
+      "detection_logic": "Generate an alert when at least 2 incoming transactions of $5,000 or more are followed within 3 days by outgoing transactions within 5% of the incoming amounts, especially when an involved country conflicts with the customer profile or appears in the demo jurisdiction-risk table.",
+      "implementation_hint": "Pair credits and later debits by account, time, and amount tolerance; do not hard-code an outdated country list into production logic.",
+      "legitimate_explanations": [
+        "Legitimate import-export intermediary.",
+        "Documented escrow, settlement, or payment-processing activity."
+      ],
+      "evidence_required": [
+        "Contracts and invoices",
+        "Source and purpose of funds",
+        "Beneficiary relationship",
+        "Expected account behavior"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "4 to 5",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "amount_tolerance_pct": 0.05,
+        "max_days_between": 3,
+        "min_pairs": 2,
+        "min_amount_usd": 5000,
+        "jurisdiction_risk_source": "demo_current_jurisdiction_risk_table"
+      }
+    },
+    {
+      "pattern_id": "TM-08",
+      "pattern_name": "Sudden onset and cessation of wire activity",
+      "enabled_for_initial_synthesis": true,
+      "alert_only": true,
+      "official_red_flags": [
+        "Payments, typically wires, begin suddenly and stop equally suddenly within a short period, suggesting temporary use of the account."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "direction",
+        "amount",
+        "currency",
+        "counterparty_id",
+        "counterparty_country"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "open_date",
+        "customer_type",
+        "expected_wire_activity",
+        "expected_monthly_transaction_volume_usd",
+        "occupation_or_industry"
+      ],
+      "official_thresholds": null,
+      "detection_logic": "Generate an alert when an account has at least 60 quiet days, then a wire burst lasting no more than 45 days with at least 5 wires totaling at least $50,000, followed by another 60 quiet days, and the burst conflicts with expected activity.",
+      "implementation_hint": "Identify contiguous wire-activity periods and calculate quiet periods before and after each burst.",
+      "legitimate_explanations": [
+        "Seasonal business activity.",
+        "A documented one-time project or asset transaction.",
+        "Legitimate onboarding activity in a new account."
+      ],
+      "evidence_required": [
+        "Business model and seasonality",
+        "Purpose of wires",
+        "Counterparty details",
+        "Supporting contracts"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "5",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "quiet_days_before": 60,
+        "active_burst_days_max": 45,
+        "quiet_days_after": 60,
+        "min_burst_wire_count": 5,
+        "min_burst_total_usd": 50000
+      }
+    },
+    {
+      "pattern_id": "TM-09",
+      "pattern_name": "International wires involving unrelated third parties or incomplete information",
+      "enabled_for_initial_synthesis": true,
+      "alert_only": true,
+      "official_red_flags": [
+        "An intermediary apparently unrelated to the buyer or seller makes a third-party payment.",
+        "There is no apparent business relationship between originator and beneficiary.",
+        "The ordering party's residence is inconsistent with the country from which the wire originates.",
+        "Originator, beneficiary, or payment-purpose information is missing.",
+        "Frequent wires use round or whole-dollar amounts."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "direction",
+        "amount",
+        "currency",
+        "is_round_amount",
+        "originator_name",
+        "originator_country",
+        "beneficiary_name",
+        "counterparty_id",
+        "counterparty_country",
+        "purpose_field",
+        "first_seen_counterparty_date",
+        "invoice_id"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "customer_type",
+        "country_of_residence",
+        "counterparties.json",
+        "expected_countries",
+        "occupation_or_industry"
+      ],
+      "official_thresholds": {
+        "round_amount_definition": null,
+        "frequency": "Frequent; no exact numeric value stated."
+      },
+      "detection_logic": "Within 90 days, generate an alert when an account has at least 5 international wires and either at least 60% use round amounts or one or more wires involve unknown counterparties, missing payment information, or country-profile inconsistencies. Require stronger review when multiple indicators occur together.",
+      "implementation_hint": "Calculate wire count and round-amount share; test counterparty familiarity, required-field completeness, residency-country consistency, and expected-country match.",
+      "legitimate_explanations": [
+        "Contractually fixed payments.",
+        "A newly onboarded legitimate supplier.",
+        "Documented parent-company, agent, or intermediary payments."
+      ],
+      "evidence_required": [
+        "Invoices and contracts",
+        "Payer-payee-customer relationship",
+        "Purpose of payment",
+        "Explanation of third-party payer"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "4 to 5",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "min_round_wire_share": 0.6,
+        "min_wire_count": 5,
+        "lookback_days": 90,
+        "new_counterparty_days": 30
+      }
+    },
+    {
+      "pattern_id": "TM-10",
+      "pattern_name": "Non-resident multi-account and geographically dispersed activity",
+      "enabled_for_initial_synthesis": false,
+      "alert_only": true,
+      "official_red_flags": [
+        "A foreign visitor opens multiple U.S. accounts at one or more institutions.",
+        "Cash deposits are made over the counter while checkbooks or cards are used abroad.",
+        "Deposits occur across multiple U.S. jurisdictions and withdrawals occur through foreign ATMs.",
+        "Related persons maintain multiple accounts used for structured deposits or payments to unrelated foreign businesses."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "channel",
+        "cash_flag",
+        "direction",
+        "amount",
+        "currency",
+        "branch_state",
+        "atm_country",
+        "counterparty_country",
+        "counterparty_id"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "residency_status",
+        "country_of_residence",
+        "open_date",
+        "household_or_related_id",
+        "account_ids",
+        "expected_travel_countries"
+      ],
+      "official_thresholds": {
+        "number_of_accounts": null,
+        "deposit_amount": null
+      },
+      "detection_logic": "Within 60 days, generate an alert for a non-resident or visitor with at least 2 accounts, over-the-counter cash deposits in at least 2 states, and at least 2 foreign ATM withdrawals, especially when activity conflicts with the customer's documented purpose and travel profile.",
+      "implementation_hint": "Aggregate at customer and related-household levels across all accounts, branches, and ATM countries.",
+      "legitimate_explanations": [
+        "Documented student, tourist, or temporary-worker activity.",
+        "Legitimate family members maintaining separate accounts."
+      ],
+      "evidence_required": [
+        "Identity and residency documents",
+        "Travel information",
+        "Account signers and control",
+        "Purpose of multiple accounts"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "5 to 6",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "max_account_open_days": 30,
+        "min_accounts_per_customer": 2,
+        "min_distinct_deposit_states": 2,
+        "min_foreign_atm_withdrawals": 2,
+        "window_days": 60
+      }
+    },
+    {
+      "pattern_id": "TM-11",
+      "pattern_name": "Same-day multi-branch cash deposits",
+      "enabled_for_initial_synthesis": false,
+      "alert_only": true,
+      "official_red_flags": [
+        "Multiple cash deposits into an account on the same day collectively exceed the CTR threshold.",
+        "Cash deposits occur at multiple branches, potentially including branches in different states."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "cash_flag",
+        "direction",
+        "amount",
+        "currency",
+        "branch_id",
+        "branch_state",
+        "depositor_id"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "account_id",
+        "customer_type",
+        "business_locations",
+        "expected_cash_activity"
+      ],
+      "official_thresholds": {
+        "ctr_aggregate_threshold_usd": 10000
+      },
+      "detection_logic": "For each account and business day, generate an alert when cash deposits collectively exceed $10,000 and occur at 2 or more branches. Increase review priority when branches span multiple states or depositors are unrelated to the customer.",
+      "implementation_hint": "Aggregate cash deposits by account and date; count distinct branches, states, and depositors.",
+      "legitimate_explanations": [
+        "A business with multiple documented locations depositing daily receipts.",
+        "Documented armored-car or courier consolidation."
+      ],
+      "evidence_required": [
+        "Deposit slips",
+        "Depositor identities",
+        "Business-location list",
+        "Cash-sales records"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "6",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        },
+        {
+          "source_id": "SRC-FFIEC-G",
+          "pages": "G-1",
+          "url": "https://bsaaml.ffiec.gov/docs/manual/10_Appendices/08.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "min_branches_same_day": 2,
+        "min_states_same_day": 1
+      }
+    },
+    {
+      "pattern_id": "TM-12",
+      "pattern_name": "Sequential checks through foreign MSBs or correspondent channels",
+      "enabled_for_initial_synthesis": false,
+      "alert_only": true,
+      "official_red_flags": [
+        "Sequentially numbered checks drawn on U.S. accounts are negotiated through foreign money-services businesses.",
+        "Checks are payable directly to a casa de cambio or other foreign MSB.",
+        "Checks or wires from a funnel account are deposited into or cleared through a foreign bank's U.S. correspondent account or cash-letter channel."
+      ],
+      "required_transaction_fields": [
+        "transaction_id",
+        "account_id",
+        "txn_ts",
+        "txn_type",
+        "direction",
+        "amount",
+        "currency",
+        "check_number",
+        "payee_type",
+        "payee_name",
+        "clearing_channel",
+        "counterparty_country",
+        "counterparty_id"
+      ],
+      "required_customer_fields": [
+        "customer_id",
+        "customer_type",
+        "occupation_or_industry",
+        "expected_countries",
+        "counterparties.json"
+      ],
+      "official_thresholds": null,
+      "detection_logic": "Within 14 days, generate an alert when at least 3 sequentially numbered checks totaling at least $10,000 are payable to or cleared through a foreign MSB, casa de cambio, correspondent account, or cash-letter channel, and the activity is inconsistent with the customer's stated business.",
+      "implementation_hint": "Identify check-number sequences, then aggregate count and amount by account, payee type, and clearing channel.",
+      "legitimate_explanations": [
+        "Documented remittance or currency-exchange activity.",
+        "Legitimate supplier payments to foreign vendors."
+      ],
+      "evidence_required": [
+        "Payee identity and licensing",
+        "Underlying trade documents",
+        "Customer-payee relationship",
+        "Check images and clearing records"
+      ],
+      "source_refs": [
+        {
+          "source_id": "SRC-FINCEN-2014-A005",
+          "pages": "3",
+          "url": "https://www.fincen.gov/system/files/advisory/FIN-2014-A005.pdf"
+        },
+        {
+          "source_id": "SRC-FINCEN-2010-A001",
+          "pages": "6",
+          "url": "https://www.fincen.gov/system/files/advisory/fin-2010-a001.pdf"
+        }
+      ],
+      "demo_thresholds": {
+        "threshold_type": "SYNTHETIC_DEMO_CONFIG_NOT_REGULATORY",
+        "min_checks_in_sequence": 3,
+        "sequence_window_days": 14,
+        "min_total_usd": 10000
+      }
+    }
+  ],
+  "initial_synthesis_plan": {
+    "customer_count": 5,
+    "enabled_pattern_ids": [
+      "TM-01",
+      "TM-03",
+      "TM-04",
+      "TM-07",
+      "TM-08",
+      "TM-09"
+    ],
+    "scenario_count": 5,
+    "note": "TM-03 and TM-04 form one combined funnel-account scenario, so six enabled pattern records support five customer scenarios."
+  },
+  "excluded_from_transaction_only_detection": [
+    {
+      "indicator": "Handwriting mismatch on checks",
+      "reason": "Requires document-image analysis or manual review."
+    },
+    {
+      "indicator": "Amended letters of credit or discrepancies among bills of lading, invoices, and packing lists",
+      "reason": "Requires trade-document fields and document comparison."
+    },
+    {
+      "indicator": "Customer cannot produce documentation or a depositor lacks knowledge of the business",
+      "reason": "Requires interview or case-management findings."
+    },
+    {
+      "indicator": "Over-invoicing, under-invoicing, double invoicing, or price, quantity, and quality mismatch",
+      "reason": "Requires invoices, goods data, and external or internal pricing references."
+    },
+    {
+      "indicator": "Difficulty identifying beneficial ownership",
+      "reason": "Requires KYC and beneficial-ownership data rather than transactions alone."
+    }
+  ],
+  "sar_note": "The cited FinCEN advisories may request specific SAR narrative terms where applicable. Those terms are reporting guidance, not transaction-detection rules.",
+  "disclaimer": "This file is a synthetic demonstration configuration derived from public guidance. It is not an actual bank policy, legal advice, or a determination that any person or transaction involves money laundering.",
+  "account_model": "ONE_CHECKING_ACCOUNT_PER_CUSTOMER"
+}

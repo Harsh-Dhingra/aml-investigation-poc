@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aml-investigation-poc"
+version = "0.1.0"
+description = "Streaming AML evidence and human review demonstration"
+requires-python = ">=3.11"
+dependencies = [
+  "duckdb>=1.4,<2", "fastapi>=0.115,<1", "uvicorn>=0.34,<1",
+  "streamlit>=1.45,<2", "pandas>=2.2,<3", "requests>=2.32,<3",
+  "pydantic>=2.10,<3", "python-dotenv>=1,<2",
+  "langgraph>=1.0,<2", "langgraph-checkpoint-sqlite>=3,<4",
+  "langchain-anthropic>=1,<2", "langsmith>=0.4,<1",
+  "pypdf>=5,<7", "python-multipart>=0.0.20,<1",
+  "openai>=2,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.28,<1", "ruff>=0.11,<1"]
+
+[project.scripts]
+aml-poc = "aml_poc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["aml_poc*"]
+
+[tool.setuptools.package-data]
+aml_poc = ["console.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110

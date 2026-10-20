@@ -1,0 +1,375 @@
+{
+  "data_classification": "SYNTHETIC_DEMO_DATA",
+  "schema_version": "1.3",
+  "currency": "USD",
+  "home_state": "CA",
+  "account_model": "ONE_CHECKING_ACCOUNT_PER_CUSTOMER",
+  "source_policy_file": "policy_patterns.json",
+  "disclaimer": "All customers, businesses, identifiers, and figures are fictional. Assigned patterns are reserved for later synthetic scenario generation and do not indicate real misconduct.",
+  "customers": [
+    {
+      "customer_id": "C001",
+      "fake_name": "Marcus Delgado-Whitfield",
+      "business_name": "Sunnyvale Corner Quick Stop LLC",
+      "customer_type": "BUSINESS",
+      "occupation_or_industry": "Convenience-store owner",
+      "naics_code": "445131",
+      "stated_business_purpose": "Operate a neighborhood convenience store.",
+      "account_id": "ACC-C001-01",
+      "annual_income_or_revenue_usd": 780000,
+      "expected_monthly_transaction_count": {
+        "min": 85,
+        "max": 130
+      },
+      "expected_monthly_transaction_volume_usd": {
+        "min": 100000,
+        "max": 150000
+      },
+      "expected_cash_activity": {
+        "level": "MODERATE_HIGH",
+        "monthly_cash_deposit_count": {
+          "min": 20,
+          "max": 30
+        },
+        "monthly_cash_deposit_total_usd": {
+          "min": 20000,
+          "max": 32000
+        },
+        "typical_single_cash_deposit_usd": {
+          "min": 600,
+          "max": 1800
+        }
+      },
+      "expected_wire_activity": {
+        "level": "VERY_LOW",
+        "monthly_wire_count": {
+          "min": 0,
+          "max": 1
+        },
+        "typical_wire_amount_usd": {
+          "min": 0,
+          "max": 6000
+        }
+      },
+      "expected_transaction_types": [
+        "cash_deposit",
+        "card_settlement",
+        "ach_credit",
+        "ach_debit",
+        "check",
+        "debit_card_purchase",
+        "wire_out"
+      ],
+      "expected_operating_states": [
+        "CA"
+      ],
+      "expected_countries": [
+        "US"
+      ],
+      "expected_counterparty_industries": [
+        "Food and beverage distribution",
+        "Payment processing",
+        "Utilities",
+        "Commercial real estate",
+        "Insurance"
+      ],
+      "onboarding_date": "2019-06-18",
+      "risk_rating": "MEDIUM",
+      "risk_rating_reason": "Cash-intensive retail business.",
+      "assigned_pattern_ids": [
+        "TM-01"
+      ],
+      "normal_behavior_summary": "Regular register-cash deposits and card settlements; payments to suppliers, rent, utilities, payroll, and insurance."
+    },
+    {
+      "customer_id": "C002",
+      "fake_name": "Elena Marisol Quintanilla-Hayes",
+      "business_name": "Casa Brisa Kitchen Inc.",
+      "customer_type": "BUSINESS",
+      "occupation_or_industry": "Restaurant owner",
+      "naics_code": "722511",
+      "stated_business_purpose": "Operate one full-service restaurant with dine-in, takeout, and catering.",
+      "account_id": "ACC-C002-01",
+      "annual_income_or_revenue_usd": 1850000,
+      "expected_monthly_transaction_count": {
+        "min": 140,
+        "max": 220
+      },
+      "expected_monthly_transaction_volume_usd": {
+        "min": 270000,
+        "max": 340000
+      },
+      "expected_cash_activity": {
+        "level": "MODERATE",
+        "monthly_cash_deposit_count": {
+          "min": 18,
+          "max": 26
+        },
+        "monthly_cash_deposit_total_usd": {
+          "min": 30000,
+          "max": 46000
+        },
+        "typical_single_cash_deposit_usd": {
+          "min": 900,
+          "max": 2800
+        }
+      },
+      "expected_wire_activity": {
+        "level": "VERY_LOW",
+        "monthly_wire_count": {
+          "min": 0,
+          "max": 2
+        },
+        "typical_wire_amount_usd": {
+          "min": 0,
+          "max": 15000
+        }
+      },
+      "expected_transaction_types": [
+        "cash_deposit",
+        "card_settlement",
+        "ach_credit",
+        "ach_debit",
+        "check",
+        "debit_card_purchase",
+        "wire_out"
+      ],
+      "expected_operating_states": [
+        "CA"
+      ],
+      "expected_countries": [
+        "US"
+      ],
+      "expected_counterparty_industries": [
+        "Food distribution",
+        "Beverage distribution",
+        "Payroll processing",
+        "Payment processing",
+        "Commercial real estate",
+        "Utilities",
+        "Equipment leasing"
+      ],
+      "onboarding_date": "2020-02-10",
+      "risk_rating": "MEDIUM",
+      "risk_rating_reason": "Restaurant with regular cash deposits.",
+      "assigned_pattern_ids": [
+        "TM-03",
+        "TM-04"
+      ],
+      "normal_behavior_summary": "Local restaurant cash deposits and card settlements; supplier, payroll, rent, tax, utility, and equipment payments are handled directly through one operating checking account."
+    },
+    {
+      "customer_id": "C003",
+      "fake_name": "Priya Anand-Sorensen",
+      "business_name": null,
+      "customer_type": "INDIVIDUAL",
+      "occupation_or_industry": "Freelance business consultant",
+      "naics_code": "541611",
+      "stated_business_purpose": "Receive consulting income and pay professional and personal expenses.",
+      "account_id": "ACC-C003-01",
+      "annual_income_or_revenue_usd": 148000,
+      "expected_monthly_transaction_count": {
+        "min": 25,
+        "max": 45
+      },
+      "expected_monthly_transaction_volume_usd": {
+        "min": 15000,
+        "max": 28000
+      },
+      "expected_cash_activity": {
+        "level": "MINIMAL",
+        "monthly_cash_deposit_count": {
+          "min": 0,
+          "max": 1
+        },
+        "monthly_cash_deposit_total_usd": {
+          "min": 0,
+          "max": 500
+        }
+      },
+      "expected_wire_activity": {
+        "level": "LOW",
+        "monthly_wire_count": {
+          "min": 1,
+          "max": 4
+        },
+        "typical_wire_amount_usd": {
+          "min": 3000,
+          "max": 9000
+        }
+      },
+      "expected_transaction_types": [
+        "ach_credit",
+        "wire_in",
+        "ach_debit",
+        "debit_card_purchase",
+        "check",
+        "atm_withdrawal"
+      ],
+      "expected_operating_states": [
+        "CA"
+      ],
+      "expected_countries": [
+        "US"
+      ],
+      "expected_counterparty_industries": [
+        "Logistics",
+        "Healthcare",
+        "Retail",
+        "Software",
+        "Professional services",
+        "Insurance"
+      ],
+      "onboarding_date": "2022-09-06",
+      "risk_rating": "LOW",
+      "risk_rating_reason": "Domestic consulting income and minimal cash use.",
+      "assigned_pattern_ids": [
+        "TM-07"
+      ],
+      "normal_behavior_summary": "ACH and occasional incoming domestic-wire consulting payments followed by ordinary professional and personal expenses."
+    },
+    {
+      "customer_id": "C004",
+      "fake_name": "Wei-Lin Tran-Castellano",
+      "business_name": "Pacific Rim Circuitry Imports Inc.",
+      "customer_type": "BUSINESS",
+      "occupation_or_industry": "Electronics importer",
+      "naics_code": "423690",
+      "stated_business_purpose": "Import electronics components and sell them to U.S. retailers and distributors.",
+      "account_id": "ACC-C004-01",
+      "annual_income_or_revenue_usd": 7200000,
+      "expected_monthly_transaction_count": {
+        "min": 60,
+        "max": 110
+      },
+      "expected_monthly_transaction_volume_usd": {
+        "min": 900000,
+        "max": 1500000
+      },
+      "expected_cash_activity": {
+        "level": "MINIMAL",
+        "monthly_cash_deposit_count": {
+          "min": 0,
+          "max": 1
+        },
+        "monthly_cash_deposit_total_usd": {
+          "min": 0,
+          "max": 1000
+        }
+      },
+      "expected_wire_activity": {
+        "level": "HIGH",
+        "monthly_wire_count": {
+          "min": 20,
+          "max": 38
+        },
+        "typical_outgoing_international_wire_amount_usd": {
+          "min": 30000,
+          "max": 120000
+        }
+      },
+      "expected_transaction_types": [
+        "wire_out",
+        "wire_in",
+        "ach_credit",
+        "ach_debit",
+        "check"
+      ],
+      "expected_operating_states": [
+        "CA"
+      ],
+      "expected_countries": [
+        "US",
+        "CN",
+        "TW",
+        "KR",
+        "HK"
+      ],
+      "expected_counterparty_industries": [
+        "Electronics manufacturing",
+        "Freight forwarding",
+        "Customs brokerage",
+        "Electronics distribution",
+        "Warehousing",
+        "Insurance"
+      ],
+      "onboarding_date": "2018-11-27",
+      "risk_rating": "HIGH",
+      "risk_rating_reason": "High-volume cross-border trade and international wires.",
+      "assigned_pattern_ids": [
+        "TM-09"
+      ],
+      "normal_behavior_summary": "International supplier wires and domestic customer receipts, with freight, customs, warehouse, insurance, and operating payments through one checking account."
+    },
+    {
+      "customer_id": "C005",
+      "fake_name": "Jordan Alexei Pemberton-Nakamura",
+      "business_name": null,
+      "customer_type": "INDIVIDUAL",
+      "occupation_or_industry": "Salaried software engineer",
+      "naics_code": null,
+      "stated_business_purpose": "Personal banking for salary, bills, investing, and everyday spending.",
+      "account_id": "ACC-C005-01",
+      "annual_income_or_revenue_usd": 172000,
+      "expected_monthly_transaction_count": {
+        "min": 25,
+        "max": 45
+      },
+      "expected_monthly_transaction_volume_usd": {
+        "min": 9000,
+        "max": 15000
+      },
+      "expected_cash_activity": {
+        "level": "MINIMAL",
+        "monthly_cash_deposit_count": {
+          "min": 0,
+          "max": 0
+        },
+        "monthly_cash_deposit_total_usd": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "expected_wire_activity": {
+        "level": "RARE",
+        "monthly_wire_count": {
+          "min": 0,
+          "max": 1
+        },
+        "typical_wire_amount_usd": {
+          "min": 0,
+          "max": 5000
+        }
+      },
+      "expected_transaction_types": [
+        "ach_credit",
+        "ach_debit",
+        "debit_card_purchase",
+        "atm_withdrawal",
+        "check",
+        "wire_out"
+      ],
+      "expected_operating_states": [
+        "CA"
+      ],
+      "expected_countries": [
+        "US"
+      ],
+      "expected_counterparty_industries": [
+        "Employer payroll",
+        "Housing",
+        "Utilities",
+        "Retail",
+        "Brokerage",
+        "Insurance"
+      ],
+      "onboarding_date": "2023-01-23",
+      "risk_rating": "LOW",
+      "risk_rating_reason": "Predictable salary and domestic personal activity.",
+      "assigned_pattern_ids": [
+        "TM-08"
+      ],
+      "normal_behavior_summary": "Twice-monthly salary, household expenses, and ACH payments to brokerage and other financial-services providers; cash deposits and wires are rare."
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "data_classification": "SYNTHETIC_DEMO_DATA",
+  "validation_version": "1.0",
+  "overall_status": "PASS",
+  "summary": {
+    "transaction_rows": 4815,
+    "golden_label_rows": 4815,
+    "normal_rows": 4572,
+    "suspicious_rows": 243,
+    "suspicious_rate": 0.050467,
+    "customers": 5,
+    "checking_accounts": 5,
+    "counterparties": 34,
+    "policy_patterns": 12,
+    "scenario_pattern_groups": 31
+  },
+  "checks": [
+    {
+      "check": "JSON files parse",
+      "status": "PASS",
+      "detail": "4/4 parsed"
+    },
+    {
+      "check": "CSV files parse",
+      "status": "PASS",
+      "detail": "2/2 parsed"
+    },
+    {
+      "check": "Transaction IDs unique",
+      "status": "PASS",
+      "detail": "4815 unique IDs"
+    },
+    {
+      "check": "Golden IDs unique",
+      "status": "PASS",
+      "detail": "4815 unique IDs"
+    },
+    {
+      "check": "Rows and ID sets match",
+      "status": "PASS",
+      "detail": "4815 transaction rows; 4815 label rows"
+    },
+    {
+      "check": "Customer IDs match labels",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "All customers valid",
+      "status": "PASS",
+      "detail": "5 valid customers"
+    },
+    {
+      "check": "All accounts valid",
+      "status": "PASS",
+      "detail": "5 valid accounts"
+    },
+    {
+      "check": "Account-to-customer mapping",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "All counterparties valid",
+      "status": "PASS",
+      "detail": "34 referenced counterparties; 0 unknown"
+    },
+    {
+      "check": "All patterns valid",
+      "status": "PASS",
+      "detail": "0 unknown pattern IDs"
+    },
+    {
+      "check": "Suspicious patterns assigned",
+      "status": "PASS",
+      "detail": "All suspicious patterns match customer assignments"
+    },
+    {
+      "check": "Only checking accounts",
+      "status": "PASS",
+      "detail": "Exactly one checking account per customer"
+    },
+    {
+      "check": "No linked accounts",
+      "status": "PASS",
+      "detail": "No linked-account fields/references"
+    },
+    {
+      "check": "No obsolete other-account references",
+      "status": "PASS",
+      "detail": "No obsolete savings/payroll/reserve/internal-transfer references"
+    },
+    {
+      "check": "Timestamps valid and in range",
+      "status": "PASS",
+      "detail": "2025-10-07 08:20:04+00:00 to 2026-10-06 20:40:11+00:00"
+    },
+    {
+      "check": "Amounts valid",
+      "status": "PASS",
+      "detail": "All amounts are positive numbers"
+    },
+    {
+      "check": "USD only",
+      "status": "PASS",
+      "detail": "All rows USD"
+    },
+    {
+      "check": "Suspicious rate near 5%",
+      "status": "PASS",
+      "detail": "5.05% (243 rows)"
+    },
+    {
+      "check": "Labels do not leak into transactions",
+      "status": "PASS",
+      "detail": "No answer-key columns in transactions.csv"
+    },
+    {
+      "check": "All planted scenarios satisfy rules",
+      "status": "PASS",
+      "detail": "31/31 scenario-pattern groups pass"
+    }
+  ],
+  "scenario_checks": [
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-01",
+      "status": "PASS",
+      "detail": "5 cash deposits, $46,492.00, span 5 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-02",
+      "status": "PASS",
+      "detail": "5 cash deposits, $44,415.70, span 4 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-03",
+      "status": "PASS",
+      "detail": "5 cash deposits, $43,841.88, span 5 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-04",
+      "status": "PASS",
+      "detail": "5 cash deposits, $46,157.32, span 5 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-05",
+      "status": "PASS",
+      "detail": "5 cash deposits, $44,585.65, span 3 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-06",
+      "status": "PASS",
+      "detail": "5 cash deposits, $46,183.47, span 3 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-07",
+      "status": "PASS",
+      "detail": "5 cash deposits, $44,034.92, span 6 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-08",
+      "status": "PASS",
+      "detail": "5 cash deposits, $45,375.55, span 5 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-09",
+      "status": "PASS",
+      "detail": "5 cash deposits, $44,183.67, span 6 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-10",
+      "status": "PASS",
+      "detail": "5 cash deposits, $42,759.76, span 5 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-11",
+      "status": "PASS",
+      "detail": "5 cash deposits, $46,240.02, span 4 days"
+    },
+    {
+      "pattern_id": "TM-01",
+      "scenario_id": "SCN-C001-12",
+      "status": "PASS",
+      "detail": "5 cash deposits, $43,525.09, span 5 days"
+    },
+    {
+      "pattern_id": "TM-03",
+      "scenario_id": "SCN-C002-01",
+      "status": "PASS",
+      "detail": "14 deposits, 3 out-of-region states"
+    },
+    {
+      "pattern_id": "TM-03",
+      "scenario_id": "SCN-C002-02",
+      "status": "PASS",
+      "detail": "14 deposits, 3 out-of-region states"
+    },
+    {
+      "pattern_id": "TM-03",
+      "scenario_id": "SCN-C002-03",
+      "status": "PASS",
+      "detail": "14 deposits, 3 out-of-region states"
+    },
+    {
+      "pattern_id": "TM-03",
+      "scenario_id": "SCN-C002-04",
+      "status": "PASS",
+      "detail": "14 deposits, 3 out-of-region states"
+    },
+    {
+      "pattern_id": "TM-03",
+      "scenario_id": "SCN-C002-05",
+      "status": "PASS",
+      "detail": "14 deposits, 3 out-of-region states"
+    },
+    {
+      "pattern_id": "TM-04",
+      "scenario_id": "SCN-C002-01",
+      "status": "PASS",
+      "detail": "outflow/inflow ratio 93.6%"
+    },
+    {
+      "pattern_id": "TM-04",
+      "scenario_id": "SCN-C002-02",
+      "status": "PASS",
+      "detail": "outflow/inflow ratio 92.4%"
+    },
+    {
+      "pattern_id": "TM-04",
+      "scenario_id": "SCN-C002-03",
+      "status": "PASS",
+      "detail": "outflow/inflow ratio 96.3%"
+    },
+    {
+      "pattern_id": "TM-04",
+      "scenario_id": "SCN-C002-04",
+      "status": "PASS",
+      "detail": "outflow/inflow ratio 89.8%"
+    },
+    {
+      "pattern_id": "TM-04",
+      "scenario_id": "SCN-C002-05",
+      "status": "PASS",
+      "detail": "outflow/inflow ratio 93.7%"
+    },
+    {
+      "pattern_id": "TM-07",
+      "scenario_id": "SCN-C003-01",
+      "status": "PASS",
+      "detail": "3 qualifying matched pairs"
+    },
+    {
+      "pattern_id": "TM-07",
+      "scenario_id": "SCN-C003-02",
+      "status": "PASS",
+      "detail": "3 qualifying matched pairs"
+    },
+    {
+      "pattern_id": "TM-07",
+      "scenario_id": "SCN-C003-03",
+      "status": "PASS",
+      "detail": "4 qualifying matched pairs"
+    },
+    {
+      "pattern_id": "TM-08",
+      "scenario_id": "SCN-C005-01",
+      "status": "PASS",
+      "detail": "9 wires, $80,012.84, burst 27 days"
+    },
+    {
+      "pattern_id": "TM-08",
+      "scenario_id": "SCN-C005-02",
+      "status": "PASS",
+      "detail": "10 wires, $96,834.41, burst 35 days"
+    },
+    {
+      "pattern_id": "TM-09",
+      "scenario_id": "SCN-C004-01",
+      "status": "PASS",
+      "detail": "11 wires, round share 100%"
+    },
+    {
+      "pattern_id": "TM-09",
+      "scenario_id": "SCN-C004-02",
+      "status": "PASS",
+      "detail": "11 wires, round share 100%"
+    },
+    {
+      "pattern_id": "TM-09",
+      "scenario_id": "SCN-C004-03",
+      "status": "PASS",
+      "detail": "11 wires, round share 100%"
+    },
+    {
+      "pattern_id": "TM-09",
+      "scenario_id": "SCN-C004-04",
+      "status": "PASS",
+      "detail": "11 wires, round share 100%"
+    }
+  ],
+  "notes": [
+    "All thresholds marked as synthetic demo configuration remain non-regulatory.",
+    "Labels indicate suspicious activity for review, not confirmed money laundering."
+  ]
+}

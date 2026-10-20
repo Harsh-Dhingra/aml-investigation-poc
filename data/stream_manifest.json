@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "rows": 1000,
+  "normal": 954,
+  "planted": 46,
+  "episodes": 5,
+  "start": "2026-10-07T00:56:45",
+  "end": "2026-12-05T22:47:05",
+  "note": "Synthetic resampled extension. Labels are held out from runtime. UTC demo event clock."
+}

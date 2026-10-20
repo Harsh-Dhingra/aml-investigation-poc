@@ -1,0 +1,776 @@
+{
+  "data_classification": "SYNTHETIC_DEMO_DATA",
+  "schema_version": "1.1",
+  "currency": "USD",
+  "source_customer_file": "customers.json",
+  "source_account_file": "accounts.json",
+  "scope": "KNOWN_COUNTERPARTIES_USED_BY_NORMAL_AND_SYNTHETIC_SCENARIO_TRANSACTIONS",
+  "disclaimer": "All counterparties, names, locations, relationships, and values are fictional synthetic demo data. They do not identify real entities.",
+  "counterparties": [
+    {
+      "counterparty_id": "CP-C001-001",
+      "name": "Bay Cities Wholesale Foods Inc.",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "FOOD_DISTRIBUTION",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C001"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 1200,
+        "max": 8500
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C001-002",
+      "name": "Golden Valley Beverage Distributors",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "BEVERAGE_DISTRIBUTION",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C001"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 800,
+        "max": 6000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C001-003",
+      "name": "Redline Snack and Tobacco Supply",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "SNACK_AND_TOBACCO_DISTRIBUTION",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C001"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 600,
+        "max": 5000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C001-004",
+      "name": "Meridian Card Processing",
+      "entity_type": "BUSINESS",
+      "relationship": "CARD_PROCESSOR",
+      "industry": "PAYMENT_PROCESSING",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C001"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 9000,
+        "max": 26000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C001-005",
+      "name": "Peninsula Gas and Electric Co.",
+      "entity_type": "BUSINESS",
+      "relationship": "UTILITY_PROVIDER",
+      "industry": "UTILITIES",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C001"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 500,
+        "max": 2200
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C001-006",
+      "name": "Alder Street Properties LLC",
+      "entity_type": "BUSINESS",
+      "relationship": "LANDLORD",
+      "industry": "COMMERCIAL_REAL_ESTATE",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C001"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 5500,
+        "max": 5500
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C002-001",
+      "name": "Delta Fresh Produce Co.",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "PRODUCE_DISTRIBUTION",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C002"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 1800,
+        "max": 9000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C002-002",
+      "name": "Capitol City Meat and Seafood",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "MEAT_AND_SEAFOOD_SUPPLY",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C002"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 2500,
+        "max": 12000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C002-003",
+      "name": "Sierra Beverage Distributing",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "BEVERAGE_DISTRIBUTION",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C002"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 1200,
+        "max": 7500
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C002-004",
+      "name": "Meridian Card Processing",
+      "entity_type": "BUSINESS",
+      "relationship": "CARD_PROCESSOR",
+      "industry": "PAYMENT_PROCESSING",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C002"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 35000,
+        "max": 95000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C002-005",
+      "name": "Northgate Payroll Services",
+      "entity_type": "BUSINESS",
+      "relationship": "PAYROLL_PROCESSOR",
+      "industry": "PAYROLL_PROCESSING",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C002"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 22000,
+        "max": 52000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C002-006",
+      "name": "Tower Row Properties LLC",
+      "entity_type": "BUSINESS",
+      "relationship": "LANDLORD",
+      "industry": "COMMERCIAL_REAL_ESTATE",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C002"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 12000,
+        "max": 12000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C002-007",
+      "name": "Valley Kitchen Equipment Leasing",
+      "entity_type": "BUSINESS",
+      "relationship": "EQUIPMENT_LESSOR",
+      "industry": "EQUIPMENT_LEASING",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C002"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 1500,
+        "max": 5500
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C003-001",
+      "name": "Brightwater Logistics Group",
+      "entity_type": "BUSINESS",
+      "relationship": "CLIENT",
+      "industry": "LOGISTICS",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C003"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 3500,
+        "max": 12000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C003-002",
+      "name": "Kestrel Health Partners",
+      "entity_type": "BUSINESS",
+      "relationship": "CLIENT",
+      "industry": "HEALTHCARE_SERVICES",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C003"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 3000,
+        "max": 10000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C003-003",
+      "name": "Alder and Finch Retail Co.",
+      "entity_type": "BUSINESS",
+      "relationship": "CLIENT",
+      "industry": "RETAIL",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C003"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 2500,
+        "max": 9000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C003-004",
+      "name": "Northbeam Software Inc.",
+      "entity_type": "BUSINESS",
+      "relationship": "CLIENT",
+      "industry": "SOFTWARE",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C003"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 3000,
+        "max": 11000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C003-005",
+      "name": "Redwood Shared Offices",
+      "entity_type": "BUSINESS",
+      "relationship": "SERVICE_PROVIDER",
+      "industry": "COWORKING",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C003"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 500,
+        "max": 1500
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C003-006",
+      "name": "Solstice Tax Advisors",
+      "entity_type": "BUSINESS",
+      "relationship": "PROFESSIONAL_ADVISER",
+      "industry": "PROFESSIONAL_SERVICES",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C003"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "CHECK"
+      ],
+      "expected_amount_range_usd": {
+        "min": 500,
+        "max": 4500
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C003-007",
+      "name": "Valley Health Plans Inc.",
+      "entity_type": "BUSINESS",
+      "relationship": "INSURER",
+      "industry": "INSURANCE",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C003"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 450,
+        "max": 1200
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-001",
+      "name": "Shenzhen Brightway Components Co. Ltd.",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "ELECTRONICS_MANUFACTURING",
+      "country": "CN",
+      "state": null,
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "INTERNATIONAL_WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 30000,
+        "max": 120000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-002",
+      "name": "Hsinchu Microlink Electronics Co.",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "ELECTRONICS_MANUFACTURING",
+      "country": "TW",
+      "state": null,
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "INTERNATIONAL_WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 30000,
+        "max": 110000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-003",
+      "name": "Gyeonggi Display Systems Ltd.",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "ELECTRONICS_MANUFACTURING",
+      "country": "KR",
+      "state": null,
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "INTERNATIONAL_WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 35000,
+        "max": 120000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-004",
+      "name": "Kowloon Sunmark Trading Ltd.",
+      "entity_type": "BUSINESS",
+      "relationship": "SUPPLIER",
+      "industry": "ELECTRONICS_MANUFACTURING",
+      "country": "HK",
+      "state": null,
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "INTERNATIONAL_WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 30000,
+        "max": 100000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-005",
+      "name": "Pacific Gateway Freight Forwarders Inc.",
+      "entity_type": "BUSINESS",
+      "relationship": "FREIGHT_FORWARDER",
+      "industry": "FREIGHT_FORWARDING",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 5000,
+        "max": 30000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-006",
+      "name": "Harborline Customs Brokers LLC",
+      "entity_type": "BUSINESS",
+      "relationship": "CUSTOMS_BROKER",
+      "industry": "CUSTOMS_BROKERAGE",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 2500,
+        "max": 18000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-007",
+      "name": "Westcoast Tech Retail Inc.",
+      "entity_type": "BUSINESS",
+      "relationship": "CUSTOMER",
+      "industry": "ELECTRONICS_RETAIL",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 15000,
+        "max": 90000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C004-008",
+      "name": "Midlands Electronics Distribution Co.",
+      "entity_type": "BUSINESS",
+      "relationship": "CUSTOMER",
+      "industry": "ELECTRONICS_DISTRIBUTION",
+      "country": "US",
+      "state": "IL",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C004"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH",
+        "WIRE"
+      ],
+      "expected_amount_range_usd": {
+        "min": 20000,
+        "max": 100000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C005-001",
+      "name": "Lumenfield Systems Inc.",
+      "entity_type": "BUSINESS",
+      "relationship": "EMPLOYER",
+      "industry": "EMPLOYER_PAYROLL",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C005"
+      ],
+      "expected_direction": "INCOMING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 6500,
+        "max": 7500
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C005-002",
+      "name": "Bayshore Home Lending",
+      "entity_type": "BUSINESS",
+      "relationship": "MORTGAGE_SERVICER",
+      "industry": "HOUSING",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C005"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 3200,
+        "max": 3200
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C005-003",
+      "name": "Santa Clara Valley Power",
+      "entity_type": "BUSINESS",
+      "relationship": "UTILITY_PROVIDER",
+      "industry": "UTILITIES",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C005"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 80,
+        "max": 350
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C005-004",
+      "name": "Pacific Fiber Telecom",
+      "entity_type": "BUSINESS",
+      "relationship": "TELECOM_PROVIDER",
+      "industry": "TELECOMMUNICATIONS",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C005"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 60,
+        "max": 220
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C005-005",
+      "name": "Evergreen Brokerage Services",
+      "entity_type": "BUSINESS",
+      "relationship": "BROKERAGE",
+      "industry": "INVESTMENT_SERVICES",
+      "country": "US",
+      "state": "NY",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C005"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 500,
+        "max": 3000
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    },
+    {
+      "counterparty_id": "CP-C005-006",
+      "name": "Coastline Auto Insurance",
+      "entity_type": "BUSINESS",
+      "relationship": "INSURER",
+      "industry": "INSURANCE",
+      "country": "US",
+      "state": "CA",
+      "is_known_counterparty": true,
+      "associated_customer_ids": [
+        "C005"
+      ],
+      "expected_direction": "OUTGOING",
+      "expected_payment_methods": [
+        "ACH"
+      ],
+      "expected_amount_range_usd": {
+        "min": 150,
+        "max": 600
+      },
+      "data_classification": "SYNTHETIC_DEMO_DATA"
+    }
+  ]
+}

@@ -1,0 +1,1001 @@
+transaction_id,account_id,customer_id,txn_ts,txn_type,direction,amount,currency,cash_flag,channel,branch_id,branch_state,counterparty_id,counterparty_country,depositor_id,depositor_is_customer,atm_country,originator_name,originator_country,beneficiary_name,purpose_field,invoice_id,check_number,is_round_amount,description
+STR-N-0231,ACC-C001-01,C001,2026-10-07T00:56:45,debit_card_purchase,OUTGOING,43.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0440,ACC-C004-01,C004,2026-10-07T02:40:55,ach_debit,OUTGOING,4629.85,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0440,,false,Customs brokerage fees
+STR-N-0126,ACC-C002-01,C002,2026-10-07T05:01:20,debit_card_purchase,OUTGOING,157.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0400,ACC-C004-01,C004,2026-10-07T06:14:05,ach_debit,OUTGOING,5577.48,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0400,,false,Customs brokerage fees
+STR-N-0653,ACC-C005-01,C005,2026-10-07T14:13:39,atm_withdrawal,OUTGOING,200.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0014,ACC-C001-01,C001,2026-10-07T15:08:35,cash_deposit,INCOMING,1392.18,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0095,ACC-C002-01,C002,2026-10-07T16:45:21,debit_card_purchase,OUTGOING,195.48,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0676,ACC-C001-01,C001,2026-10-07T17:54:43,ach_debit,OUTGOING,2267.43,USD,false,ACH,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0676,,false,Supplier payment
+STR-N-0162,ACC-C005-01,C005,2026-10-07T18:13:44,atm_withdrawal,OUTGOING,200.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0528,ACC-C002-01,C002,2026-10-07T18:52:10,debit_card_purchase,OUTGOING,80.93,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0152,ACC-C004-01,C004,2026-10-07T21:42:23,ach_credit,INCOMING,43690.65,USD,false,ACH,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0152,,false,Customer payment
+STR-N-0377,ACC-C001-01,C001,2026-10-08T04:34:49,check,OUTGOING,2987.95,USD,false,CHECK,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0377,2500,false,Supplier payment
+STR-N-0551,ACC-C002-01,C002,2026-10-08T08:25:58,debit_card_purchase,OUTGOING,181.96,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0120,ACC-C004-01,C004,2026-10-08T10:23:17,ach_debit,OUTGOING,10526.65,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0120,,false,Freight charges
+STR-N-0597,ACC-C002-01,C002,2026-10-08T12:46:21,debit_card_purchase,OUTGOING,65.58,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0819,ACC-C004-01,C004,2026-10-08T14:17:49,wire_out,OUTGOING,9698.45,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0819,,false,Freight charges
+STR-N-0688,ACC-C002-01,C002,2026-10-08T19:40:15,debit_card_purchase,OUTGOING,113.82,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0830,ACC-C004-01,C004,2026-10-08T23:22:56,wire_in,INCOMING,18239.04,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0830,,false,Customer payment
+STR-N-0093,ACC-C002-01,C002,2026-10-09T01:00:48,debit_card_purchase,OUTGOING,167.81,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0001,ACC-C002-01,C002,2026-10-09T10:16:45,debit_card_purchase,OUTGOING,38.85,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0557,ACC-C001-01,C001,2026-10-09T10:18:41,debit_card_purchase,OUTGOING,73.72,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0421,ACC-C003-01,C003,2026-10-09T12:16:10,debit_card_purchase,OUTGOING,51.57,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0649,ACC-C003-01,C003,2026-10-09T13:10:33,atm_withdrawal,OUTGOING,80.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0907,ACC-C002-01,C002,2026-10-09T13:14:46,debit_card_purchase,OUTGOING,139.61,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0796,ACC-C002-01,C002,2026-10-09T14:08:45,debit_card_purchase,OUTGOING,47.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0936,ACC-C002-01,C002,2026-10-09T18:06:54,ach_debit,OUTGOING,2942.45,USD,false,ACH,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0936,,false,Supplier payment
+STR-N-0501,ACC-C001-01,C001,2026-10-09T19:27:07,debit_card_purchase,OUTGOING,96.72,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0650,ACC-C004-01,C004,2026-10-09T19:27:56,wire_out,OUTGOING,3443.20,USD,false,WIRE,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,Customs brokerage,INV-STREAM-0650,,false,Customs brokerage fees
+STR-N-0939,ACC-C004-01,C004,2026-10-09T22:34:16,ach_debit,OUTGOING,3606.22,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0939,,false,Customs brokerage fees
+STR-N-0656,ACC-C004-01,C004,2026-10-09T23:26:10,wire_in,INCOMING,25608.32,USD,false,WIRE,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0656,,false,Customer payment
+STR-N-0306,ACC-C004-01,C004,2026-10-10T00:18:18,ach_credit,INCOMING,37758.15,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0306,,false,Customer payment
+STR-N-0536,ACC-C002-01,C002,2026-10-10T05:44:41,debit_card_purchase,OUTGOING,74.51,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0876,ACC-C001-01,C001,2026-10-10T09:05:14,card_settlement,INCOMING,12450.29,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0181,ACC-C002-01,C002,2026-10-10T11:57:05,check,OUTGOING,3975.78,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0181,3947,false,Supplier payment
+STR-N-0843,ACC-C001-01,C001,2026-10-10T14:10:42,check,OUTGOING,1522.70,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0843,2550,false,Supplier payment
+STR-N-0724,ACC-C002-01,C002,2026-10-10T15:37:52,ach_debit,OUTGOING,6205.08,USD,false,ACH,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0724,,false,Supplier payment
+STR-N-0768,ACC-C001-01,C001,2026-10-10T15:57:28,debit_card_purchase,OUTGOING,63.14,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0210,ACC-C002-01,C002,2026-10-10T17:08:44,debit_card_purchase,OUTGOING,150.70,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0186,ACC-C004-01,C004,2026-10-10T20:57:42,ach_debit,OUTGOING,5352.46,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0186,,false,Customs brokerage fees
+STR-N-0730,ACC-C001-01,C001,2026-10-10T23:35:23,debit_card_purchase,OUTGOING,196.22,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0687,ACC-C001-01,C001,2026-10-11T02:34:17,cash_deposit,INCOMING,941.51,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0869,ACC-C004-01,C004,2026-10-11T02:41:40,wire_out,OUTGOING,6705.29,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0869,,false,Freight charges
+STR-N-0022,ACC-C002-01,C002,2026-10-11T05:14:48,debit_card_purchase,OUTGOING,142.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0478,ACC-C002-01,C002,2026-10-11T05:42:20,debit_card_purchase,OUTGOING,164.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0174,ACC-C001-01,C001,2026-10-11T06:43:46,cash_deposit,INCOMING,1748.74,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0562,ACC-C002-01,C002,2026-10-11T09:39:56,debit_card_purchase,OUTGOING,91.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0674,ACC-C002-01,C002,2026-10-11T09:49:48,debit_card_purchase,OUTGOING,60.31,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0937,ACC-C001-01,C001,2026-10-11T09:56:01,ach_debit,OUTGOING,843.57,USD,false,ACH,,,CP-C001-005,US,,,,Sunnyvale Corner Quick Stop LLC,US,Peninsula Gas and Electric Co.,,,,false,Utilities
+STR-N-0243,ACC-C005-01,C005,2026-10-11T11:41:08,atm_withdrawal,OUTGOING,40.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-P-001,ACC-C001-01,C001,2026-10-11T12:00:00,cash_deposit,INCOMING,9144.00,USD,true,BRANCH_TELLER,BR-CA-01,CA,,,C001,true,,,,,,,,false,Synthetic demonstration transaction
+STR-P-027,ACC-C005-01,C005,2026-10-11T12:00:00,wire_out,OUTGOING,8000.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,true,Synthetic demonstration transaction
+STR-N-0055,ACC-C002-01,C002,2026-10-11T13:47:20,debit_card_purchase,OUTGOING,121.94,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0815,ACC-C002-01,C002,2026-10-11T15:15:51,debit_card_purchase,OUTGOING,72.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0253,ACC-C002-01,C002,2026-10-11T21:01:02,debit_card_purchase,OUTGOING,60.95,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0583,ACC-C005-01,C005,2026-10-11T21:51:23,debit_card_purchase,OUTGOING,306.32,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0119,ACC-C003-01,C003,2026-10-11T21:52:45,debit_card_purchase,OUTGOING,92.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0172,ACC-C001-01,C001,2026-10-11T22:22:12,debit_card_purchase,OUTGOING,229.13,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0638,ACC-C001-01,C001,2026-10-11T23:52:40,check,OUTGOING,1568.23,USD,false,CHECK,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0638,2555,false,Supplier payment
+STR-N-0445,ACC-C005-01,C005,2026-10-12T00:15:50,debit_card_purchase,OUTGOING,116.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0663,ACC-C003-01,C003,2026-10-12T02:35:14,wire_in,INCOMING,3316.15,USD,false,WIRE,,,CP-C003-002,US,,,,Kestrel Health Partners,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0663,,false,Consulting fee
+STR-N-0442,ACC-C002-01,C002,2026-10-12T06:18:16,debit_card_purchase,OUTGOING,141.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0374,ACC-C004-01,C004,2026-10-12T07:03:17,wire_in,INCOMING,17918.68,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0374,,false,Customer payment
+STR-P-002,ACC-C001-01,C001,2026-10-12T12:00:00,cash_deposit,INCOMING,9155.00,USD,true,BRANCH_TELLER,BR-CA-01,CA,,,C001,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0134,ACC-C002-01,C002,2026-10-12T13:12:17,debit_card_purchase,OUTGOING,52.81,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0078,ACC-C002-01,C002,2026-10-12T14:58:31,debit_card_purchase,OUTGOING,40.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0132,ACC-C005-01,C005,2026-10-12T16:16:33,debit_card_purchase,OUTGOING,70.56,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0096,ACC-C001-01,C001,2026-10-12T17:11:08,cash_deposit,INCOMING,1220.03,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0411,ACC-C001-01,C001,2026-10-12T18:58:00,debit_card_purchase,OUTGOING,118.87,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0578,ACC-C002-01,C002,2026-10-12T21:05:30,debit_card_purchase,OUTGOING,41.22,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0608,ACC-C002-01,C002,2026-10-12T21:44:00,check,OUTGOING,2914.38,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0608,3863,false,Supplier payment
+STR-N-0133,ACC-C001-01,C001,2026-10-12T22:02:29,debit_card_purchase,OUTGOING,104.83,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0734,ACC-C002-01,C002,2026-10-13T00:10:34,ach_debit,OUTGOING,26968.39,USD,false,ACH,,,CP-C002-005,US,,,,Casa Brisa Kitchen Inc.,US,Northgate Payroll Services,,,,false,Payroll funding
+STR-N-0817,ACC-C003-01,C003,2026-10-13T02:21:04,debit_card_purchase,OUTGOING,837.55,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Larger personal purchase
+STR-N-0559,ACC-C001-01,C001,2026-10-13T03:18:22,card_settlement,INCOMING,13383.86,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0601,ACC-C002-01,C002,2026-10-13T04:06:03,debit_card_purchase,OUTGOING,181.22,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0092,ACC-C001-01,C001,2026-10-13T05:11:28,debit_card_purchase,OUTGOING,219.63,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0273,ACC-C004-01,C004,2026-10-13T05:39:50,ach_debit,OUTGOING,7655.62,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0273,,false,Freight charges
+STR-N-0614,ACC-C001-01,C001,2026-10-13T09:03:02,debit_card_purchase,OUTGOING,118.15,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0911,ACC-C002-01,C002,2026-10-13T09:12:15,debit_card_purchase,OUTGOING,63.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-003,ACC-C001-01,C001,2026-10-13T12:00:00,cash_deposit,INCOMING,9166.00,USD,true,BRANCH_TELLER,BR-CA-01,CA,,,C001,true,,,,,,,,false,Synthetic demonstration transaction
+STR-P-028,ACC-C005-01,C005,2026-10-13T12:00:00,wire_out,OUTGOING,8070.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0630,ACC-C002-01,C002,2026-10-13T12:25:55,debit_card_purchase,OUTGOING,39.17,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0877,ACC-C004-01,C004,2026-10-13T12:39:54,ach_credit,INCOMING,28288.45,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0877,,false,Customer payment
+STR-N-0097,ACC-C004-01,C004,2026-10-13T13:03:14,ach_debit,OUTGOING,3538.14,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0097,,false,Customs brokerage fees
+STR-N-0827,ACC-C001-01,C001,2026-10-13T13:42:15,ach_debit,OUTGOING,3108.65,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0827,,false,Supplier payment
+STR-N-0586,ACC-C002-01,C002,2026-10-13T15:52:23,debit_card_purchase,OUTGOING,115.69,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0305,ACC-C004-01,C004,2026-10-13T15:53:32,ach_debit,OUTGOING,5270.02,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0305,,false,Customs brokerage fees
+STR-N-0324,ACC-C002-01,C002,2026-10-13T16:40:51,debit_card_purchase,OUTGOING,81.91,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0081,ACC-C001-01,C001,2026-10-13T17:16:36,cash_deposit,INCOMING,1099.12,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0655,ACC-C002-01,C002,2026-10-13T18:08:44,debit_card_purchase,OUTGOING,57.05,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0405,ACC-C004-01,C004,2026-10-13T21:51:39,ach_debit,OUTGOING,3971.93,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0405,,false,Customs brokerage fees
+STR-N-0035,ACC-C004-01,C004,2026-10-13T22:22:47,ach_debit,OUTGOING,2739.37,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0035,,false,Customs brokerage fees
+STR-N-0686,ACC-C002-01,C002,2026-10-13T23:56:53,check,OUTGOING,4711.74,USD,false,CHECK,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0686,3921,false,Supplier payment
+STR-N-0944,ACC-C002-01,C002,2026-10-14T02:02:22,debit_card_purchase,OUTGOING,121.82,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0154,ACC-C003-01,C003,2026-10-14T02:42:35,debit_card_purchase,OUTGOING,43.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0517,ACC-C004-01,C004,2026-10-14T04:06:38,wire_out,OUTGOING,40483.86,USD,false,WIRE,,,CP-C004-004,HK,,,,Pacific Rim Circuitry Imports Inc.,US,Kowloon Sunmark Trading Ltd.,Payment for electronic components,INV-STREAM-0517,,false,Supplier wire
+STR-N-0896,ACC-C002-01,C002,2026-10-14T04:33:13,debit_card_purchase,OUTGOING,77.22,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0384,ACC-C003-01,C003,2026-10-14T04:37:26,debit_card_purchase,OUTGOING,153.02,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0916,ACC-C004-01,C004,2026-10-14T04:49:01,ach_debit,OUTGOING,4303.30,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0916,,false,Customs brokerage fees
+STR-N-0722,ACC-C002-01,C002,2026-10-14T04:52:36,debit_card_purchase,OUTGOING,168.35,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0872,ACC-C004-01,C004,2026-10-14T06:51:30,wire_in,INCOMING,61222.34,USD,false,WIRE,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0872,,false,Customer payment
+STR-N-0547,ACC-C004-01,C004,2026-10-14T07:27:36,wire_out,OUTGOING,5801.31,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0547,,false,Freight charges
+STR-N-0712,ACC-C001-01,C001,2026-10-14T07:35:09,cash_deposit,INCOMING,1294.02,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0117,ACC-C001-01,C001,2026-10-14T07:39:34,debit_card_purchase,OUTGOING,182.05,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0318,ACC-C004-01,C004,2026-10-14T09:05:04,ach_debit,OUTGOING,11466.50,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0318,,false,Freight charges
+STR-N-0704,ACC-C001-01,C001,2026-10-14T09:58:36,debit_card_purchase,OUTGOING,98.45,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0726,ACC-C001-01,C001,2026-10-14T10:47:46,debit_card_purchase,OUTGOING,68.28,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0883,ACC-C001-01,C001,2026-10-14T11:09:21,ach_debit,OUTGOING,5346.14,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0883,,false,Supplier payment
+STR-P-004,ACC-C001-01,C001,2026-10-14T12:00:00,cash_deposit,INCOMING,9177.00,USD,true,BRANCH_TELLER,BR-CA-01,CA,,,C001,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0266,ACC-C001-01,C001,2026-10-14T12:32:57,debit_card_purchase,OUTGOING,162.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0689,ACC-C001-01,C001,2026-10-14T13:25:58,debit_card_purchase,OUTGOING,67.10,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0509,ACC-C001-01,C001,2026-10-14T16:00:34,check,OUTGOING,4577.24,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0509,2503,false,Supplier payment
+STR-N-0029,ACC-C004-01,C004,2026-10-14T17:55:43,wire_in,INCOMING,26398.47,USD,false,WIRE,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0029,,false,Customer payment
+STR-N-0864,ACC-C001-01,C001,2026-10-14T18:34:26,check,OUTGOING,2987.95,USD,false,CHECK,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0864,2500,false,Supplier payment
+STR-N-0491,ACC-C001-01,C001,2026-10-14T19:08:53,ach_debit,OUTGOING,5889.41,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0491,,false,Supplier payment
+STR-N-0418,ACC-C002-01,C002,2026-10-14T19:26:35,debit_card_purchase,OUTGOING,69.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0612,ACC-C001-01,C001,2026-10-14T20:15:19,ach_debit,OUTGOING,6132.87,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0612,,false,Supplier payment
+STR-N-0665,ACC-C002-01,C002,2026-10-14T22:05:55,debit_card_purchase,OUTGOING,148.84,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0800,ACC-C004-01,C004,2026-10-14T22:09:16,ach_debit,OUTGOING,5414.34,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0800,,false,Customs brokerage fees
+STR-N-0144,ACC-C005-01,C005,2026-10-14T23:02:06,debit_card_purchase,OUTGOING,106.15,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0293,ACC-C004-01,C004,2026-10-15T03:36:42,wire_out,OUTGOING,7243.99,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0293,,false,Freight charges
+STR-N-0387,ACC-C002-01,C002,2026-10-15T06:29:09,debit_card_purchase,OUTGOING,135.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0631,ACC-C002-01,C002,2026-10-15T06:54:48,debit_card_purchase,OUTGOING,59.18,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0346,ACC-C001-01,C001,2026-10-15T07:29:33,cash_deposit,INCOMING,1414.50,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0080,ACC-C005-01,C005,2026-10-15T07:35:13,debit_card_purchase,OUTGOING,52.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0335,ACC-C001-01,C001,2026-10-15T09:56:21,check,OUTGOING,3374.88,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0335,2522,false,Supplier payment
+STR-P-005,ACC-C001-01,C001,2026-10-15T12:00:00,cash_deposit,INCOMING,9188.00,USD,true,BRANCH_TELLER,BR-CA-01,CA,,,C001,true,,,,,,,,false,Synthetic demonstration transaction
+STR-P-029,ACC-C005-01,C005,2026-10-15T12:00:00,wire_out,OUTGOING,8140.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0550,ACC-C001-01,C001,2026-10-15T18:25:15,cash_deposit,INCOMING,898.81,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0581,ACC-C005-01,C005,2026-10-15T21:36:52,debit_card_purchase,OUTGOING,205.10,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0794,ACC-C002-01,C002,2026-10-15T21:42:29,debit_card_purchase,OUTGOING,93.47,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0351,ACC-C001-01,C001,2026-10-16T00:49:48,debit_card_purchase,OUTGOING,161.54,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0454,ACC-C001-01,C001,2026-10-16T01:11:35,cash_deposit,INCOMING,1330.86,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0932,ACC-C001-01,C001,2026-10-16T01:42:14,check,OUTGOING,2676.03,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0932,2562,false,Supplier payment
+STR-N-0007,ACC-C003-01,C003,2026-10-16T02:19:32,wire_in,INCOMING,7201.97,USD,false,WIRE,,,CP-C003-003,US,,,,Alder and Finch Retail Co.,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0007,,false,Consulting fee
+STR-N-0105,ACC-C002-01,C002,2026-10-16T03:47:42,check,OUTGOING,5014.77,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0105,3895,false,Supplier payment
+STR-N-0534,ACC-C003-01,C003,2026-10-16T10:24:30,ach_debit,OUTGOING,1147.44,USD,false,ACH,,,CP-C003-005,US,,,,Priya Anand-Sorensen,US,Redwood Shared Offices,,,,false,Coworking membership
+STR-N-0109,ACC-C002-01,C002,2026-10-16T13:19:48,debit_card_purchase,OUTGOING,73.18,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0620,ACC-C005-01,C005,2026-10-16T15:06:09,ach_credit,INCOMING,6547.92,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-N-0576,ACC-C002-01,C002,2026-10-16T15:30:46,debit_card_purchase,OUTGOING,134.99,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0484,ACC-C004-01,C004,2026-10-16T17:51:59,ach_credit,INCOMING,32840.60,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0484,,false,Customer payment
+STR-N-0499,ACC-C004-01,C004,2026-10-16T18:11:55,ach_debit,OUTGOING,4153.70,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0499,,false,Customs brokerage fees
+STR-N-0368,ACC-C001-01,C001,2026-10-16T18:14:34,debit_card_purchase,OUTGOING,89.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0030,ACC-C001-01,C001,2026-10-16T19:21:01,debit_card_purchase,OUTGOING,101.56,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0766,ACC-C001-01,C001,2026-10-16T19:40:30,debit_card_purchase,OUTGOING,36.23,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0319,ACC-C005-01,C005,2026-10-16T21:26:50,debit_card_purchase,OUTGOING,49.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0018,ACC-C005-01,C005,2026-10-16T22:10:01,debit_card_purchase,OUTGOING,74.85,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0188,ACC-C002-01,C002,2026-10-16T23:31:35,debit_card_purchase,OUTGOING,98.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0709,ACC-C005-01,C005,2026-10-16T23:33:06,atm_withdrawal,OUTGOING,200.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0735,ACC-C001-01,C001,2026-10-17T01:10:36,debit_card_purchase,OUTGOING,102.45,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0836,ACC-C002-01,C002,2026-10-17T01:33:15,debit_card_purchase,OUTGOING,219.15,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0327,ACC-C002-01,C002,2026-10-17T05:55:24,debit_card_purchase,OUTGOING,202.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0069,ACC-C002-01,C002,2026-10-17T07:57:18,debit_card_purchase,OUTGOING,137.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0250,ACC-C002-01,C002,2026-10-17T08:21:59,debit_card_purchase,OUTGOING,80.66,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0610,ACC-C002-01,C002,2026-10-17T11:34:09,debit_card_purchase,OUTGOING,96.33,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0196,ACC-C002-01,C002,2026-10-17T11:52:51,debit_card_purchase,OUTGOING,77.39,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0315,ACC-C005-01,C005,2026-10-17T11:53:18,debit_card_purchase,OUTGOING,251.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-P-030,ACC-C005-01,C005,2026-10-17T12:00:00,wire_out,OUTGOING,8210.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0644,ACC-C005-01,C005,2026-10-17T12:10:01,debit_card_purchase,OUTGOING,83.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0111,ACC-C003-01,C003,2026-10-17T14:36:55,debit_card_purchase,OUTGOING,189.52,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0593,ACC-C001-01,C001,2026-10-17T16:08:49,debit_card_purchase,OUTGOING,99.04,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0064,ACC-C001-01,C001,2026-10-17T19:56:07,cash_deposit,INCOMING,1244.28,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0076,ACC-C001-01,C001,2026-10-17T20:40:14,cash_deposit,INCOMING,1427.46,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0179,ACC-C002-01,C002,2026-10-17T20:41:06,debit_card_purchase,OUTGOING,41.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0887,ACC-C002-01,C002,2026-10-18T00:21:15,debit_card_purchase,OUTGOING,98.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0455,ACC-C001-01,C001,2026-10-18T00:23:00,debit_card_purchase,OUTGOING,219.63,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0670,ACC-C003-01,C003,2026-10-18T01:12:50,debit_card_purchase,OUTGOING,31.52,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0705,ACC-C002-01,C002,2026-10-18T01:42:04,debit_card_purchase,OUTGOING,94.27,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0382,ACC-C001-01,C001,2026-10-18T01:50:32,debit_card_purchase,OUTGOING,127.22,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0310,ACC-C002-01,C002,2026-10-18T02:32:48,debit_card_purchase,OUTGOING,115.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0062,ACC-C004-01,C004,2026-10-18T02:55:29,wire_out,OUTGOING,4435.79,USD,false,WIRE,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,Customs brokerage,INV-STREAM-0062,,false,Customs brokerage fees
+STR-N-0646,ACC-C001-01,C001,2026-10-18T03:42:07,ach_debit,OUTGOING,2618.61,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0646,,false,Supplier payment
+STR-N-0546,ACC-C005-01,C005,2026-10-18T04:21:53,debit_card_purchase,OUTGOING,134.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0693,ACC-C001-01,C001,2026-10-18T04:22:24,cash_deposit,INCOMING,702.46,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0208,ACC-C002-01,C002,2026-10-18T04:45:56,debit_card_purchase,OUTGOING,112.61,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0165,ACC-C002-01,C002,2026-10-18T04:58:05,debit_card_purchase,OUTGOING,142.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0214,ACC-C001-01,C001,2026-10-18T05:28:27,debit_card_purchase,OUTGOING,98.66,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0564,ACC-C002-01,C002,2026-10-18T06:34:49,debit_card_purchase,OUTGOING,75.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0561,ACC-C001-01,C001,2026-10-18T07:52:28,check,OUTGOING,5500.00,USD,false,CHECK,,,CP-C001-006,US,,,,Sunnyvale Corner Quick Stop LLC,US,Alder Street Properties LLC,,,2544,false,Monthly rent
+STR-N-0456,ACC-C002-01,C002,2026-10-18T09:42:57,check,OUTGOING,4112.92,USD,false,CHECK,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0456,3932,false,Supplier payment
+STR-N-0388,ACC-C002-01,C002,2026-10-18T12:00:43,debit_card_purchase,OUTGOING,183.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0142,ACC-C004-01,C004,2026-10-18T15:21:21,wire_out,OUTGOING,10212.53,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0142,,false,Freight charges
+STR-N-0449,ACC-C004-01,C004,2026-10-18T18:56:35,wire_in,INCOMING,33383.97,USD,false,WIRE,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0449,,false,Customer payment
+STR-N-0636,ACC-C002-01,C002,2026-10-18T20:49:10,debit_card_purchase,OUTGOING,179.02,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0922,ACC-C005-01,C005,2026-10-19T01:18:58,debit_card_purchase,OUTGOING,99.51,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0853,ACC-C002-01,C002,2026-10-19T02:02:52,debit_card_purchase,OUTGOING,76.31,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0222,ACC-C004-01,C004,2026-10-19T02:23:52,wire_in,INCOMING,35964.44,USD,false,WIRE,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0222,,false,Customer payment
+STR-N-0930,ACC-C002-01,C002,2026-10-19T03:40:04,debit_card_purchase,OUTGOING,80.93,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0915,ACC-C002-01,C002,2026-10-19T04:01:57,ach_debit,OUTGOING,6604.60,USD,false,ACH,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0915,,false,Supplier payment
+STR-N-0082,ACC-C001-01,C001,2026-10-19T05:02:35,cash_deposit,INCOMING,1133.66,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0309,ACC-C002-01,C002,2026-10-19T06:06:58,ach_debit,OUTGOING,2701.13,USD,false,ACH,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0309,,false,Supplier payment
+STR-N-0482,ACC-C003-01,C003,2026-10-19T06:10:30,debit_card_purchase,OUTGOING,52.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0184,ACC-C004-01,C004,2026-10-19T08:58:10,ach_debit,OUTGOING,4039.31,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0184,,false,Customs brokerage fees
+STR-P-031,ACC-C005-01,C005,2026-10-19T12:00:00,wire_out,OUTGOING,8280.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0920,ACC-C002-01,C002,2026-10-19T12:40:06,debit_card_purchase,OUTGOING,113.72,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0910,ACC-C002-01,C002,2026-10-19T14:23:19,check,OUTGOING,3454.87,USD,false,CHECK,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0910,3955,false,Supplier payment
+STR-N-0591,ACC-C001-01,C001,2026-10-19T14:54:13,cash_deposit,INCOMING,1256.21,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0951,ACC-C002-01,C002,2026-10-19T16:42:25,debit_card_purchase,OUTGOING,158.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0447,ACC-C004-01,C004,2026-10-19T17:16:58,ach_debit,OUTGOING,3595.13,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0447,,false,Customs brokerage fees
+STR-N-0769,ACC-C002-01,C002,2026-10-19T17:21:59,debit_card_purchase,OUTGOING,142.50,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0537,ACC-C002-01,C002,2026-10-19T18:12:42,debit_card_purchase,OUTGOING,185.72,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0594,ACC-C002-01,C002,2026-10-19T19:07:25,debit_card_purchase,OUTGOING,160.89,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0102,ACC-C003-01,C003,2026-10-19T20:18:32,debit_card_purchase,OUTGOING,76.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0837,ACC-C001-01,C001,2026-10-19T22:52:00,debit_card_purchase,OUTGOING,203.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0164,ACC-C001-01,C001,2026-10-20T00:55:15,check,OUTGOING,2640.10,USD,false,CHECK,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0164,2495,false,Supplier payment
+STR-N-0566,ACC-C002-01,C002,2026-10-20T04:07:12,debit_card_purchase,OUTGOING,142.33,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0294,ACC-C002-01,C002,2026-10-20T04:12:09,debit_card_purchase,OUTGOING,146.69,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0464,ACC-C002-01,C002,2026-10-20T06:05:14,debit_card_purchase,OUTGOING,45.12,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0678,ACC-C001-01,C001,2026-10-20T07:46:48,check,OUTGOING,3891.68,USD,false,CHECK,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0678,2508,false,Supplier payment
+STR-N-0764,ACC-C001-01,C001,2026-10-20T08:33:01,debit_card_purchase,OUTGOING,81.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0804,ACC-C002-01,C002,2026-10-20T08:37:49,ach_debit,OUTGOING,4855.89,USD,false,ACH,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0804,,false,Supplier payment
+STR-N-0053,ACC-C001-01,C001,2026-10-20T10:20:10,debit_card_purchase,OUTGOING,38.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0270,ACC-C003-01,C003,2026-10-20T10:26:05,debit_card_purchase,OUTGOING,218.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-P-006,ACC-C002-01,C002,2026-10-20T12:00:00,cash_deposit,INCOMING,3200.00,USD,true,BRANCH_TELLER,BR-STREAM-0,TX,,,DEP-STREAM-0,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0003,ACC-C002-01,C002,2026-10-20T13:08:48,ach_debit,OUTGOING,12000.00,USD,false,ACH,,,CP-C002-006,US,,,,Casa Brisa Kitchen Inc.,US,Tower Row Properties LLC,,,,true,Monthly rent
+STR-N-0048,ACC-C003-01,C003,2026-10-20T13:21:44,debit_card_purchase,OUTGOING,89.15,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0114,ACC-C004-01,C004,2026-10-20T14:38:54,ach_debit,OUTGOING,4716.62,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0114,,false,Customs brokerage fees
+STR-N-0410,ACC-C002-01,C002,2026-10-20T19:26:04,debit_card_purchase,OUTGOING,163.38,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-007,ACC-C002-01,C002,2026-10-20T20:00:00,cash_deposit,INCOMING,3220.00,USD,true,BRANCH_TELLER,BR-STREAM-1,MN,,,DEP-STREAM-1,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0875,ACC-C002-01,C002,2026-10-20T20:42:00,check,OUTGOING,2914.38,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0875,3863,false,Supplier payment
+STR-N-0047,ACC-C001-01,C001,2026-10-20T20:54:53,check,OUTGOING,5500.00,USD,false,CHECK,,,CP-C001-006,US,,,,Sunnyvale Corner Quick Stop LLC,US,Alder Street Properties LLC,,,2556,false,Monthly rent
+STR-N-0654,ACC-C002-01,C002,2026-10-20T21:48:00,debit_card_purchase,OUTGOING,149.01,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0487,ACC-C002-01,C002,2026-10-20T23:54:23,ach_debit,OUTGOING,4482.42,USD,false,ACH,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0487,,false,Supplier payment
+STR-N-0462,ACC-C003-01,C003,2026-10-21T01:02:24,ach_debit,OUTGOING,2351.22,USD,false,ACH,,,CP-C003-006,US,,,,Priya Anand-Sorensen,US,Solstice Tax Advisors,,,,false,Professional services
+STR-N-0505,ACC-C001-01,C001,2026-10-21T03:12:07,cash_deposit,INCOMING,1449.93,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-P-008,ACC-C002-01,C002,2026-10-21T04:00:00,cash_deposit,INCOMING,3240.00,USD,true,BRANCH_TELLER,BR-STREAM-2,IN,,,DEP-STREAM-2,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0793,ACC-C002-01,C002,2026-10-21T07:20:50,debit_card_purchase,OUTGOING,175.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0242,ACC-C002-01,C002,2026-10-21T07:21:34,ach_debit,OUTGOING,27901.82,USD,false,ACH,,,CP-C002-005,US,,,,Casa Brisa Kitchen Inc.,US,Northgate Payroll Services,,,,false,Payroll funding
+STR-N-0589,ACC-C002-01,C002,2026-10-21T07:49:34,debit_card_purchase,OUTGOING,111.40,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0249,ACC-C002-01,C002,2026-10-21T07:51:58,debit_card_purchase,OUTGOING,34.55,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0708,ACC-C002-01,C002,2026-10-21T08:08:32,debit_card_purchase,OUTGOING,202.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0183,ACC-C002-01,C002,2026-10-21T09:05:00,debit_card_purchase,OUTGOING,133.44,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0470,ACC-C002-01,C002,2026-10-21T10:15:08,ach_debit,OUTGOING,2212.46,USD,false,ACH,,,CP-C002-007,US,,,,Casa Brisa Kitchen Inc.,US,Valley Kitchen Equipment Leasing,,,,false,Equipment lease
+STR-N-0409,ACC-C004-01,C004,2026-10-21T11:10:13,ach_credit,INCOMING,60055.14,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0409,,false,Customer payment
+STR-N-0180,ACC-C004-01,C004,2026-10-21T11:19:17,wire_out,OUTGOING,57205.25,USD,false,WIRE,,,CP-C004-002,TW,,,,Pacific Rim Circuitry Imports Inc.,US,Hsinchu Microlink Electronics Co.,Payment for electronic components,INV-STREAM-0180,,false,Supplier wire
+STR-P-009,ACC-C002-01,C002,2026-10-21T12:00:00,cash_deposit,INCOMING,3260.00,USD,true,BRANCH_TELLER,BR-STREAM-0,TX,,,DEP-STREAM-3,true,,,,,,,,false,Synthetic demonstration transaction
+STR-P-032,ACC-C005-01,C005,2026-10-21T12:00:00,wire_out,OUTGOING,8350.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0810,ACC-C001-01,C001,2026-10-21T12:24:21,cash_deposit,INCOMING,1175.20,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0385,ACC-C002-01,C002,2026-10-21T17:32:58,debit_card_purchase,OUTGOING,93.17,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0308,ACC-C001-01,C001,2026-10-21T19:04:35,debit_card_purchase,OUTGOING,179.39,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0629,ACC-C004-01,C004,2026-10-21T19:40:28,ach_debit,OUTGOING,3958.25,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0629,,false,Customs brokerage fees
+STR-P-010,ACC-C002-01,C002,2026-10-21T20:00:00,cash_deposit,INCOMING,3280.00,USD,true,BRANCH_TELLER,BR-STREAM-1,MN,,,DEP-STREAM-0,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0272,ACC-C002-01,C002,2026-10-21T20:03:43,debit_card_purchase,OUTGOING,33.15,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0071,ACC-C005-01,C005,2026-10-21T20:08:28,ach_credit,INCOMING,7129.21,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-N-0056,ACC-C001-01,C001,2026-10-21T20:08:45,debit_card_purchase,OUTGOING,240.25,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0329,ACC-C001-01,C001,2026-10-21T20:29:42,debit_card_purchase,OUTGOING,67.10,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0923,ACC-C003-01,C003,2026-10-21T20:33:06,ach_debit,OUTGOING,867.49,USD,false,ACH,,,CP-C003-007,US,,,,Priya Anand-Sorensen,US,Valley Health Plans Inc.,,,,false,Health insurance premium
+STR-N-0770,ACC-C002-01,C002,2026-10-21T23:26:05,debit_card_purchase,OUTGOING,81.91,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0488,ACC-C001-01,C001,2026-10-21T23:41:15,debit_card_purchase,OUTGOING,210.78,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0190,ACC-C005-01,C005,2026-10-22T00:08:07,debit_card_purchase,OUTGOING,88.55,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0130,ACC-C002-01,C002,2026-10-22T00:42:09,debit_card_purchase,OUTGOING,136.95,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-011,ACC-C002-01,C002,2026-10-22T04:00:00,cash_deposit,INCOMING,3300.00,USD,true,BRANCH_TELLER,BR-STREAM-2,IN,,,DEP-STREAM-1,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0397,ACC-C001-01,C001,2026-10-22T05:58:10,ach_debit,OUTGOING,843.57,USD,false,ACH,,,CP-C001-005,US,,,,Sunnyvale Corner Quick Stop LLC,US,Peninsula Gas and Electric Co.,,,,false,Utilities
+STR-N-0660,ACC-C002-01,C002,2026-10-22T06:47:24,debit_card_purchase,OUTGOING,85.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0664,ACC-C002-01,C002,2026-10-22T06:47:29,debit_card_purchase,OUTGOING,142.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0137,ACC-C001-01,C001,2026-10-22T06:50:41,debit_card_purchase,OUTGOING,80.94,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0902,ACC-C004-01,C004,2026-10-22T07:00:49,ach_debit,OUTGOING,3656.91,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0902,,false,Customs brokerage fees
+STR-N-0945,ACC-C002-01,C002,2026-10-22T08:21:14,debit_card_purchase,OUTGOING,86.72,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0451,ACC-C004-01,C004,2026-10-22T09:02:52,ach_credit,INCOMING,41475.93,USD,false,ACH,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0451,,false,Customer payment
+STR-P-012,ACC-C002-01,C002,2026-10-22T12:00:00,cash_deposit,INCOMING,3320.00,USD,true,BRANCH_TELLER,BR-STREAM-0,TX,,,DEP-STREAM-2,true,,,,,,,,false,Synthetic demonstration transaction
+STR-P-020,ACC-C002-01,C002,2026-10-22T12:00:00,wire_out,OUTGOING,19000.00,USD,false,WIRE,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,Supplier payment,,,true,Synthetic demonstration transaction
+STR-N-0791,ACC-C002-01,C002,2026-10-22T13:33:17,check,OUTGOING,3320.66,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0791,3869,false,Supplier payment
+STR-N-0432,ACC-C004-01,C004,2026-10-22T14:44:56,ach_debit,OUTGOING,8517.50,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0432,,false,Freight charges
+STR-N-0072,ACC-C002-01,C002,2026-10-22T16:26:11,debit_card_purchase,OUTGOING,81.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0784,ACC-C005-01,C005,2026-10-22T17:37:22,debit_card_purchase,OUTGOING,165.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0191,ACC-C005-01,C005,2026-10-22T18:39:23,debit_card_purchase,OUTGOING,96.19,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-P-013,ACC-C002-01,C002,2026-10-22T20:00:00,cash_deposit,INCOMING,3340.00,USD,true,BRANCH_TELLER,BR-STREAM-1,MN,,,DEP-STREAM-3,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0037,ACC-C004-01,C004,2026-10-22T20:45:19,ach_debit,OUTGOING,11846.35,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0037,,false,Freight charges
+STR-N-0314,ACC-C001-01,C001,2026-10-22T21:36:07,debit_card_purchase,OUTGOING,64.65,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0125,ACC-C004-01,C004,2026-10-22T23:37:56,ach_debit,OUTGOING,10534.50,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0125,,false,Freight charges
+STR-N-0924,ACC-C001-01,C001,2026-10-22T23:40:43,check,OUTGOING,2459.15,USD,false,CHECK,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0924,2527,false,Supplier payment
+STR-N-0084,ACC-C001-01,C001,2026-10-23T00:46:25,card_settlement,INCOMING,18082.04,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0500,ACC-C002-01,C002,2026-10-23T03:39:28,ach_debit,OUTGOING,3349.56,USD,false,ACH,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0500,,false,Supplier payment
+STR-P-014,ACC-C002-01,C002,2026-10-23T04:00:00,cash_deposit,INCOMING,3360.00,USD,true,BRANCH_TELLER,BR-STREAM-2,IN,,,DEP-STREAM-0,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0933,ACC-C002-01,C002,2026-10-23T08:57:00,debit_card_purchase,OUTGOING,140.04,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0237,ACC-C004-01,C004,2026-10-23T11:24:34,ach_debit,OUTGOING,7203.64,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0237,,false,Freight charges
+STR-P-015,ACC-C002-01,C002,2026-10-23T12:00:00,cash_deposit,INCOMING,3380.00,USD,true,BRANCH_TELLER,BR-STREAM-0,TX,,,DEP-STREAM-1,true,,,,,,,,false,Synthetic demonstration transaction
+STR-P-033,ACC-C005-01,C005,2026-10-23T12:00:00,wire_out,OUTGOING,8420.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0934,ACC-C002-01,C002,2026-10-23T14:55:34,debit_card_purchase,OUTGOING,31.92,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0695,ACC-C001-01,C001,2026-10-23T16:29:36,debit_card_purchase,OUTGOING,111.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0737,ACC-C005-01,C005,2026-10-23T18:05:29,debit_card_purchase,OUTGOING,257.49,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0897,ACC-C002-01,C002,2026-10-23T18:19:06,debit_card_purchase,OUTGOING,122.81,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-016,ACC-C002-01,C002,2026-10-23T20:00:00,cash_deposit,INCOMING,3400.00,USD,true,BRANCH_TELLER,BR-STREAM-1,MN,,,DEP-STREAM-2,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0711,ACC-C004-01,C004,2026-10-23T20:16:55,ach_debit,OUTGOING,3140.21,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0711,,false,Customs brokerage fees
+STR-N-0398,ACC-C001-01,C001,2026-10-23T21:00:53,ach_debit,OUTGOING,1898.30,USD,false,ACH,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0398,,false,Supplier payment
+STR-N-0424,ACC-C004-01,C004,2026-10-24T00:13:26,ach_credit,INCOMING,37758.15,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0424,,false,Customer payment
+STR-N-0682,ACC-C003-01,C003,2026-10-24T01:23:54,debit_card_purchase,OUTGOING,211.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0330,ACC-C002-01,C002,2026-10-24T02:25:43,debit_card_purchase,OUTGOING,116.98,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-017,ACC-C002-01,C002,2026-10-24T04:00:00,cash_deposit,INCOMING,3420.00,USD,true,BRANCH_TELLER,BR-STREAM-2,IN,,,DEP-STREAM-3,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0209,ACC-C004-01,C004,2026-10-24T08:05:35,ach_debit,OUTGOING,3000.01,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0209,,false,Customs brokerage fees
+STR-N-0068,ACC-C002-01,C002,2026-10-24T08:17:20,debit_card_purchase,OUTGOING,233.41,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0193,ACC-C003-01,C003,2026-10-24T09:56:26,debit_card_purchase,OUTGOING,97.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-P-018,ACC-C002-01,C002,2026-10-24T12:00:00,cash_deposit,INCOMING,3440.00,USD,true,BRANCH_TELLER,BR-STREAM-0,TX,,,DEP-STREAM-0,true,,,,,,,,false,Synthetic demonstration transaction
+STR-P-021,ACC-C002-01,C002,2026-10-24T12:00:00,wire_out,OUTGOING,19000.00,USD,false,WIRE,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,Supplier payment,,,true,Synthetic demonstration transaction
+STR-N-0761,ACC-C002-01,C002,2026-10-24T12:02:34,debit_card_purchase,OUTGOING,239.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0771,ACC-C005-01,C005,2026-10-24T13:24:05,debit_card_purchase,OUTGOING,118.28,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0295,ACC-C001-01,C001,2026-10-24T15:27:33,cash_deposit,INCOMING,1509.11,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0340,ACC-C004-01,C004,2026-10-24T15:43:03,ach_credit,INCOMING,38296.64,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0340,,false,Customer payment
+STR-N-0841,ACC-C001-01,C001,2026-10-24T16:44:18,card_settlement,INCOMING,16608.02,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-P-019,ACC-C002-01,C002,2026-10-24T20:00:00,cash_deposit,INCOMING,3460.00,USD,true,BRANCH_TELLER,BR-STREAM-1,MN,,,DEP-STREAM-1,true,,,,,,,,false,Synthetic demonstration transaction
+STR-N-0364,ACC-C005-01,C005,2026-10-24T23:25:49,ach_debit,OUTGOING,558.87,USD,false,ACH,,,CP-C005-006,US,,,,Jordan Alexei Pemberton-Nakamura,US,Coastline Auto Insurance,,,,false,Auto insurance
+STR-N-0888,ACC-C002-01,C002,2026-10-25T01:31:24,debit_card_purchase,OUTGOING,41.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0825,ACC-C004-01,C004,2026-10-25T04:28:22,ach_debit,OUTGOING,3606.22,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0825,,false,Customs brokerage fees
+STR-P-022,ACC-C002-01,C002,2026-10-25T12:00:00,wire_out,OUTGOING,6000.00,USD,false,WIRE,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,Supplier payment,,,true,Synthetic demonstration transaction
+STR-P-034,ACC-C005-01,C005,2026-10-25T12:00:00,wire_out,OUTGOING,8490.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0463,ACC-C004-01,C004,2026-10-25T12:09:15,wire_out,OUTGOING,7472.26,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0463,,false,Freight charges
+STR-N-0850,ACC-C002-01,C002,2026-10-25T13:18:11,debit_card_purchase,OUTGOING,21.83,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0112,ACC-C001-01,C001,2026-10-25T14:26:14,check,OUTGOING,7571.11,USD,false,CHECK,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0112,2521,false,Supplier payment
+STR-N-0227,ACC-C001-01,C001,2026-10-25T15:01:11,card_settlement,INCOMING,18142.29,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0763,ACC-C003-01,C003,2026-10-25T15:24:16,debit_card_purchase,OUTGOING,97.44,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0362,ACC-C002-01,C002,2026-10-25T16:45:14,card_settlement,INCOMING,47858.80,USD,false,CARD_PROCESSOR_ACH,,,CP-C002-004,US,,,,Meridian Card Processing,US,Casa Brisa Kitchen Inc.,,,,false,Card settlement
+STR-N-0202,ACC-C002-01,C002,2026-10-25T18:01:30,debit_card_purchase,OUTGOING,48.11,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0779,ACC-C004-01,C004,2026-10-25T20:05:25,ach_debit,OUTGOING,9606.60,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0779,,false,Freight charges
+STR-N-0219,ACC-C004-01,C004,2026-10-26T03:07:30,ach_debit,OUTGOING,6091.82,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0219,,false,Freight charges
+STR-N-0521,ACC-C004-01,C004,2026-10-26T08:12:33,ach_debit,OUTGOING,2691.59,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0521,,false,Customs brokerage fees
+STR-N-0307,ACC-C005-01,C005,2026-10-26T08:32:38,debit_card_purchase,OUTGOING,362.84,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0845,ACC-C001-01,C001,2026-10-26T08:47:54,cash_deposit,INCOMING,1465.14,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0540,ACC-C001-01,C001,2026-10-26T11:53:08,card_settlement,INCOMING,9333.00,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0905,ACC-C002-01,C002,2026-10-26T12:19:05,debit_card_purchase,OUTGOING,128.56,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0087,ACC-C003-01,C003,2026-10-26T12:42:57,debit_card_purchase,OUTGOING,76.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0844,ACC-C001-01,C001,2026-10-26T13:44:27,cash_deposit,INCOMING,1446.93,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0147,ACC-C004-01,C004,2026-10-26T19:57:30,wire_out,OUTGOING,9533.21,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0147,,false,Freight charges
+STR-N-0277,ACC-C004-01,C004,2026-10-27T01:57:32,ach_debit,OUTGOING,4214.99,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0277,,false,Customs brokerage fees
+STR-N-0587,ACC-C001-01,C001,2026-10-27T02:42:41,debit_card_purchase,OUTGOING,196.22,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0395,ACC-C003-01,C003,2026-10-27T04:10:51,debit_card_purchase,OUTGOING,106.97,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0034,ACC-C002-01,C002,2026-10-27T08:11:12,debit_card_purchase,OUTGOING,116.71,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0187,ACC-C002-01,C002,2026-10-27T09:30:49,debit_card_purchase,OUTGOING,51.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0938,ACC-C003-01,C003,2026-10-27T11:13:08,debit_card_purchase,OUTGOING,82.41,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0044,ACC-C001-01,C001,2026-10-27T11:37:32,debit_card_purchase,OUTGOING,131.66,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-P-035,ACC-C005-01,C005,2026-10-27T12:00:00,wire_out,OUTGOING,8560.00,USD,false,WIRE,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,Investment funding,,,false,Synthetic demonstration transaction
+STR-N-0086,ACC-C003-01,C003,2026-10-27T13:31:32,debit_card_purchase,OUTGOING,797.83,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Larger personal purchase
+STR-N-0341,ACC-C002-01,C002,2026-10-27T14:16:30,debit_card_purchase,OUTGOING,192.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0045,ACC-C002-01,C002,2026-10-27T15:27:20,debit_card_purchase,OUTGOING,136.42,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0642,ACC-C002-01,C002,2026-10-27T15:43:02,debit_card_purchase,OUTGOING,168.35,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0155,ACC-C002-01,C002,2026-10-27T16:41:07,debit_card_purchase,OUTGOING,61.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0101,ACC-C004-01,C004,2026-10-27T19:12:28,wire_out,OUTGOING,66965.74,USD,false,WIRE,,,CP-C004-003,KR,,,,Pacific Rim Circuitry Imports Inc.,US,Gyeonggi Display Systems Ltd.,Payment for electronic components,INV-STREAM-0101,,false,Supplier wire
+STR-N-0017,ACC-C004-01,C004,2026-10-27T21:43:02,wire_in,INCOMING,43101.17,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0017,,false,Customer payment
+STR-N-0669,ACC-C001-01,C001,2026-10-27T22:18:43,debit_card_purchase,OUTGOING,57.80,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0365,ACC-C004-01,C004,2026-10-28T00:12:45,ach_credit,INCOMING,55601.04,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0365,,false,Customer payment
+STR-N-0251,ACC-C002-01,C002,2026-10-28T05:56:12,debit_card_purchase,OUTGOING,18.31,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0532,ACC-C002-01,C002,2026-10-28T06:19:03,debit_card_purchase,OUTGOING,68.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0012,ACC-C004-01,C004,2026-10-28T09:39:49,wire_out,OUTGOING,8723.76,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0012,,false,Freight charges
+STR-N-0605,ACC-C002-01,C002,2026-10-28T12:14:54,check,OUTGOING,12000.00,USD,false,CHECK,,,CP-C002-006,US,,,,Casa Brisa Kitchen Inc.,US,Tower Row Properties LLC,,,3935,true,Monthly rent
+STR-N-0352,ACC-C002-01,C002,2026-10-28T12:21:25,debit_card_purchase,OUTGOING,110.36,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0198,ACC-C001-01,C001,2026-10-28T14:18:29,debit_card_purchase,OUTGOING,80.77,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0201,ACC-C004-01,C004,2026-10-28T15:26:58,ach_debit,OUTGOING,4796.88,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0201,,false,Customs brokerage fees
+STR-N-0904,ACC-C001-01,C001,2026-10-28T18:31:15,debit_card_purchase,OUTGOING,217.04,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0801,ACC-C003-01,C003,2026-10-28T19:12:47,debit_card_purchase,OUTGOING,70.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0241,ACC-C004-01,C004,2026-10-28T19:27:02,ach_debit,OUTGOING,4711.02,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0241,,false,Customs brokerage fees
+STR-N-0548,ACC-C004-01,C004,2026-10-28T21:43:13,ach_debit,OUTGOING,2777.43,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0548,,false,Customs brokerage fees
+STR-N-0497,ACC-C003-01,C003,2026-10-29T02:04:53,debit_card_purchase,OUTGOING,110.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0028,ACC-C004-01,C004,2026-10-29T03:02:29,ach_debit,OUTGOING,3803.44,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0028,,false,Customs brokerage fees
+STR-N-0623,ACC-C002-01,C002,2026-10-29T04:25:43,cash_deposit,INCOMING,2153.78,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0422,ACC-C002-01,C002,2026-10-29T05:25:57,cash_deposit,INCOMING,1536.34,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0041,ACC-C004-01,C004,2026-10-29T05:43:14,ach_debit,OUTGOING,4049.87,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0041,,false,Customs brokerage fees
+STR-N-0684,ACC-C002-01,C002,2026-10-29T08:11:48,cash_deposit,INCOMING,1291.24,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0094,ACC-C001-01,C001,2026-10-29T08:12:22,debit_card_purchase,OUTGOING,118.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0361,ACC-C003-01,C003,2026-10-29T09:11:33,debit_card_purchase,OUTGOING,208.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0271,ACC-C002-01,C002,2026-10-29T10:52:41,ach_debit,OUTGOING,26968.39,USD,false,ACH,,,CP-C002-005,US,,,,Casa Brisa Kitchen Inc.,US,Northgate Payroll Services,,,,false,Payroll funding
+STR-N-0403,ACC-C002-01,C002,2026-10-29T11:22:43,debit_card_purchase,OUTGOING,188.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-023,ACC-C003-01,C003,2026-10-29T12:00:00,wire_in,INCOMING,12500.00,USD,false,WIRE,,,CP-C003-003,US,,,,Alder and Finch Retail Co.,US,Priya Anand-Sorensen,Consulting services,,,false,Synthetic demonstration transaction
+STR-N-0512,ACC-C003-01,C003,2026-10-29T13:02:17,debit_card_purchase,OUTGOING,61.17,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0008,ACC-C002-01,C002,2026-10-29T14:08:21,debit_card_purchase,OUTGOING,80.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0588,ACC-C002-01,C002,2026-10-29T14:55:34,debit_card_purchase,OUTGOING,74.36,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0477,ACC-C002-01,C002,2026-10-29T16:14:23,debit_card_purchase,OUTGOING,33.15,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0556,ACC-C005-01,C005,2026-10-29T16:50:40,debit_card_purchase,OUTGOING,226.18,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0267,ACC-C001-01,C001,2026-10-29T18:24:34,debit_card_purchase,OUTGOING,75.68,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0496,ACC-C005-01,C005,2026-10-29T19:03:15,debit_card_purchase,OUTGOING,281.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0565,ACC-C001-01,C001,2026-10-29T19:07:25,debit_card_purchase,OUTGOING,76.10,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0240,ACC-C003-01,C003,2026-10-29T19:17:00,wire_in,INCOMING,7192.07,USD,false,WIRE,,,CP-C003-004,US,,,,Northbeam Software Inc.,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0240,,false,Consulting fee
+STR-N-0141,ACC-C004-01,C004,2026-10-29T20:03:53,ach_debit,OUTGOING,9569.86,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0141,,false,Freight charges
+STR-N-0799,ACC-C002-01,C002,2026-10-29T21:24:09,debit_card_purchase,OUTGOING,81.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0575,ACC-C002-01,C002,2026-10-29T22:10:56,debit_card_purchase,OUTGOING,23.53,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0121,ACC-C001-01,C001,2026-10-29T22:48:14,ach_debit,OUTGOING,5290.38,USD,false,ACH,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0121,,false,Supplier payment
+STR-N-0906,ACC-C002-01,C002,2026-10-29T23:38:07,check,OUTGOING,5059.00,USD,false,CHECK,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0906,3893,false,Supplier payment
+STR-N-0523,ACC-C005-01,C005,2026-10-30T00:43:45,debit_card_purchase,OUTGOING,86.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0774,ACC-C004-01,C004,2026-10-30T01:29:07,wire_out,OUTGOING,2807.55,USD,false,WIRE,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,Customs brokerage,INV-STREAM-0774,,false,Customs brokerage fees
+STR-N-0148,ACC-C003-01,C003,2026-10-30T04:10:42,debit_card_purchase,OUTGOING,116.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0476,ACC-C003-01,C003,2026-10-30T04:27:26,ach_debit,OUTGOING,676.44,USD,false,ACH,,,CP-C003-007,US,,,,Priya Anand-Sorensen,US,Valley Health Plans Inc.,,,,false,Health insurance premium
+STR-N-0824,ACC-C004-01,C004,2026-10-30T08:33:19,ach_debit,OUTGOING,12869.09,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0824,,false,Freight charges
+STR-N-0510,ACC-C002-01,C002,2026-10-30T09:10:26,cash_deposit,INCOMING,2715.13,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-P-024,ACC-C003-01,C003,2026-10-30T12:00:00,wire_out,OUTGOING,12300.00,USD,false,WIRE,,,CP-C003-002,US,,,,Priya Anand-Sorensen,US,Kestrel Health Partners,Payment,,,false,Synthetic demonstration transaction
+STR-N-0103,ACC-C004-01,C004,2026-10-30T14:13:28,ach_debit,OUTGOING,3148.54,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0103,,false,Customs brokerage fees
+STR-N-0353,ACC-C002-01,C002,2026-10-30T14:56:31,debit_card_purchase,OUTGOING,51.04,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0698,ACC-C003-01,C003,2026-10-30T14:58:06,debit_card_purchase,OUTGOING,76.83,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0584,ACC-C004-01,C004,2026-10-30T15:33:23,wire_out,OUTGOING,11393.47,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0584,,false,Freight charges
+STR-N-0158,ACC-C002-01,C002,2026-10-30T17:13:26,debit_card_purchase,OUTGOING,241.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0942,ACC-C002-01,C002,2026-10-30T18:36:24,debit_card_purchase,OUTGOING,199.32,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0002,ACC-C002-01,C002,2026-10-30T18:38:21,debit_card_purchase,OUTGOING,118.71,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0738,ACC-C002-01,C002,2026-10-31T01:17:04,debit_card_purchase,OUTGOING,96.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0091,ACC-C004-01,C004,2026-10-31T01:39:43,ach_debit,OUTGOING,4018.88,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0091,,false,Customs brokerage fees
+STR-N-0254,ACC-C003-01,C003,2026-10-31T04:40:26,debit_card_purchase,OUTGOING,21.73,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0786,ACC-C002-01,C002,2026-10-31T06:32:58,debit_card_purchase,OUTGOING,81.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0928,ACC-C002-01,C002,2026-10-31T07:57:09,cash_deposit,INCOMING,1216.57,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0533,ACC-C002-01,C002,2026-10-31T08:00:09,debit_card_purchase,OUTGOING,138.24,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0592,ACC-C003-01,C003,2026-10-31T08:03:59,debit_card_purchase,OUTGOING,92.88,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0301,ACC-C005-01,C005,2026-10-31T11:50:06,debit_card_purchase,OUTGOING,359.42,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0381,ACC-C001-01,C001,2026-10-31T12:19:02,debit_card_purchase,OUTGOING,140.17,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0849,ACC-C001-01,C001,2026-10-31T14:15:49,cash_deposit,INCOMING,1312.49,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0833,ACC-C001-01,C001,2026-10-31T15:02:52,cash_deposit,INCOMING,1700.89,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0513,ACC-C001-01,C001,2026-10-31T15:48:36,card_settlement,INCOMING,15101.28,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0216,ACC-C002-01,C002,2026-10-31T17:32:47,debit_card_purchase,OUTGOING,138.24,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0628,ACC-C002-01,C002,2026-10-31T17:56:10,cash_deposit,INCOMING,1667.92,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0514,ACC-C002-01,C002,2026-10-31T18:57:15,cash_deposit,INCOMING,2743.83,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0809,ACC-C005-01,C005,2026-10-31T20:20:45,debit_card_purchase,OUTGOING,137.97,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0710,ACC-C002-01,C002,2026-10-31T20:26:57,debit_card_purchase,OUTGOING,197.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0544,ACC-C002-01,C002,2026-10-31T22:47:01,debit_card_purchase,OUTGOING,144.65,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0342,ACC-C004-01,C004,2026-11-01T02:00:17,ach_debit,OUTGOING,2945.18,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0342,,false,Customs brokerage fees
+STR-N-0262,ACC-C001-01,C001,2026-11-01T03:57:36,debit_card_purchase,OUTGOING,251.46,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0296,ACC-C004-01,C004,2026-11-01T06:12:29,ach_debit,OUTGOING,6005.14,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0296,,false,Freight charges
+STR-N-0891,ACC-C001-01,C001,2026-11-01T09:59:01,debit_card_purchase,OUTGOING,109.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0176,ACC-C003-01,C003,2026-11-01T10:24:00,debit_card_purchase,OUTGOING,138.44,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0554,ACC-C003-01,C003,2026-11-01T10:52:49,ach_debit,OUTGOING,1055.23,USD,false,ACH,,,CP-C003-005,US,,,,Priya Anand-Sorensen,US,Redwood Shared Offices,,,,false,Coworking membership
+STR-N-0050,ACC-C005-01,C005,2026-11-01T12:13:56,debit_card_purchase,OUTGOING,261.76,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0067,ACC-C002-01,C002,2026-11-01T13:44:27,debit_card_purchase,OUTGOING,86.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0170,ACC-C003-01,C003,2026-11-01T15:07:37,debit_card_purchase,OUTGOING,88.27,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0406,ACC-C004-01,C004,2026-11-01T16:27:25,wire_out,OUTGOING,3414.26,USD,false,WIRE,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,Customs brokerage,INV-STREAM-0406,,false,Customs brokerage fees
+STR-N-0396,ACC-C002-01,C002,2026-11-01T16:40:12,check,OUTGOING,6085.44,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0396,3896,false,Supplier payment
+STR-N-0156,ACC-C002-01,C002,2026-11-01T17:57:42,debit_card_purchase,OUTGOING,124.95,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0127,ACC-C004-01,C004,2026-11-01T17:58:04,ach_debit,OUTGOING,3024.88,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0127,,false,Customs brokerage fees
+STR-N-0598,ACC-C001-01,C001,2026-11-01T18:21:04,debit_card_purchase,OUTGOING,114.65,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0859,ACC-C004-01,C004,2026-11-01T21:30:15,wire_out,OUTGOING,55646.03,USD,false,WIRE,,,CP-C004-003,KR,,,,Pacific Rim Circuitry Imports Inc.,US,Gyeonggi Display Systems Ltd.,Payment for electronic components,INV-STREAM-0859,,false,Supplier wire
+STR-N-0195,ACC-C005-01,C005,2026-11-01T21:42:08,ach_debit,OUTGOING,210.23,USD,false,ACH,,,CP-C005-003,US,,,,Jordan Alexei Pemberton-Nakamura,US,Santa Clara Valley Power,,,,false,Utilities
+STR-N-0063,ACC-C001-01,C001,2026-11-01T21:44:51,cash_deposit,INCOMING,1324.84,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0446,ACC-C003-01,C003,2026-11-01T22:17:10,debit_card_purchase,OUTGOING,88.27,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0467,ACC-C004-01,C004,2026-11-01T22:33:26,wire_out,OUTGOING,65526.18,USD,false,WIRE,,,CP-C004-003,KR,,,,Pacific Rim Circuitry Imports Inc.,US,Gyeonggi Display Systems Ltd.,Payment for electronic components,INV-STREAM-0467,,false,Supplier wire
+STR-N-0043,ACC-C002-01,C002,2026-11-01T23:52:53,debit_card_purchase,OUTGOING,71.38,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0423,ACC-C004-01,C004,2026-11-02T04:00:22,ach_debit,OUTGOING,2866.46,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0423,,false,Customs brokerage fees
+STR-N-0331,ACC-C002-01,C002,2026-11-02T05:20:15,debit_card_purchase,OUTGOING,95.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0167,ACC-C004-01,C004,2026-11-02T10:37:02,wire_in,INCOMING,43101.17,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0167,,false,Customer payment
+STR-N-0543,ACC-C002-01,C002,2026-11-02T11:02:05,debit_card_purchase,OUTGOING,227.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0286,ACC-C002-01,C002,2026-11-02T11:59:07,debit_card_purchase,OUTGOING,172.87,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0651,ACC-C002-01,C002,2026-11-02T12:45:58,debit_card_purchase,OUTGOING,117.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0373,ACC-C005-01,C005,2026-11-02T15:11:30,ach_credit,INCOMING,7374.08,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-N-0871,ACC-C005-01,C005,2026-11-02T15:45:37,debit_card_purchase,OUTGOING,10.31,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0265,ACC-C002-01,C002,2026-11-02T15:51:30,debit_card_purchase,OUTGOING,67.42,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0615,ACC-C001-01,C001,2026-11-02T16:50:01,debit_card_purchase,OUTGOING,50.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0579,ACC-C003-01,C003,2026-11-02T18:51:01,wire_in,INCOMING,3686.02,USD,false,WIRE,,,CP-C003-002,US,,,,Kestrel Health Partners,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0579,,false,Consulting fee
+STR-N-0465,ACC-C001-01,C001,2026-11-02T19:42:11,debit_card_purchase,OUTGOING,58.52,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0366,ACC-C001-01,C001,2026-11-02T20:17:26,debit_card_purchase,OUTGOING,241.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0590,ACC-C002-01,C002,2026-11-02T22:05:49,debit_card_purchase,OUTGOING,43.33,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0263,ACC-C005-01,C005,2026-11-02T22:10:56,debit_card_purchase,OUTGOING,362.84,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0016,ACC-C002-01,C002,2026-11-02T23:29:13,debit_card_purchase,OUTGOING,133.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0031,ACC-C004-01,C004,2026-11-02T23:43:31,ach_debit,OUTGOING,3650.53,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0031,,false,Customs brokerage fees
+STR-N-0426,ACC-C003-01,C003,2026-11-03T00:09:06,ach_debit,OUTGOING,771.86,USD,false,ACH,,,CP-C003-006,US,,,,Priya Anand-Sorensen,US,Solstice Tax Advisors,,,,false,Professional services
+STR-N-0300,ACC-C004-01,C004,2026-11-03T00:23:05,ach_debit,OUTGOING,5707.07,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0300,,false,Freight charges
+STR-N-0100,ACC-C004-01,C004,2026-11-03T00:53:56,wire_out,OUTGOING,13504.36,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0100,,false,Freight charges
+STR-N-0886,ACC-C002-01,C002,2026-11-03T01:23:39,debit_card_purchase,OUTGOING,80.81,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0343,ACC-C002-01,C002,2026-11-03T03:39:05,debit_card_purchase,OUTGOING,119.07,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0572,ACC-C004-01,C004,2026-11-03T03:50:30,ach_debit,OUTGOING,3713.19,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0572,,false,Customs brokerage fees
+STR-N-0404,ACC-C001-01,C001,2026-11-03T10:46:53,ach_debit,OUTGOING,3155.68,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0404,,false,Supplier payment
+STR-N-0468,ACC-C004-01,C004,2026-11-03T11:03:45,ach_debit,OUTGOING,9158.30,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0468,,false,Freight charges
+STR-N-0742,ACC-C002-01,C002,2026-11-03T11:11:23,debit_card_purchase,OUTGOING,47.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-025,ACC-C003-01,C003,2026-11-03T12:00:00,wire_in,INCOMING,13500.00,USD,false,WIRE,,,CP-C003-003,US,,,,Alder and Finch Retail Co.,US,Priya Anand-Sorensen,Consulting services,,,false,Synthetic demonstration transaction
+STR-N-0672,ACC-C001-01,C001,2026-11-03T12:00:43,cash_deposit,INCOMING,1228.98,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0238,ACC-C004-01,C004,2026-11-03T13:16:12,ach_debit,OUTGOING,3415.45,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0238,,false,Customs brokerage fees
+STR-N-0927,ACC-C002-01,C002,2026-11-03T13:52:49,debit_card_purchase,OUTGOING,119.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0748,ACC-C001-01,C001,2026-11-03T14:06:37,ach_debit,OUTGOING,2105.98,USD,false,ACH,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0748,,false,Supplier payment
+STR-N-0159,ACC-C001-01,C001,2026-11-03T16:04:07,cash_deposit,INCOMING,1395.63,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0790,ACC-C002-01,C002,2026-11-03T16:14:41,debit_card_purchase,OUTGOING,220.73,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0128,ACC-C001-01,C001,2026-11-03T16:40:43,cash_deposit,INCOMING,1733.20,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0530,ACC-C003-01,C003,2026-11-03T18:52:50,debit_card_purchase,OUTGOING,63.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0805,ACC-C001-01,C001,2026-11-03T20:28:38,debit_card_purchase,OUTGOING,162.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0232,ACC-C002-01,C002,2026-11-03T20:33:26,debit_card_purchase,OUTGOING,135.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0813,ACC-C002-01,C002,2026-11-03T23:19:31,cash_deposit,INCOMING,2358.19,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0434,ACC-C002-01,C002,2026-11-03T23:35:46,debit_card_purchase,OUTGOING,178.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0679,ACC-C005-01,C005,2026-11-04T02:27:38,debit_card_purchase,OUTGOING,34.11,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0901,ACC-C001-01,C001,2026-11-04T04:35:35,debit_card_purchase,OUTGOING,104.83,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0402,ACC-C003-01,C003,2026-11-04T06:41:00,wire_in,INCOMING,6383.00,USD,false,WIRE,,,CP-C003-002,US,,,,Kestrel Health Partners,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0402,,false,Consulting fee
+STR-N-0375,ACC-C001-01,C001,2026-11-04T08:43:39,debit_card_purchase,OUTGOING,224.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0503,ACC-C001-01,C001,2026-11-04T11:35:47,debit_card_purchase,OUTGOING,134.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-P-026,ACC-C003-01,C003,2026-11-04T12:00:00,wire_out,OUTGOING,13300.00,USD,false,WIRE,,,CP-C003-002,US,,,,Priya Anand-Sorensen,US,Kestrel Health Partners,Payment,,,false,Synthetic demonstration transaction
+STR-N-0618,ACC-C005-01,C005,2026-11-04T15:09:41,debit_card_purchase,OUTGOING,40.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0538,ACC-C001-01,C001,2026-11-04T15:39:25,cash_deposit,INCOMING,604.64,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0545,ACC-C003-01,C003,2026-11-04T15:43:45,debit_card_purchase,OUTGOING,81.57,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0526,ACC-C001-01,C001,2026-11-04T15:56:15,debit_card_purchase,OUTGOING,36.23,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0865,ACC-C003-01,C003,2026-11-04T16:53:27,debit_card_purchase,OUTGOING,74.88,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0369,ACC-C002-01,C002,2026-11-04T18:18:15,debit_card_purchase,OUTGOING,30.93,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0131,ACC-C002-01,C002,2026-11-04T19:22:45,debit_card_purchase,OUTGOING,140.58,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0392,ACC-C002-01,C002,2026-11-04T20:52:58,cash_deposit,INCOMING,1462.28,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0943,ACC-C002-01,C002,2026-11-04T21:04:16,debit_card_purchase,OUTGOING,74.84,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0163,ACC-C002-01,C002,2026-11-05T01:36:10,check,OUTGOING,6620.55,USD,false,CHECK,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0163,3952,false,Supplier payment
+STR-N-0150,ACC-C002-01,C002,2026-11-05T03:02:37,debit_card_purchase,OUTGOING,47.34,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0814,ACC-C005-01,C005,2026-11-05T05:43:59,debit_card_purchase,OUTGOING,30.79,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0677,ACC-C004-01,C004,2026-11-05T06:21:28,wire_out,OUTGOING,5330.38,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0677,,false,Freight charges
+STR-N-0941,ACC-C001-01,C001,2026-11-05T07:55:49,ach_debit,OUTGOING,4316.60,USD,false,ACH,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0941,,false,Supplier payment
+STR-N-0560,ACC-C002-01,C002,2026-11-05T08:09:14,debit_card_purchase,OUTGOING,66.32,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0371,ACC-C003-01,C003,2026-11-05T08:20:04,debit_card_purchase,OUTGOING,179.30,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0161,ACC-C001-01,C001,2026-11-05T08:54:57,debit_card_purchase,OUTGOING,207.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0719,ACC-C003-01,C003,2026-11-05T09:37:21,ach_debit,OUTGOING,771.86,USD,false,ACH,,,CP-C003-006,US,,,,Priya Anand-Sorensen,US,Solstice Tax Advisors,,,,false,Professional services
+STR-N-0563,ACC-C002-01,C002,2026-11-05T13:13:15,debit_card_purchase,OUTGOING,41.36,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0200,ACC-C001-01,C001,2026-11-05T15:08:46,cash_deposit,INCOMING,1598.76,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0393,ACC-C002-01,C002,2026-11-05T15:35:15,debit_card_purchase,OUTGOING,74.25,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0360,ACC-C001-01,C001,2026-11-05T18:29:00,debit_card_purchase,OUTGOING,166.34,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0077,ACC-C002-01,C002,2026-11-05T20:33:35,debit_card_purchase,OUTGOING,44.39,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0412,ACC-C004-01,C004,2026-11-05T20:47:14,ach_debit,OUTGOING,8061.76,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0412,,false,Freight charges
+STR-N-0185,ACC-C002-01,C002,2026-11-05T22:17:38,cash_deposit,INCOMING,1317.32,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0535,ACC-C001-01,C001,2026-11-05T23:51:56,debit_card_purchase,OUTGOING,84.30,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0778,ACC-C002-01,C002,2026-11-06T01:06:44,debit_card_purchase,OUTGOING,67.42,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0755,ACC-C004-01,C004,2026-11-06T01:22:41,ach_debit,OUTGOING,3415.45,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0755,,false,Customs brokerage fees
+STR-N-0661,ACC-C002-01,C002,2026-11-06T06:10:03,cash_deposit,INCOMING,1467.80,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0316,ACC-C001-01,C001,2026-11-06T06:54:47,debit_card_purchase,OUTGOING,118.58,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0949,ACC-C005-01,C005,2026-11-06T08:22:12,debit_card_purchase,OUTGOING,329.56,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0437,ACC-C003-01,C003,2026-11-06T12:52:41,debit_card_purchase,OUTGOING,50.35,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0042,ACC-C003-01,C003,2026-11-06T15:03:31,debit_card_purchase,OUTGOING,140.46,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0846,ACC-C001-01,C001,2026-11-06T15:23:29,ach_debit,OUTGOING,5500.00,USD,false,ACH,,,CP-C001-006,US,,,,Sunnyvale Corner Quick Stop LLC,US,Alder Street Properties LLC,,,,false,Monthly rent
+STR-N-0716,ACC-C005-01,C005,2026-11-06T16:39:25,debit_card_purchase,OUTGOING,297.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0151,ACC-C001-01,C001,2026-11-06T16:44:46,debit_card_purchase,OUTGOING,129.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0146,ACC-C002-01,C002,2026-11-06T17:11:42,debit_card_purchase,OUTGOING,38.58,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0493,ACC-C004-01,C004,2026-11-06T17:52:26,ach_debit,OUTGOING,3650.53,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0493,,false,Customs brokerage fees
+STR-N-0802,ACC-C002-01,C002,2026-11-06T22:35:22,debit_card_purchase,OUTGOING,85.85,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0953,ACC-C002-01,C002,2026-11-06T23:35:38,debit_card_purchase,OUTGOING,54.93,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0431,ACC-C002-01,C002,2026-11-07T04:07:11,debit_card_purchase,OUTGOING,251.01,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0863,ACC-C002-01,C002,2026-11-07T04:28:36,debit_card_purchase,OUTGOING,145.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0732,ACC-C002-01,C002,2026-11-07T05:12:41,debit_card_purchase,OUTGOING,199.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0475,ACC-C002-01,C002,2026-11-07T05:47:44,debit_card_purchase,OUTGOING,104.83,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0334,ACC-C002-01,C002,2026-11-07T07:01:26,debit_card_purchase,OUTGOING,137.55,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0925,ACC-C001-01,C001,2026-11-07T07:51:14,cash_deposit,INCOMING,935.54,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0438,ACC-C002-01,C002,2026-11-07T09:16:57,debit_card_purchase,OUTGOING,44.21,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0040,ACC-C002-01,C002,2026-11-07T11:38:00,debit_card_purchase,OUTGOING,146.73,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0502,ACC-C005-01,C005,2026-11-07T11:50:51,atm_withdrawal,OUTGOING,40.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-P-036,ACC-C004-01,C004,2026-11-07T12:00:00,wire_out,OUTGOING,50000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0616,ACC-C002-01,C002,2026-11-07T13:44:13,debit_card_purchase,OUTGOING,143.70,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0297,ACC-C004-01,C004,2026-11-07T18:47:13,ach_debit,OUTGOING,5707.07,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0297,,false,Freight charges
+STR-N-0203,ACC-C002-01,C002,2026-11-07T20:54:20,ach_debit,OUTGOING,8393.56,USD,false,ACH,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0203,,false,Supplier payment
+STR-N-0756,ACC-C004-01,C004,2026-11-07T21:24:21,ach_debit,OUTGOING,3500.61,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0756,,false,Customs brokerage fees
+STR-N-0746,ACC-C001-01,C001,2026-11-08T00:14:06,debit_card_purchase,OUTGOING,189.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0694,ACC-C002-01,C002,2026-11-08T00:35:57,cash_deposit,INCOMING,1998.42,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0221,ACC-C002-01,C002,2026-11-08T01:25:18,debit_card_purchase,OUTGOING,126.47,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0098,ACC-C002-01,C002,2026-11-08T01:57:15,debit_card_purchase,OUTGOING,112.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0358,ACC-C002-01,C002,2026-11-08T02:47:58,debit_card_purchase,OUTGOING,174.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0207,ACC-C001-01,C001,2026-11-08T03:38:06,ach_debit,OUTGOING,2274.14,USD,false,ACH,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0207,,false,Supplier payment
+STR-N-0852,ACC-C002-01,C002,2026-11-08T05:26:26,cash_deposit,INCOMING,1440.91,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0703,ACC-C001-01,C001,2026-11-08T08:06:22,debit_card_purchase,OUTGOING,181.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0750,ACC-C004-01,C004,2026-11-08T08:47:23,ach_debit,OUTGOING,2673.95,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0750,,false,Customs brokerage fees
+STR-N-0175,ACC-C001-01,C001,2026-11-08T09:14:35,ach_debit,OUTGOING,6345.13,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0175,,false,Supplier payment
+STR-N-0745,ACC-C002-01,C002,2026-11-08T11:47:22,debit_card_purchase,OUTGOING,15.49,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0239,ACC-C001-01,C001,2026-11-08T13:02:42,debit_card_purchase,OUTGOING,44.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0803,ACC-C002-01,C002,2026-11-08T13:16:59,debit_card_purchase,OUTGOING,49.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0268,ACC-C002-01,C002,2026-11-08T14:34:53,cash_deposit,INCOMING,2040.48,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0338,ACC-C002-01,C002,2026-11-08T15:51:39,debit_card_purchase,OUTGOING,157.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0299,ACC-C005-01,C005,2026-11-08T18:25:59,atm_withdrawal,OUTGOING,60.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0839,ACC-C002-01,C002,2026-11-08T20:52:20,cash_deposit,INCOMING,1497.54,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0490,ACC-C002-01,C002,2026-11-08T20:54:17,debit_card_purchase,OUTGOING,47.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0624,ACC-C003-01,C003,2026-11-08T21:46:04,debit_card_purchase,OUTGOING,58.69,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0856,ACC-C001-01,C001,2026-11-08T22:00:45,debit_card_purchase,OUTGOING,101.94,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0702,ACC-C003-01,C003,2026-11-08T23:07:23,check,OUTGOING,765.04,USD,false,CHECK,,,CP-C003-006,US,,,,Priya Anand-Sorensen,US,Solstice Tax Advisors,,,1541,false,Professional services
+STR-N-0652,ACC-C002-01,C002,2026-11-08T23:50:55,cash_deposit,INCOMING,968.29,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0466,ACC-C005-01,C005,2026-11-08T23:58:00,debit_card_purchase,OUTGOING,71.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0948,ACC-C001-01,C001,2026-11-09T00:42:22,ach_debit,OUTGOING,4696.73,USD,false,ACH,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0948,,false,Supplier payment
+STR-N-0006,ACC-C002-01,C002,2026-11-09T02:03:32,cash_deposit,INCOMING,2002.04,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0325,ACC-C002-01,C002,2026-11-09T03:07:34,debit_card_purchase,OUTGOING,124.95,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0762,ACC-C002-01,C002,2026-11-09T04:17:38,cash_deposit,INCOMING,2477.78,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0169,ACC-C004-01,C004,2026-11-09T06:58:08,ach_debit,OUTGOING,3207.47,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0169,,false,Customs brokerage fees
+STR-N-0918,ACC-C002-01,C002,2026-11-09T10:46:39,debit_card_purchase,OUTGOING,71.28,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0835,ACC-C001-01,C001,2026-11-09T11:26:52,cash_deposit,INCOMING,1663.11,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-P-037,ACC-C004-01,C004,2026-11-09T12:00:00,wire_out,OUTGOING,55000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0472,ACC-C004-01,C004,2026-11-09T12:11:49,ach_debit,OUTGOING,5927.38,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0472,,false,Freight charges
+STR-N-0950,ACC-C002-01,C002,2026-11-09T12:46:18,debit_card_purchase,OUTGOING,159.22,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0518,ACC-C001-01,C001,2026-11-09T13:13:34,debit_card_purchase,OUTGOING,100.78,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0212,ACC-C004-01,C004,2026-11-09T13:30:33,ach_debit,OUTGOING,4252.13,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0212,,false,Customs brokerage fees
+STR-N-0926,ACC-C003-01,C003,2026-11-09T14:17:31,ach_debit,OUTGOING,1099.23,USD,false,ACH,,,CP-C003-005,US,,,,Priya Anand-Sorensen,US,Redwood Shared Offices,,,,false,Coworking membership
+STR-N-0322,ACC-C003-01,C003,2026-11-09T17:02:36,debit_card_purchase,OUTGOING,156.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0899,ACC-C001-01,C001,2026-11-09T17:33:34,debit_card_purchase,OUTGOING,83.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0197,ACC-C002-01,C002,2026-11-09T18:14:05,cash_deposit,INCOMING,2715.13,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0157,ACC-C002-01,C002,2026-11-09T21:14:58,debit_card_purchase,OUTGOING,109.69,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0707,ACC-C004-01,C004,2026-11-09T22:06:12,ach_debit,OUTGOING,8782.20,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0707,,false,Freight charges
+STR-N-0752,ACC-C003-01,C003,2026-11-09T23:08:29,atm_withdrawal,OUTGOING,100.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0304,ACC-C001-01,C001,2026-11-09T23:28:00,check,OUTGOING,2158.55,USD,false,CHECK,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0304,2493,false,Supplier payment
+STR-N-0205,ACC-C004-01,C004,2026-11-10T02:13:47,wire_in,INCOMING,45005.54,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0205,,false,Customer payment
+STR-N-0868,ACC-C001-01,C001,2026-11-10T03:09:49,ach_debit,OUTGOING,5346.14,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0868,,false,Supplier payment
+STR-N-0640,ACC-C002-01,C002,2026-11-10T03:23:42,debit_card_purchase,OUTGOING,103.25,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0281,ACC-C002-01,C002,2026-11-10T03:39:26,debit_card_purchase,OUTGOING,97.89,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0721,ACC-C001-01,C001,2026-11-10T04:05:05,debit_card_purchase,OUTGOING,196.91,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0838,ACC-C001-01,C001,2026-11-10T04:54:58,debit_card_purchase,OUTGOING,90.97,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0637,ACC-C002-01,C002,2026-11-10T07:56:35,debit_card_purchase,OUTGOING,164.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0851,ACC-C002-01,C002,2026-11-10T15:48:36,debit_card_purchase,OUTGOING,162.58,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0834,ACC-C001-01,C001,2026-11-10T16:05:20,debit_card_purchase,OUTGOING,56.63,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0595,ACC-C002-01,C002,2026-11-10T18:45:54,debit_card_purchase,OUTGOING,48.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0020,ACC-C003-01,C003,2026-11-10T20:28:57,debit_card_purchase,OUTGOING,50.42,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0370,ACC-C002-01,C002,2026-11-11T00:54:49,cash_deposit,INCOMING,2608.37,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0903,ACC-C002-01,C002,2026-11-11T02:20:16,debit_card_purchase,OUTGOING,66.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0026,ACC-C002-01,C002,2026-11-11T02:40:14,cash_deposit,INCOMING,1510.49,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0759,ACC-C005-01,C005,2026-11-11T03:07:14,debit_card_purchase,OUTGOING,217.92,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0696,ACC-C003-01,C003,2026-11-11T03:10:40,debit_card_purchase,OUTGOING,113.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0052,ACC-C002-01,C002,2026-11-11T03:30:46,debit_card_purchase,OUTGOING,110.01,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0328,ACC-C004-01,C004,2026-11-11T03:57:33,ach_debit,OUTGOING,3167.65,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0328,,false,Customs brokerage fees
+STR-N-0797,ACC-C002-01,C002,2026-11-11T04:05:51,cash_deposit,INCOMING,2173.99,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0760,ACC-C001-01,C001,2026-11-11T04:54:49,cash_deposit,INCOMING,1723.97,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0873,ACC-C001-01,C001,2026-11-11T06:34:34,debit_card_purchase,OUTGOING,237.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0741,ACC-C002-01,C002,2026-11-11T07:56:37,debit_card_purchase,OUTGOING,97.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0032,ACC-C002-01,C002,2026-11-11T10:07:14,cash_deposit,INCOMING,1009.59,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-P-038,ACC-C004-01,C004,2026-11-11T12:00:00,wire_out,OUTGOING,60000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0878,ACC-C002-01,C002,2026-11-11T13:36:25,debit_card_purchase,OUTGOING,24.98,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0858,ACC-C004-01,C004,2026-11-11T15:58:49,ach_credit,INCOMING,59609.73,USD,false,ACH,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0858,,false,Customer payment
+STR-N-0725,ACC-C001-01,C001,2026-11-11T19:13:15,debit_card_purchase,OUTGOING,175.04,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0312,ACC-C001-01,C001,2026-11-11T19:35:17,debit_card_purchase,OUTGOING,174.48,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0033,ACC-C004-01,C004,2026-11-11T22:35:03,ach_debit,OUTGOING,3621.03,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0033,,false,Customs brokerage fees
+STR-N-0573,ACC-C002-01,C002,2026-11-11T23:23:50,debit_card_purchase,OUTGOING,136.42,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0555,ACC-C002-01,C002,2026-11-12T01:35:46,debit_card_purchase,OUTGOING,51.50,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0882,ACC-C001-01,C001,2026-11-12T02:51:14,debit_card_purchase,OUTGOING,94.14,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0842,ACC-C002-01,C002,2026-11-12T03:02:05,cash_deposit,INCOMING,951.13,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0633,ACC-C004-01,C004,2026-11-12T04:19:48,ach_credit,INCOMING,43074.66,USD,false,ACH,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0633,,false,Customer payment
+STR-N-0504,ACC-C001-01,C001,2026-11-12T09:26:34,check,OUTGOING,4311.61,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0504,2536,false,Supplier payment
+STR-N-0658,ACC-C002-01,C002,2026-11-12T12:35:47,debit_card_purchase,OUTGOING,137.21,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0474,ACC-C002-01,C002,2026-11-12T14:57:47,debit_card_purchase,OUTGOING,35.40,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0204,ACC-C002-01,C002,2026-11-12T17:45:43,cash_deposit,INCOMING,2405.76,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0024,ACC-C002-01,C002,2026-11-12T18:02:56,debit_card_purchase,OUTGOING,36.27,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0027,ACC-C002-01,C002,2026-11-12T18:04:30,cash_deposit,INCOMING,2553.42,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0228,ACC-C003-01,C003,2026-11-12T19:28:21,debit_card_purchase,OUTGOING,134.63,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0038,ACC-C002-01,C002,2026-11-12T20:11:42,debit_card_purchase,OUTGOING,120.25,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0019,ACC-C001-01,C001,2026-11-12T21:17:41,debit_card_purchase,OUTGOING,135.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0683,ACC-C002-01,C002,2026-11-12T21:56:51,debit_card_purchase,OUTGOING,90.47,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0782,ACC-C002-01,C002,2026-11-13T01:49:38,debit_card_purchase,OUTGOING,26.27,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0879,ACC-C002-01,C002,2026-11-13T04:06:55,debit_card_purchase,OUTGOING,58.70,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0247,ACC-C003-01,C003,2026-11-13T06:44:04,debit_card_purchase,OUTGOING,64.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0399,ACC-C002-01,C002,2026-11-13T06:54:49,cash_deposit,INCOMING,2747.61,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0728,ACC-C005-01,C005,2026-11-13T07:54:32,debit_card_purchase,OUTGOING,79.88,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0058,ACC-C001-01,C001,2026-11-13T08:34:22,debit_card_purchase,OUTGOING,69.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0480,ACC-C001-01,C001,2026-11-13T11:37:43,debit_card_purchase,OUTGOING,101.11,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0765,ACC-C002-01,C002,2026-11-13T11:48:27,cash_deposit,INCOMING,1603.96,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-P-039,ACC-C004-01,C004,2026-11-13T12:00:00,wire_out,OUTGOING,65000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0832,ACC-C001-01,C001,2026-11-13T13:29:55,debit_card_purchase,OUTGOING,73.40,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0808,ACC-C002-01,C002,2026-11-13T16:36:33,cash_deposit,INCOMING,2727.32,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0288,ACC-C001-01,C001,2026-11-13T18:06:10,check,OUTGOING,1278.18,USD,false,CHECK,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0288,2487,false,Supplier payment
+STR-N-0278,ACC-C004-01,C004,2026-11-13T19:32:48,ach_debit,OUTGOING,4055.06,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0278,,false,Customs brokerage fees
+STR-N-0282,ACC-C005-01,C005,2026-11-13T20:44:05,debit_card_purchase,OUTGOING,187.73,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0753,ACC-C003-01,C003,2026-11-14T01:19:41,check,OUTGOING,765.04,USD,false,CHECK,,,CP-C003-006,US,,,,Priya Anand-Sorensen,US,Solstice Tax Advisors,,,1541,false,Professional services
+STR-N-0736,ACC-C002-01,C002,2026-11-14T04:30:04,cash_deposit,INCOMING,1241.38,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0292,ACC-C001-01,C001,2026-11-14T06:08:01,ach_debit,OUTGOING,985.51,USD,false,ACH,,,CP-C001-005,US,,,,Sunnyvale Corner Quick Stop LLC,US,Peninsula Gas and Electric Co.,,,,false,Utilities
+STR-N-0675,ACC-C002-01,C002,2026-11-14T09:01:49,debit_card_purchase,OUTGOING,133.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0046,ACC-C001-01,C001,2026-11-14T09:53:20,debit_card_purchase,OUTGOING,68.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0701,ACC-C005-01,C005,2026-11-14T10:12:11,debit_card_purchase,OUTGOING,283.34,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0149,ACC-C001-01,C001,2026-11-14T10:14:52,cash_deposit,INCOMING,849.28,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0527,ACC-C001-01,C001,2026-11-14T10:17:39,debit_card_purchase,OUTGOING,90.50,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0317,ACC-C002-01,C002,2026-11-14T12:16:18,debit_card_purchase,OUTGOING,154.95,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0898,ACC-C002-01,C002,2026-11-14T12:34:02,cash_deposit,INCOMING,1034.79,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0885,ACC-C002-01,C002,2026-11-14T15:29:11,debit_card_purchase,OUTGOING,144.61,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0912,ACC-C003-01,C003,2026-11-14T15:46:47,wire_in,INCOMING,4936.47,USD,false,WIRE,,,CP-C003-001,US,,,,Brightwater Logistics Group,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0912,,false,Consulting fee
+STR-N-0625,ACC-C002-01,C002,2026-11-14T17:06:31,debit_card_purchase,OUTGOING,121.82,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0088,ACC-C002-01,C002,2026-11-14T17:43:09,debit_card_purchase,OUTGOING,209.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0248,ACC-C005-01,C005,2026-11-14T19:15:31,debit_card_purchase,OUTGOING,195.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0206,ACC-C005-01,C005,2026-11-14T19:19:05,debit_card_purchase,OUTGOING,57.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0383,ACC-C002-01,C002,2026-11-14T21:42:57,ach_debit,OUTGOING,5238.50,USD,false,ACH,,,CP-C002-007,US,,,,Casa Brisa Kitchen Inc.,US,Valley Kitchen Equipment Leasing,,,,false,Equipment lease
+STR-N-0124,ACC-C002-01,C002,2026-11-14T22:29:29,debit_card_purchase,OUTGOING,26.98,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0609,ACC-C002-01,C002,2026-11-14T23:50:09,debit_card_purchase,OUTGOING,136.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0225,ACC-C002-01,C002,2026-11-15T01:39:39,cash_deposit,INCOMING,1379.99,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0415,ACC-C001-01,C001,2026-11-15T01:54:46,check,OUTGOING,2459.15,USD,false,CHECK,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0415,2527,false,Supplier payment
+STR-N-0110,ACC-C005-01,C005,2026-11-15T02:10:32,debit_card_purchase,OUTGOING,165.58,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0626,ACC-C002-01,C002,2026-11-15T05:33:57,cash_deposit,INCOMING,1664.76,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0439,ACC-C004-01,C004,2026-11-15T05:47:46,ach_debit,OUTGOING,3390.39,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0439,,false,Customs brokerage fees
+STR-N-0289,ACC-C004-01,C004,2026-11-15T06:07:34,ach_debit,OUTGOING,5675.93,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0289,,false,Freight charges
+STR-N-0230,ACC-C002-01,C002,2026-11-15T10:13:25,debit_card_purchase,OUTGOING,87.33,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0122,ACC-C003-01,C003,2026-11-15T11:00:48,debit_card_purchase,OUTGOING,43.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0347,ACC-C002-01,C002,2026-11-15T11:02:46,debit_card_purchase,OUTGOING,76.24,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-P-040,ACC-C004-01,C004,2026-11-15T12:00:00,wire_out,OUTGOING,50000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0104,ACC-C002-01,C002,2026-11-15T12:31:06,debit_card_purchase,OUTGOING,87.13,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0274,ACC-C002-01,C002,2026-11-15T13:46:31,cash_deposit,INCOMING,2173.99,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0430,ACC-C005-01,C005,2026-11-15T15:31:12,debit_card_purchase,OUTGOING,121.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0224,ACC-C003-01,C003,2026-11-15T15:37:28,wire_in,INCOMING,4936.47,USD,false,WIRE,,,CP-C003-001,US,,,,Brightwater Logistics Group,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0224,,false,Consulting fee
+STR-N-0485,ACC-C002-01,C002,2026-11-15T16:20:42,cash_deposit,INCOMING,1855.29,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0743,ACC-C002-01,C002,2026-11-15T16:30:06,debit_card_purchase,OUTGOING,225.58,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0914,ACC-C002-01,C002,2026-11-15T18:02:57,debit_card_purchase,OUTGOING,164.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0773,ACC-C001-01,C001,2026-11-15T21:22:11,debit_card_purchase,OUTGOING,62.24,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0433,ACC-C002-01,C002,2026-11-15T23:12:09,debit_card_purchase,OUTGOING,194.93,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0194,ACC-C002-01,C002,2026-11-15T23:21:40,debit_card_purchase,OUTGOING,92.96,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0192,ACC-C004-01,C004,2026-11-16T00:42:56,wire_out,OUTGOING,5863.02,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0192,,false,Freight charges
+STR-N-0668,ACC-C005-01,C005,2026-11-16T05:07:05,debit_card_purchase,OUTGOING,116.37,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0570,ACC-C001-01,C001,2026-11-16T06:45:03,cash_deposit,INCOMING,966.44,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0459,ACC-C003-01,C003,2026-11-16T08:09:45,ach_debit,OUTGOING,1046.47,USD,false,ACH,,,CP-C003-005,US,,,,Priya Anand-Sorensen,US,Redwood Shared Offices,,,,false,Coworking membership
+STR-N-0539,ACC-C003-01,C003,2026-11-16T08:11:32,debit_card_purchase,OUTGOING,203.24,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0946,ACC-C001-01,C001,2026-11-16T08:28:07,debit_card_purchase,OUTGOING,193.99,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0276,ACC-C002-01,C002,2026-11-16T08:49:27,debit_card_purchase,OUTGOING,143.88,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0389,ACC-C002-01,C002,2026-11-16T09:45:20,cash_deposit,INCOMING,1034.96,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0692,ACC-C003-01,C003,2026-11-16T13:17:50,debit_card_purchase,OUTGOING,194.69,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0816,ACC-C001-01,C001,2026-11-16T18:15:51,cash_deposit,INCOMING,1017.68,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0326,ACC-C005-01,C005,2026-11-16T18:48:28,debit_card_purchase,OUTGOING,110.34,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0057,ACC-C001-01,C001,2026-11-16T23:42:14,cash_deposit,INCOMING,871.01,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0015,ACC-C002-01,C002,2026-11-17T00:45:46,debit_card_purchase,OUTGOING,153.66,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0812,ACC-C003-01,C003,2026-11-17T02:15:18,debit_card_purchase,OUTGOING,184.66,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0758,ACC-C003-01,C003,2026-11-17T02:36:30,wire_in,INCOMING,7192.07,USD,false,WIRE,,,CP-C003-004,US,,,,Northbeam Software Inc.,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0758,,false,Consulting fee
+STR-N-0173,ACC-C002-01,C002,2026-11-17T03:00:11,check,OUTGOING,3174.23,USD,false,CHECK,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0173,3884,false,Supplier payment
+STR-N-0107,ACC-C001-01,C001,2026-11-17T03:00:35,debit_card_purchase,OUTGOING,144.51,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0519,ACC-C002-01,C002,2026-11-17T04:42:41,debit_card_purchase,OUTGOING,56.18,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0860,ACC-C004-01,C004,2026-11-17T05:09:21,ach_debit,OUTGOING,3048.09,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0860,,false,Customs brokerage fees
+STR-N-0407,ACC-C003-01,C003,2026-11-17T06:38:44,check,OUTGOING,2478.50,USD,false,CHECK,,,CP-C003-006,US,,,,Priya Anand-Sorensen,US,Solstice Tax Advisors,,,1539,false,Professional services
+STR-N-0357,ACC-C004-01,C004,2026-11-17T07:29:44,ach_credit,INCOMING,18644.22,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0357,,false,Customer payment
+STR-N-0259,ACC-C003-01,C003,2026-11-17T10:22:40,debit_card_purchase,OUTGOING,109.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0627,ACC-C002-01,C002,2026-11-17T10:25:55,cash_deposit,INCOMING,1667.92,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-P-041,ACC-C004-01,C004,2026-11-17T12:00:00,wire_out,OUTGOING,55000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0178,ACC-C002-01,C002,2026-11-17T12:34:57,check,OUTGOING,3454.87,USD,false,CHECK,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0178,3955,false,Supplier payment
+STR-N-0323,ACC-C001-01,C001,2026-11-17T14:11:35,debit_card_purchase,OUTGOING,59.52,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0363,ACC-C002-01,C002,2026-11-17T14:34:57,cash_deposit,INCOMING,2152.39,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0680,ACC-C002-01,C002,2026-11-17T15:35:01,cash_deposit,INCOMING,2058.71,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0648,ACC-C005-01,C005,2026-11-17T15:54:15,debit_card_purchase,OUTGOING,170.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0822,ACC-C002-01,C002,2026-11-17T16:11:56,debit_card_purchase,OUTGOING,144.73,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0233,ACC-C004-01,C004,2026-11-17T17:42:43,ach_debit,OUTGOING,3228.01,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0233,,false,Customs brokerage fees
+STR-N-0671,ACC-C002-01,C002,2026-11-17T17:46:16,debit_card_purchase,OUTGOING,80.41,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0622,ACC-C002-01,C002,2026-11-17T18:08:08,ach_debit,OUTGOING,5266.76,USD,false,ACH,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0622,,false,Supplier payment
+STR-N-0861,ACC-C002-01,C002,2026-11-17T19:23:14,cash_deposit,INCOMING,1216.57,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0106,ACC-C001-01,C001,2026-11-17T20:25:19,debit_card_purchase,OUTGOING,213.88,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0580,ACC-C002-01,C002,2026-11-17T20:39:09,cash_deposit,INCOMING,1379.71,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0220,ACC-C002-01,C002,2026-11-17T20:59:44,check,OUTGOING,10056.24,USD,false,CHECK,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0220,3920,false,Supplier payment
+STR-N-0895,ACC-C002-01,C002,2026-11-17T21:45:57,cash_deposit,INCOMING,995.43,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0632,ACC-C001-01,C001,2026-11-17T22:20:42,ach_debit,OUTGOING,2158.78,USD,false,ACH,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0632,,false,Supplier payment
+STR-N-0419,ACC-C004-01,C004,2026-11-17T22:41:59,ach_debit,OUTGOING,2595.45,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0419,,false,Customs brokerage fees
+STR-N-0498,ACC-C005-01,C005,2026-11-18T03:13:36,debit_card_purchase,OUTGOING,47.51,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0065,ACC-C003-01,C003,2026-11-18T05:04:35,wire_in,INCOMING,7738.14,USD,false,WIRE,,,CP-C003-002,US,,,,Kestrel Health Partners,US,Priya Anand-Sorensen,Consulting services,INV-STREAM-0065,,false,Consulting fee
+STR-N-0333,ACC-C001-01,C001,2026-11-18T06:57:43,cash_deposit,INCOMING,1189.98,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0599,ACC-C002-01,C002,2026-11-18T07:22:07,cash_deposit,INCOMING,1314.40,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0217,ACC-C001-01,C001,2026-11-18T08:05:15,debit_card_purchase,OUTGOING,90.97,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0213,ACC-C002-01,C002,2026-11-18T08:52:17,debit_card_purchase,OUTGOING,52.81,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0697,ACC-C003-01,C003,2026-11-18T09:36:43,debit_card_purchase,OUTGOING,50.35,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0854,ACC-C004-01,C004,2026-11-18T10:10:13,ach_debit,OUTGOING,3013.84,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0854,,false,Customs brokerage fees
+STR-N-0772,ACC-C002-01,C002,2026-11-18T11:51:10,debit_card_purchase,OUTGOING,119.05,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0089,ACC-C002-01,C002,2026-11-18T12:50:49,debit_card_purchase,OUTGOING,64.38,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0448,ACC-C004-01,C004,2026-11-18T12:53:04,wire_out,OUTGOING,6372.61,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0448,,false,Freight charges
+STR-N-0160,ACC-C003-01,C003,2026-11-18T13:02:38,debit_card_purchase,OUTGOING,844.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Larger personal purchase
+STR-N-0413,ACC-C004-01,C004,2026-11-18T15:18:06,ach_debit,OUTGOING,3217.30,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0413,,false,Customs brokerage fees
+STR-N-0739,ACC-C002-01,C002,2026-11-18T15:55:37,debit_card_purchase,OUTGOING,69.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0855,ACC-C001-01,C001,2026-11-18T16:39:38,card_settlement,INCOMING,16248.68,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0717,ACC-C001-01,C001,2026-11-18T16:43:17,cash_deposit,INCOMING,886.72,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0379,ACC-C004-01,C004,2026-11-18T18:22:00,ach_debit,OUTGOING,3093.96,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0379,,false,Customs brokerage fees
+STR-N-0177,ACC-C004-01,C004,2026-11-18T21:33:04,ach_debit,OUTGOING,4411.02,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0177,,false,Customs brokerage fees
+STR-N-0235,ACC-C001-01,C001,2026-11-18T22:18:25,debit_card_purchase,OUTGOING,133.85,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0258,ACC-C002-01,C002,2026-11-18T23:16:14,debit_card_purchase,OUTGOING,201.68,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0666,ACC-C002-01,C002,2026-11-19T00:31:41,debit_card_purchase,OUTGOING,158.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0574,ACC-C005-01,C005,2026-11-19T01:09:26,debit_card_purchase,OUTGOING,131.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0611,ACC-C001-01,C001,2026-11-19T01:34:30,debit_card_purchase,OUTGOING,239.41,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0260,ACC-C001-01,C001,2026-11-19T07:03:14,debit_card_purchase,OUTGOING,43.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0866,ACC-C001-01,C001,2026-11-19T07:03:32,debit_card_purchase,OUTGOING,121.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0892,ACC-C003-01,C003,2026-11-19T07:53:30,debit_card_purchase,OUTGOING,140.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0806,ACC-C002-01,C002,2026-11-19T11:24:37,cash_deposit,INCOMING,2374.97,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-P-042,ACC-C004-01,C004,2026-11-19T12:00:00,wire_out,OUTGOING,60000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0350,ACC-C002-01,C002,2026-11-19T12:19:20,debit_card_purchase,OUTGOING,149.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0602,ACC-C002-01,C002,2026-11-19T12:33:25,debit_card_purchase,OUTGOING,117.44,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0807,ACC-C004-01,C004,2026-11-19T13:19:01,ach_debit,OUTGOING,9606.60,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0807,,false,Freight charges
+STR-N-0776,ACC-C005-01,C005,2026-11-19T14:04:40,debit_card_purchase,OUTGOING,54.78,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0792,ACC-C005-01,C005,2026-11-19T14:59:22,debit_card_purchase,OUTGOING,86.70,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0881,ACC-C002-01,C002,2026-11-19T16:23:44,debit_card_purchase,OUTGOING,61.39,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0401,ACC-C005-01,C005,2026-11-19T17:44:58,ach_debit,OUTGOING,3200.00,USD,false,ACH,,,CP-C005-002,US,,,,Jordan Alexei Pemberton-Nakamura,US,Bayshore Home Lending,,,,false,Mortgage payment
+STR-N-0391,ACC-C004-01,C004,2026-11-19T17:46:29,ach_debit,OUTGOING,3875.21,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0391,,false,Customs brokerage fees
+STR-N-0336,ACC-C002-01,C002,2026-11-19T18:26:41,debit_card_purchase,OUTGOING,124.46,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0795,ACC-C001-01,C001,2026-11-19T19:12:15,debit_card_purchase,OUTGOING,175.49,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0090,ACC-C002-01,C002,2026-11-19T20:02:20,debit_card_purchase,OUTGOING,75.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0604,ACC-C005-01,C005,2026-11-19T21:14:56,debit_card_purchase,OUTGOING,235.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0821,ACC-C002-01,C002,2026-11-19T22:33:29,cash_deposit,INCOMING,1898.40,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0567,ACC-C005-01,C005,2026-11-20T01:03:59,debit_card_purchase,OUTGOING,170.84,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0659,ACC-C005-01,C005,2026-11-20T01:04:16,debit_card_purchase,OUTGOING,67.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0066,ACC-C004-01,C004,2026-11-20T01:15:10,ach_debit,OUTGOING,3052.91,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0066,,false,Customs brokerage fees
+STR-N-0359,ACC-C003-01,C003,2026-11-20T01:18:11,debit_card_purchase,OUTGOING,42.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0298,ACC-C002-01,C002,2026-11-20T03:31:34,debit_card_purchase,OUTGOING,44.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0553,ACC-C002-01,C002,2026-11-20T03:43:41,debit_card_purchase,OUTGOING,86.14,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0436,ACC-C004-01,C004,2026-11-20T03:49:16,wire_out,OUTGOING,52579.08,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,Payment for electronic components,INV-STREAM-0436,,false,Supplier wire
+STR-N-0245,ACC-C004-01,C004,2026-11-20T05:11:47,ach_debit,OUTGOING,10492.09,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0245,,false,Freight charges
+STR-N-0255,ACC-C002-01,C002,2026-11-20T07:37:59,debit_card_purchase,OUTGOING,128.56,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0461,ACC-C002-01,C002,2026-11-20T08:23:22,ach_debit,OUTGOING,29341.35,USD,false,ACH,,,CP-C002-005,US,,,,Casa Brisa Kitchen Inc.,US,Northgate Payroll Services,,,,false,Payroll funding
+STR-N-0520,ACC-C002-01,C002,2026-11-20T08:30:16,debit_card_purchase,OUTGOING,55.70,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0486,ACC-C003-01,C003,2026-11-20T08:43:10,atm_withdrawal,OUTGOING,80.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0607,ACC-C003-01,C003,2026-11-20T11:18:59,debit_card_purchase,OUTGOING,55.65,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0199,ACC-C001-01,C001,2026-11-20T16:35:03,check,OUTGOING,8045.39,USD,false,CHECK,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0199,2510,false,Supplier payment
+STR-N-0781,ACC-C002-01,C002,2026-11-20T19:47:32,debit_card_purchase,OUTGOING,54.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0723,ACC-C004-01,C004,2026-11-20T19:56:16,ach_debit,OUTGOING,4711.02,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0723,,false,Customs brokerage fees
+STR-N-0441,ACC-C001-01,C001,2026-11-20T20:28:58,debit_card_purchase,OUTGOING,215.38,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0116,ACC-C001-01,C001,2026-11-20T22:00:05,debit_card_purchase,OUTGOING,62.98,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0947,ACC-C001-01,C001,2026-11-21T02:13:43,debit_card_purchase,OUTGOING,241.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0840,ACC-C001-01,C001,2026-11-21T02:38:59,check,OUTGOING,4577.24,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0840,2503,false,Supplier payment
+STR-N-0256,ACC-C002-01,C002,2026-11-21T02:41:49,debit_card_purchase,OUTGOING,78.53,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0337,ACC-C004-01,C004,2026-11-21T02:50:57,wire_out,OUTGOING,5768.87,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0337,,false,Freight charges
+STR-N-0234,ACC-C001-01,C001,2026-11-21T03:30:03,check,OUTGOING,3428.39,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0234,2532,false,Supplier payment
+STR-N-0311,ACC-C001-01,C001,2026-11-21T03:36:27,debit_card_purchase,OUTGOING,117.20,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0515,ACC-C005-01,C005,2026-11-21T04:07:07,debit_card_purchase,OUTGOING,119.28,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0917,ACC-C001-01,C001,2026-11-21T05:28:12,debit_card_purchase,OUTGOING,251.46,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0954,ACC-C001-01,C001,2026-11-21T06:57:35,cash_deposit,INCOMING,670.78,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0108,ACC-C001-01,C001,2026-11-21T08:14:46,debit_card_purchase,OUTGOING,96.53,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0290,ACC-C001-01,C001,2026-11-21T09:05:52,cash_deposit,INCOMING,821.70,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0909,ACC-C001-01,C001,2026-11-21T09:08:04,cash_deposit,INCOMING,702.43,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-P-043,ACC-C004-01,C004,2026-11-21T12:00:00,wire_out,OUTGOING,65000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0414,ACC-C002-01,C002,2026-11-21T12:08:43,debit_card_purchase,OUTGOING,120.93,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0718,ACC-C002-01,C002,2026-11-21T12:39:55,cash_deposit,INCOMING,1964.04,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0874,ACC-C002-01,C002,2026-11-21T12:47:45,cash_deposit,INCOMING,1905.85,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0378,ACC-C001-01,C001,2026-11-21T13:46:26,cash_deposit,INCOMING,1239.70,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0489,ACC-C005-01,C005,2026-11-21T13:59:32,debit_card_purchase,OUTGOING,195.91,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0429,ACC-C002-01,C002,2026-11-21T15:12:12,debit_card_purchase,OUTGOING,59.18,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0831,ACC-C004-01,C004,2026-11-21T15:29:38,ach_debit,OUTGOING,3024.88,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0831,,false,Customs brokerage fees
+STR-N-0302,ACC-C004-01,C004,2026-11-21T15:53:39,ach_debit,OUTGOING,7782.93,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0302,,false,Freight charges
+STR-N-0460,ACC-C005-01,C005,2026-11-21T20:21:06,debit_card_purchase,OUTGOING,180.14,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0479,ACC-C001-01,C001,2026-11-21T22:06:52,debit_card_purchase,OUTGOING,65.96,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0355,ACC-C001-01,C001,2026-11-21T22:46:36,debit_card_purchase,OUTGOING,195.04,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0261,ACC-C003-01,C003,2026-11-22T02:04:17,debit_card_purchase,OUTGOING,111.40,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0244,ACC-C004-01,C004,2026-11-22T03:08:52,ach_debit,OUTGOING,11846.35,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0244,,false,Freight charges
+STR-N-0083,ACC-C001-01,C001,2026-11-22T03:29:17,debit_card_purchase,OUTGOING,237.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0867,ACC-C002-01,C002,2026-11-22T04:18:37,cash_deposit,INCOMING,1440.18,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0349,ACC-C001-01,C001,2026-11-22T05:22:38,debit_card_purchase,OUTGOING,104.27,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0280,ACC-C004-01,C004,2026-11-22T07:26:36,ach_debit,OUTGOING,3875.21,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0280,,false,Customs brokerage fees
+STR-N-0508,ACC-C002-01,C002,2026-11-22T12:05:26,cash_deposit,INCOMING,2063.71,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0787,ACC-C004-01,C004,2026-11-22T15:51:26,wire_out,OUTGOING,80967.17,USD,false,WIRE,,,CP-C004-002,TW,,,,Pacific Rim Circuitry Imports Inc.,US,Hsinchu Microlink Electronics Co.,Payment for electronic components,INV-STREAM-0787,,false,Supplier wire
+STR-N-0123,ACC-C002-01,C002,2026-11-22T17:38:47,debit_card_purchase,OUTGOING,73.10,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0643,ACC-C002-01,C002,2026-11-22T19:34:57,debit_card_purchase,OUTGOING,68.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0522,ACC-C005-01,C005,2026-11-22T21:57:23,ach_credit,INCOMING,6676.11,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-N-0332,ACC-C001-01,C001,2026-11-22T22:37:51,debit_card_purchase,OUTGOING,53.25,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0264,ACC-C002-01,C002,2026-11-23T01:11:34,debit_card_purchase,OUTGOING,203.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0287,ACC-C005-01,C005,2026-11-23T03:37:40,atm_withdrawal,OUTGOING,200.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0667,ACC-C001-01,C001,2026-11-23T03:40:25,cash_deposit,INCOMING,1056.60,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0285,ACC-C002-01,C002,2026-11-23T09:39:25,debit_card_purchase,OUTGOING,133.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0171,ACC-C005-01,C005,2026-11-23T10:21:42,debit_card_purchase,OUTGOING,102.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0075,ACC-C001-01,C001,2026-11-23T10:32:01,cash_deposit,INCOMING,963.32,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-P-044,ACC-C004-01,C004,2026-11-23T12:00:00,wire_out,OUTGOING,50000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0571,ACC-C002-01,C002,2026-11-23T12:15:40,debit_card_purchase,OUTGOING,49.59,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0376,ACC-C004-01,C004,2026-11-23T15:49:48,ach_credit,INCOMING,28288.45,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0376,,false,Customer payment
+STR-N-0894,ACC-C002-01,C002,2026-11-23T16:34:45,debit_card_purchase,OUTGOING,139.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0428,ACC-C005-01,C005,2026-11-23T17:48:14,atm_withdrawal,OUTGOING,200.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0115,ACC-C002-01,C002,2026-11-23T19:33:29,cash_deposit,INCOMING,2002.04,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0380,ACC-C002-01,C002,2026-11-23T21:35:54,cash_deposit,INCOMING,2120.76,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0054,ACC-C002-01,C002,2026-11-23T21:58:30,debit_card_purchase,OUTGOING,166.18,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0417,ACC-C003-01,C003,2026-11-23T22:37:34,debit_card_purchase,OUTGOING,130.78,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0713,ACC-C003-01,C003,2026-11-23T23:22:34,debit_card_purchase,OUTGOING,44.35,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0339,ACC-C004-01,C004,2026-11-23T23:49:03,ach_debit,OUTGOING,3117.47,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0339,,false,Customs brokerage fees
+STR-N-0139,ACC-C002-01,C002,2026-11-24T01:00:12,cash_deposit,INCOMING,1032.84,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0481,ACC-C003-01,C003,2026-11-24T02:11:57,debit_card_purchase,OUTGOING,69.02,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0857,ACC-C004-01,C004,2026-11-24T04:14:14,wire_out,OUTGOING,58052.06,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,Payment for electronic components,INV-STREAM-0857,,false,Supplier wire
+STR-N-0681,ACC-C004-01,C004,2026-11-24T06:59:30,ach_debit,OUTGOING,2865.17,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0681,,false,Customs brokerage fees
+STR-N-0457,ACC-C002-01,C002,2026-11-24T09:17:56,cash_deposit,INCOMING,1163.87,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0444,ACC-C002-01,C002,2026-11-24T09:34:23,cash_deposit,INCOMING,2499.66,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0818,ACC-C001-01,C001,2026-11-24T12:41:11,cash_deposit,INCOMING,1228.98,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0416,ACC-C002-01,C002,2026-11-24T14:11:04,debit_card_purchase,OUTGOING,94.13,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0733,ACC-C002-01,C002,2026-11-24T16:16:13,cash_deposit,INCOMING,1327.24,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0798,ACC-C002-01,C002,2026-11-24T17:45:40,cash_deposit,INCOMING,1049.19,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0136,ACC-C002-01,C002,2026-11-24T19:43:34,debit_card_purchase,OUTGOING,125.39,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0921,ACC-C002-01,C002,2026-11-24T19:45:27,cash_deposit,INCOMING,2105.87,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0619,ACC-C002-01,C002,2026-11-25T02:01:09,debit_card_purchase,OUTGOING,92.40,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0223,ACC-C004-01,C004,2026-11-25T05:40:51,wire_out,OUTGOING,6733.03,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0223,,false,Freight charges
+STR-N-0829,ACC-C002-01,C002,2026-11-25T06:50:46,debit_card_purchase,OUTGOING,168.35,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0070,ACC-C003-01,C003,2026-11-25T06:56:24,debit_card_purchase,OUTGOING,76.55,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0138,ACC-C003-01,C003,2026-11-25T07:19:34,debit_card_purchase,OUTGOING,77.91,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0458,ACC-C005-01,C005,2026-11-25T09:45:27,ach_credit,INCOMING,6826.82,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-P-045,ACC-C004-01,C004,2026-11-25T12:00:00,wire_out,OUTGOING,55000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0706,ACC-C005-01,C005,2026-11-25T12:16:27,debit_card_purchase,OUTGOING,40.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0236,ACC-C001-01,C001,2026-11-25T15:07:18,debit_card_purchase,OUTGOING,266.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0603,ACC-C001-01,C001,2026-11-25T19:55:52,cash_deposit,INCOMING,1168.51,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0099,ACC-C002-01,C002,2026-11-25T22:04:14,cash_deposit,INCOMING,2212.47,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0952,ACC-C002-01,C002,2026-11-25T23:59:26,debit_card_purchase,OUTGOING,81.91,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0847,ACC-C001-01,C001,2026-11-26T00:55:50,debit_card_purchase,OUTGOING,180.83,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0789,ACC-C001-01,C001,2026-11-26T02:09:21,check,OUTGOING,2987.95,USD,false,CHECK,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0789,2500,false,Supplier payment
+STR-N-0345,ACC-C001-01,C001,2026-11-26T03:49:43,cash_deposit,INCOMING,1585.99,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0889,ACC-C002-01,C002,2026-11-26T06:26:02,debit_card_purchase,OUTGOING,66.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0252,ACC-C002-01,C002,2026-11-26T06:55:44,debit_card_purchase,OUTGOING,101.53,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0443,ACC-C001-01,C001,2026-11-26T08:03:04,debit_card_purchase,OUTGOING,79.44,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0425,ACC-C001-01,C001,2026-11-26T09:16:24,cash_deposit,INCOMING,829.35,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0218,ACC-C002-01,C002,2026-11-26T11:30:07,debit_card_purchase,OUTGOING,22.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0606,ACC-C002-01,C002,2026-11-26T15:04:09,debit_card_purchase,OUTGOING,122.05,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0390,ACC-C001-01,C001,2026-11-26T17:40:56,cash_deposit,INCOMING,1084.31,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0740,ACC-C005-01,C005,2026-11-26T18:05:28,ach_debit,OUTGOING,1775.63,USD,false,ACH,,,CP-C005-005,US,,,,Jordan Alexei Pemberton-Nakamura,US,Evergreen Brokerage Services,,,,false,Brokerage funding
+STR-N-0826,ACC-C002-01,C002,2026-11-26T19:48:26,debit_card_purchase,OUTGOING,155.75,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0700,ACC-C002-01,C002,2026-11-26T20:55:16,debit_card_purchase,OUTGOING,48.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0913,ACC-C004-01,C004,2026-11-27T00:57:34,ach_debit,OUTGOING,3093.96,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0913,,false,Customs brokerage fees
+STR-N-0600,ACC-C002-01,C002,2026-11-27T01:52:05,debit_card_purchase,OUTGOING,58.70,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0757,ACC-C002-01,C002,2026-11-27T02:35:07,check,OUTGOING,3305.40,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0757,3878,false,Supplier payment
+STR-N-0673,ACC-C002-01,C002,2026-11-27T03:50:43,debit_card_purchase,OUTGOING,136.95,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0783,ACC-C002-01,C002,2026-11-27T05:04:13,debit_card_purchase,OUTGOING,201.03,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0085,ACC-C002-01,C002,2026-11-27T05:34:08,debit_card_purchase,OUTGOING,47.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0060,ACC-C004-01,C004,2026-11-27T08:55:32,ach_debit,OUTGOING,7086.09,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0060,,false,Freight charges
+STR-N-0884,ACC-C002-01,C002,2026-11-27T09:43:51,debit_card_purchase,OUTGOING,136.01,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0073,ACC-C004-01,C004,2026-11-27T11:48:49,ach_debit,OUTGOING,3127.41,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0073,,false,Customs brokerage fees
+STR-P-046,ACC-C004-01,C004,2026-11-27T12:00:00,wire_out,OUTGOING,60000.00,USD,false,WIRE,,,CP-C004-001,CN,,,,Pacific Rim Circuitry Imports Inc.,US,Shenzhen Brightway Components Co. Ltd.,,,,true,Synthetic demonstration transaction
+STR-N-0657,ACC-C002-01,C002,2026-11-27T12:06:51,debit_card_purchase,OUTGOING,122.19,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0542,ACC-C001-01,C001,2026-11-27T12:58:32,ach_debit,OUTGOING,5500.00,USD,false,ACH,,,CP-C001-006,US,,,,Sunnyvale Corner Quick Stop LLC,US,Alder Street Properties LLC,,,,false,Monthly rent
+STR-N-0356,ACC-C002-01,C002,2026-11-27T13:08:15,debit_card_purchase,OUTGOING,135.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0506,ACC-C002-01,C002,2026-11-27T13:42:26,debit_card_purchase,OUTGOING,191.31,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0492,ACC-C002-01,C002,2026-11-27T19:25:48,debit_card_purchase,OUTGOING,111.40,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0777,ACC-C002-01,C002,2026-11-27T20:20:10,ach_debit,OUTGOING,6261.63,USD,false,ACH,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0777,,false,Supplier payment
+STR-N-0291,ACC-C004-01,C004,2026-11-27T20:35:53,wire_in,INCOMING,42823.36,USD,false,WIRE,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0291,,false,Customer payment
+STR-N-0372,ACC-C002-01,C002,2026-11-27T20:37:29,ach_debit,OUTGOING,8457.89,USD,false,ACH,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0372,,false,Supplier payment
+STR-N-0036,ACC-C001-01,C001,2026-11-27T20:38:10,debit_card_purchase,OUTGOING,89.25,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0023,ACC-C003-01,C003,2026-11-28T01:30:07,debit_card_purchase,OUTGOING,176.48,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0113,ACC-C001-01,C001,2026-11-28T01:38:10,cash_deposit,INCOMING,1607.73,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0552,ACC-C002-01,C002,2026-11-28T02:18:14,debit_card_purchase,OUTGOING,142.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0283,ACC-C002-01,C002,2026-11-28T06:08:41,debit_card_purchase,OUTGOING,149.62,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0471,ACC-C002-01,C002,2026-11-28T06:59:01,debit_card_purchase,OUTGOING,107.81,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0541,ACC-C002-01,C002,2026-11-28T08:54:40,check,OUTGOING,4815.31,USD,false,CHECK,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0541,3880,false,Supplier payment
+STR-N-0303,ACC-C002-01,C002,2026-11-28T08:56:14,cash_deposit,INCOMING,1641.17,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0767,ACC-C002-01,C002,2026-11-28T09:45:25,debit_card_purchase,OUTGOING,137.00,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0269,ACC-C002-01,C002,2026-11-28T10:38:45,debit_card_purchase,OUTGOING,93.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0568,ACC-C002-01,C002,2026-11-28T10:44:23,debit_card_purchase,OUTGOING,142.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0494,ACC-C002-01,C002,2026-11-28T12:39:31,debit_card_purchase,OUTGOING,101.30,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0275,ACC-C004-01,C004,2026-11-28T16:22:32,ach_debit,OUTGOING,10439.72,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0275,,false,Freight charges
+STR-N-0848,ACC-C005-01,C005,2026-11-28T17:21:11,ach_debit,OUTGOING,186.48,USD,false,ACH,,,CP-C005-004,US,,,,Jordan Alexei Pemberton-Nakamura,US,Pacific Fiber Telecom,,,,false,Telecom
+STR-N-0828,ACC-C001-01,C001,2026-11-28T19:48:10,debit_card_purchase,OUTGOING,49.48,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0577,ACC-C003-01,C003,2026-11-28T20:41:50,debit_card_purchase,OUTGOING,103.56,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0408,ACC-C002-01,C002,2026-11-28T20:55:20,debit_card_purchase,OUTGOING,31.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0011,ACC-C004-01,C004,2026-11-28T21:48:20,wire_out,OUTGOING,41853.80,USD,false,WIRE,,,CP-C004-003,KR,,,,Pacific Rim Circuitry Imports Inc.,US,Gyeonggi Display Systems Ltd.,Payment for electronic components,INV-STREAM-0011,,false,Supplier wire
+STR-N-0004,ACC-C004-01,C004,2026-11-28T22:47:46,wire_in,INCOMING,43582.83,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0004,,false,Customer payment
+STR-N-0862,ACC-C005-01,C005,2026-11-28T23:02:50,ach_debit,OUTGOING,2728.29,USD,false,ACH,,,CP-C005-005,US,,,,Jordan Alexei Pemberton-Nakamura,US,Evergreen Brokerage Services,,,,false,Brokerage funding
+STR-N-0940,ACC-C002-01,C002,2026-11-28T23:17:15,cash_deposit,INCOMING,1081.32,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0516,ACC-C003-01,C003,2026-11-29T01:39:57,debit_card_purchase,OUTGOING,614.45,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Larger personal purchase
+STR-N-0900,ACC-C001-01,C001,2026-11-29T09:35:10,debit_card_purchase,OUTGOING,57.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0435,ACC-C002-01,C002,2026-11-29T09:49:04,debit_card_purchase,OUTGOING,48.64,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0118,ACC-C002-01,C002,2026-11-29T10:21:03,debit_card_purchase,OUTGOING,161.80,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0452,ACC-C002-01,C002,2026-11-29T11:32:52,debit_card_purchase,OUTGOING,49.41,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0929,ACC-C002-01,C002,2026-11-29T11:33:12,debit_card_purchase,OUTGOING,39.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0919,ACC-C001-01,C001,2026-11-29T12:37:48,debit_card_purchase,OUTGOING,237.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0621,ACC-C002-01,C002,2026-11-29T12:42:15,debit_card_purchase,OUTGOING,125.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0473,ACC-C001-01,C001,2026-11-29T14:03:38,debit_card_purchase,OUTGOING,203.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0025,ACC-C005-01,C005,2026-11-29T14:20:52,debit_card_purchase,OUTGOING,52.06,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0453,ACC-C001-01,C001,2026-11-29T14:50:20,debit_card_purchase,OUTGOING,188.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0166,ACC-C002-01,C002,2026-11-29T17:06:16,ach_debit,OUTGOING,7841.20,USD,false,ACH,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0166,,false,Supplier payment
+STR-N-0061,ACC-C003-01,C003,2026-11-29T17:06:35,debit_card_purchase,OUTGOING,208.29,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0908,ACC-C005-01,C005,2026-11-29T18:57:48,debit_card_purchase,OUTGOING,152.54,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0226,ACC-C001-01,C001,2026-11-29T19:52:28,debit_card_purchase,OUTGOING,172.81,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0788,ACC-C003-01,C003,2026-11-29T20:10:24,debit_card_purchase,OUTGOING,122.54,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0348,ACC-C004-01,C004,2026-11-29T21:39:15,wire_in,INCOMING,49398.59,USD,false,WIRE,,,CP-C004-008,US,,,,Midlands Electronics Distribution Co.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0348,,false,Customer payment
+STR-N-0129,ACC-C002-01,C002,2026-11-29T23:02:02,debit_card_purchase,OUTGOING,80.01,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0344,ACC-C002-01,C002,2026-11-29T23:05:13,debit_card_purchase,OUTGOING,172.30,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0645,ACC-C002-01,C002,2026-11-30T00:11:33,debit_card_purchase,OUTGOING,49.24,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0634,ACC-C002-01,C002,2026-11-30T00:26:16,debit_card_purchase,OUTGOING,23.39,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0039,ACC-C001-01,C001,2026-11-30T01:47:13,debit_card_purchase,OUTGOING,136.60,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0549,ACC-C001-01,C001,2026-11-30T02:37:57,check,OUTGOING,1785.75,USD,false,CHECK,,,CP-C001-002,US,,,,Sunnyvale Corner Quick Stop LLC,US,Golden Valley Beverage Distributors,,INV-STREAM-0549,2542,false,Supplier payment
+STR-N-0747,ACC-C004-01,C004,2026-11-30T04:08:54,wire_in,INCOMING,36115.07,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0747,,false,Customer payment
+STR-N-0685,ACC-C002-01,C002,2026-11-30T05:55:12,cash_deposit,INCOMING,962.14,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0257,ACC-C003-01,C003,2026-11-30T06:23:25,debit_card_purchase,OUTGOING,141.43,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0189,ACC-C002-01,C002,2026-11-30T08:37:23,debit_card_purchase,OUTGOING,18.90,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0010,ACC-C004-01,C004,2026-11-30T11:47:44,ach_debit,OUTGOING,7976.46,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0010,,false,Freight charges
+STR-N-0049,ACC-C002-01,C002,2026-11-30T12:04:57,cash_deposit,INCOMING,958.12,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0890,ACC-C002-01,C002,2026-11-30T12:47:32,debit_card_purchase,OUTGOING,125.87,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0386,ACC-C004-01,C004,2026-11-30T15:30:40,ach_debit,OUTGOING,5973.01,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0386,,false,Freight charges
+STR-N-0153,ACC-C003-01,C003,2026-11-30T15:52:12,debit_card_purchase,OUTGOING,99.25,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0935,ACC-C005-01,C005,2026-11-30T17:19:30,debit_card_purchase,OUTGOING,242.26,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0714,ACC-C001-01,C001,2026-11-30T17:35:55,cash_deposit,INCOMING,1359.18,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0715,ACC-C001-01,C001,2026-11-30T19:21:40,cash_deposit,INCOMING,1591.36,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0585,ACC-C001-01,C001,2026-11-30T19:33:43,ach_debit,OUTGOING,3303.24,USD,false,ACH,,,CP-C001-003,US,,,,Sunnyvale Corner Quick Stop LLC,US,Redline Snack and Tobacco Supply,,INV-STREAM-0585,,false,Supplier payment
+STR-N-0507,ACC-C002-01,C002,2026-11-30T22:42:28,cash_deposit,INCOMING,2585.18,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0321,ACC-C004-01,C004,2026-11-30T22:43:06,ach_debit,OUTGOING,4018.88,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0321,,false,Customs brokerage fees
+STR-N-0079,ACC-C003-01,C003,2026-12-01T02:02:14,debit_card_purchase,OUTGOING,70.19,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0662,ACC-C002-01,C002,2026-12-01T02:35:19,debit_card_purchase,OUTGOING,179.76,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0780,ACC-C002-01,C002,2026-12-01T09:10:24,debit_card_purchase,OUTGOING,146.82,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0731,ACC-C005-01,C005,2026-12-01T12:03:23,ach_credit,INCOMING,6609.49,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-N-0524,ACC-C003-01,C003,2026-12-01T12:40:35,debit_card_purchase,OUTGOING,521.67,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Larger personal purchase
+STR-N-0691,ACC-C003-01,C003,2026-12-01T16:07:05,debit_card_purchase,OUTGOING,180.80,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0647,ACC-C002-01,C002,2026-12-01T17:44:59,cash_deposit,INCOMING,2405.76,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0525,ACC-C001-01,C001,2026-12-01T19:24:31,debit_card_purchase,OUTGOING,231.61,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0820,ACC-C002-01,C002,2026-12-01T19:57:27,debit_card_purchase,OUTGOING,169.77,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0246,ACC-C002-01,C002,2026-12-01T21:24:37,debit_card_purchase,OUTGOING,100.36,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0279,ACC-C002-01,C002,2026-12-01T21:27:20,ach_debit,OUTGOING,3405.03,USD,false,ACH,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0279,,false,Supplier payment
+STR-N-0690,ACC-C002-01,C002,2026-12-01T21:36:57,ach_debit,OUTGOING,3252.88,USD,false,ACH,,,CP-C002-003,US,,,,Casa Brisa Kitchen Inc.,US,Sierra Beverage Distributing,,INV-STREAM-0690,,false,Supplier payment
+STR-N-0215,ACC-C003-01,C003,2026-12-01T23:32:51,debit_card_purchase,OUTGOING,76.51,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0641,ACC-C001-01,C001,2026-12-02T02:38:51,check,OUTGOING,2640.10,USD,false,CHECK,,,CP-C001-001,US,,,,Sunnyvale Corner Quick Stop LLC,US,Bay Cities Wholesale Foods Inc.,,INV-STREAM-0641,2495,false,Supplier payment
+STR-N-0143,ACC-C005-01,C005,2026-12-02T04:58:45,debit_card_purchase,OUTGOING,276.55,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Everyday POS purchase
+STR-N-0729,ACC-C002-01,C002,2026-12-02T08:15:55,debit_card_purchase,OUTGOING,77.42,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0354,ACC-C002-01,C002,2026-12-02T11:07:21,debit_card_purchase,OUTGOING,56.52,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0182,ACC-C002-01,C002,2026-12-02T13:20:44,debit_card_purchase,OUTGOING,67.77,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0751,ACC-C004-01,C004,2026-12-02T13:52:53,ach_credit,INCOMING,31241.88,USD,false,ACH,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,,INV-STREAM-0751,,false,Customer payment
+STR-N-0511,ACC-C002-01,C002,2026-12-02T14:51:16,ach_debit,OUTGOING,5673.92,USD,false,ACH,,,CP-C002-002,US,,,,Casa Brisa Kitchen Inc.,US,Capitol City Meat and Seafood,,INV-STREAM-0511,,false,Supplier payment
+STR-N-0051,ACC-C001-01,C001,2026-12-02T15:43:48,debit_card_purchase,OUTGOING,174.98,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0145,ACC-C002-01,C002,2026-12-02T16:03:18,debit_card_purchase,OUTGOING,136.09,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0135,ACC-C001-01,C001,2026-12-02T17:13:56,card_settlement,INCOMING,17596.15,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0427,ACC-C002-01,C002,2026-12-02T19:55:00,debit_card_purchase,OUTGOING,149.01,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0635,ACC-C001-01,C001,2026-12-02T22:33:45,cash_deposit,INCOMING,895.52,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0469,ACC-C002-01,C002,2026-12-02T23:39:50,debit_card_purchase,OUTGOING,18.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0569,ACC-C001-01,C001,2026-12-03T00:36:07,debit_card_purchase,OUTGOING,198.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0596,ACC-C004-01,C004,2026-12-03T04:07:36,wire_out,OUTGOING,13504.36,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0596,,false,Freight charges
+STR-N-0699,ACC-C001-01,C001,2026-12-03T04:10:10,debit_card_purchase,OUTGOING,275.20,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0013,ACC-C004-01,C004,2026-12-03T05:05:18,wire_out,OUTGOING,7374.42,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0013,,false,Freight charges
+STR-N-0483,ACC-C004-01,C004,2026-12-03T07:13:12,ach_debit,OUTGOING,8841.24,USD,false,ACH,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,,INV-STREAM-0483,,false,Freight charges
+STR-N-0005,ACC-C002-01,C002,2026-12-03T07:56:50,debit_card_purchase,OUTGOING,159.71,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0720,ACC-C002-01,C002,2026-12-03T10:06:28,debit_card_purchase,OUTGOING,84.18,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0140,ACC-C004-01,C004,2026-12-03T18:31:56,ach_debit,OUTGOING,3187.21,USD,false,ACH,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,,INV-STREAM-0140,,false,Customs brokerage fees
+STR-N-0754,ACC-C001-01,C001,2026-12-03T18:32:47,debit_card_purchase,OUTGOING,104.21,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0059,ACC-C002-01,C002,2026-12-03T20:31:14,debit_card_purchase,OUTGOING,120.49,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0211,ACC-C004-01,C004,2026-12-03T22:06:42,wire_out,OUTGOING,4871.24,USD,false,WIRE,,,CP-C004-006,US,,,,Pacific Rim Circuitry Imports Inc.,US,Harborline Customs Brokers LLC,Customs brokerage,INV-STREAM-0211,,false,Customs brokerage fees
+STR-N-0367,ACC-C004-01,C004,2026-12-03T22:37:23,wire_out,OUTGOING,7543.60,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0367,,false,Freight charges
+STR-N-0582,ACC-C001-01,C001,2026-12-03T23:27:03,debit_card_purchase,OUTGOING,172.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0617,ACC-C002-01,C002,2026-12-04T00:01:26,debit_card_purchase,OUTGOING,204.24,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0744,ACC-C002-01,C002,2026-12-04T01:10:30,cash_deposit,INCOMING,1092.08,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0074,ACC-C002-01,C002,2026-12-04T03:38:31,cash_deposit,INCOMING,2262.39,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0639,ACC-C003-01,C003,2026-12-04T07:03:24,debit_card_purchase,OUTGOING,614.45,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Larger personal purchase
+STR-N-0320,ACC-C003-01,C003,2026-12-04T07:03:37,debit_card_purchase,OUTGOING,55.65,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Personal/professional POS purchase
+STR-N-0009,ACC-C001-01,C001,2026-12-04T10:48:19,debit_card_purchase,OUTGOING,182.17,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0749,ACC-C001-01,C001,2026-12-04T12:23:40,debit_card_purchase,OUTGOING,249.84,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0284,ACC-C005-01,C005,2026-12-04T13:40:49,ach_credit,INCOMING,7405.32,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-N-0420,ACC-C002-01,C002,2026-12-04T14:45:17,debit_card_purchase,OUTGOING,47.74,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0021,ACC-C005-01,C005,2026-12-04T14:47:01,ach_debit,OUTGOING,88.98,USD,false,ACH,,,CP-C005-004,US,,,,Jordan Alexei Pemberton-Nakamura,US,Pacific Fiber Telecom,,,,false,Telecom
+STR-N-0785,ACC-C004-01,C004,2026-12-04T16:58:04,wire_out,OUTGOING,10307.70,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0785,,false,Freight charges
+STR-N-0168,ACC-C002-01,C002,2026-12-04T17:21:20,debit_card_purchase,OUTGOING,26.27,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0880,ACC-C005-01,C005,2026-12-04T17:58:23,ach_credit,INCOMING,6522.75,USD,false,ACH,,,CP-C005-001,US,,,,Lumenfield Systems Inc.,US,Jordan Alexei Pemberton-Nakamura,,,,false,Salary
+STR-N-0313,ACC-C001-01,C001,2026-12-04T19:49:56,debit_card_purchase,OUTGOING,223.15,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Store supplies POS purchase
+STR-N-0529,ACC-C001-01,C001,2026-12-04T21:01:46,cash_deposit,INCOMING,1506.45,USD,true,BRANCH_TELLER,SYNTH-BR-CA-001,CA,,,C001,true,,,,,,,,false,Register cash deposit
+STR-N-0531,ACC-C004-01,C004,2026-12-04T22:33:50,wire_in,INCOMING,56217.16,USD,false,WIRE,,,CP-C004-007,US,,,,Westcoast Tech Retail Inc.,US,Pacific Rim Circuitry Imports Inc.,Payment for goods,INV-STREAM-0531,,false,Customer payment
+STR-N-0613,ACC-C005-01,C005,2026-12-05T01:26:08,ach_debit,OUTGOING,185.12,USD,false,ACH,,,CP-C005-004,US,,,,Jordan Alexei Pemberton-Nakamura,US,Pacific Fiber Telecom,,,,false,Telecom
+STR-N-0450,ACC-C002-01,C002,2026-12-05T02:46:25,debit_card_purchase,OUTGOING,96.86,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0811,ACC-C001-01,C001,2026-12-05T02:47:36,card_settlement,INCOMING,10327.03,USD,false,CARD_PROCESSOR_ACH,,,CP-C001-004,US,,,,Meridian Card Processing,US,Sunnyvale Corner Quick Stop LLC,,,,false,Card settlement
+STR-N-0394,ACC-C002-01,C002,2026-12-05T04:32:34,debit_card_purchase,OUTGOING,70.97,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0558,ACC-C002-01,C002,2026-12-05T05:35:40,cash_deposit,INCOMING,2058.71,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0775,ACC-C002-01,C002,2026-12-05T06:47:25,check,OUTGOING,3924.59,USD,false,CHECK,,,CP-C002-001,US,,,,Casa Brisa Kitchen Inc.,US,Delta Fresh Produce Co.,,INV-STREAM-0775,3930,false,Supplier payment
+STR-N-0893,ACC-C002-01,C002,2026-12-05T09:46:37,debit_card_purchase,OUTGOING,141.72,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0931,ACC-C002-01,C002,2026-12-05T15:43:17,debit_card_purchase,OUTGOING,106.16,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0823,ACC-C002-01,C002,2026-12-05T16:36:36,debit_card_purchase,OUTGOING,97.53,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase
+STR-N-0870,ACC-C004-01,C004,2026-12-05T16:42:28,wire_out,OUTGOING,10449.40,USD,false,WIRE,,,CP-C004-005,US,,,,Pacific Rim Circuitry Imports Inc.,US,Pacific Gateway Freight Forwarders Inc.,Freight charges,INV-STREAM-0870,,false,Freight charges
+STR-N-0727,ACC-C005-01,C005,2026-12-05T17:04:24,atm_withdrawal,OUTGOING,100.00,USD,false,ATM,,CA,,,,,US,,,,,,,false,Domestic ATM withdrawal
+STR-N-0229,ACC-C002-01,C002,2026-12-05T18:15:13,cash_deposit,INCOMING,1289.51,USD,true,BRANCH_TELLER,SYNTH-BR-CA-002,CA,,,C002,true,,,,,,,,false,Restaurant cash deposit
+STR-N-0495,ACC-C002-01,C002,2026-12-05T22:47:05,debit_card_purchase,OUTGOING,139.08,USD,false,POS_DEBIT,,,,,,,,,,,,,,false,Kitchen supplies POS purchase

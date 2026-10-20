@@ -1,0 +1,212 @@
+{
+  "data_classification": "SYNTHETIC_DEMO_DATA",
+  "schema_version": "1.3",
+  "currency": "USD",
+  "home_state": "CA",
+  "source_customer_file": "customers.json",
+  "account_model": "ONE_CHECKING_ACCOUNT_PER_CUSTOMER",
+  "disclaimer": "All accounts, identifiers, branches, and people are fictional and unusable. No real bank is named. No transactions are included.",
+  "accounts": [
+    {
+      "account_id": "ACC-C001-01",
+      "customer_id": "C001",
+      "account_type": "BUSINESS_CHECKING",
+      "account_purpose": "PRIMARY_OPERATING",
+      "currency": "USD",
+      "open_date": "2019-06-18",
+      "domicile_country": "US",
+      "domicile_state": "CA",
+      "home_branch_id": "SYNTH-BR-CA-001",
+      "status": "ACTIVE",
+      "ownership_type": "BUSINESS_ENTITY",
+      "authorized_signers": [
+        {
+          "name": "Marcus Delgado-Whitfield",
+          "role": "Owner and primary signer"
+        }
+      ],
+      "expected_transaction_types": [
+        "cash_deposit",
+        "card_settlement",
+        "ach_credit",
+        "ach_debit",
+        "check",
+        "debit_card_purchase",
+        "wire_out"
+      ],
+      "capabilities": {
+        "allows_cash": true,
+        "allows_ach": true,
+        "allows_checks": true,
+        "allows_domestic_wires": true,
+        "allows_international_wires": false
+      },
+      "expected_balance_range_usd": {
+        "min": 15000,
+        "max": 90000
+      },
+      "synthetic_routing_identifier": "SYNTH-ABA-001",
+      "synthetic_masked_account_number": "SYNTH-XXXX-0001"
+    },
+    {
+      "account_id": "ACC-C002-01",
+      "customer_id": "C002",
+      "account_type": "BUSINESS_CHECKING",
+      "account_purpose": "PRIMARY_OPERATING",
+      "currency": "USD",
+      "open_date": "2020-02-10",
+      "domicile_country": "US",
+      "domicile_state": "CA",
+      "home_branch_id": "SYNTH-BR-CA-002",
+      "status": "ACTIVE",
+      "ownership_type": "BUSINESS_ENTITY",
+      "authorized_signers": [
+        {
+          "name": "Elena Marisol Quintanilla-Hayes",
+          "role": "Owner and primary signer"
+        }
+      ],
+      "expected_transaction_types": [
+        "cash_deposit",
+        "card_settlement",
+        "ach_credit",
+        "ach_debit",
+        "check",
+        "debit_card_purchase",
+        "wire_out"
+      ],
+      "capabilities": {
+        "allows_cash": true,
+        "allows_ach": true,
+        "allows_checks": true,
+        "allows_domestic_wires": true,
+        "allows_international_wires": false
+      },
+      "expected_balance_range_usd": {
+        "min": 25000,
+        "max": 180000
+      },
+      "synthetic_routing_identifier": "SYNTH-ABA-002",
+      "synthetic_masked_account_number": "SYNTH-XXXX-0002"
+    },
+    {
+      "account_id": "ACC-C003-01",
+      "customer_id": "C003",
+      "account_type": "PERSONAL_CHECKING",
+      "account_purpose": "CONSULTING_AND_PERSONAL",
+      "currency": "USD",
+      "open_date": "2022-09-06",
+      "domicile_country": "US",
+      "domicile_state": "CA",
+      "home_branch_id": "SYNTH-BR-CA-003",
+      "status": "ACTIVE",
+      "ownership_type": "INDIVIDUAL",
+      "authorized_signers": [
+        {
+          "name": "Priya Anand-Sorensen",
+          "role": "Owner and primary signer"
+        }
+      ],
+      "expected_transaction_types": [
+        "ach_credit",
+        "wire_in",
+        "ach_debit",
+        "debit_card_purchase",
+        "check",
+        "atm_withdrawal"
+      ],
+      "capabilities": {
+        "allows_cash": true,
+        "allows_ach": true,
+        "allows_checks": true,
+        "allows_domestic_wires": true,
+        "allows_international_wires": false
+      },
+      "expected_balance_range_usd": {
+        "min": 8000,
+        "max": 85000
+      },
+      "synthetic_routing_identifier": "SYNTH-ABA-003",
+      "synthetic_masked_account_number": "SYNTH-XXXX-0003"
+    },
+    {
+      "account_id": "ACC-C004-01",
+      "customer_id": "C004",
+      "account_type": "BUSINESS_CHECKING",
+      "account_purpose": "IMPORT_OPERATING",
+      "currency": "USD",
+      "open_date": "2018-11-27",
+      "domicile_country": "US",
+      "domicile_state": "CA",
+      "home_branch_id": "SYNTH-BR-CA-004",
+      "status": "ACTIVE",
+      "ownership_type": "BUSINESS_ENTITY",
+      "authorized_signers": [
+        {
+          "name": "Wei-Lin Tran-Castellano",
+          "role": "Owner and primary signer"
+        }
+      ],
+      "expected_transaction_types": [
+        "wire_out",
+        "wire_in",
+        "ach_credit",
+        "ach_debit",
+        "check"
+      ],
+      "capabilities": {
+        "allows_cash": true,
+        "allows_ach": true,
+        "allows_checks": true,
+        "allows_domestic_wires": true,
+        "allows_international_wires": true
+      },
+      "expected_balance_range_usd": {
+        "min": 100000,
+        "max": 900000
+      },
+      "synthetic_routing_identifier": "SYNTH-ABA-004",
+      "synthetic_masked_account_number": "SYNTH-XXXX-0004"
+    },
+    {
+      "account_id": "ACC-C005-01",
+      "customer_id": "C005",
+      "account_type": "PERSONAL_CHECKING",
+      "account_purpose": "PERSONAL_BANKING",
+      "currency": "USD",
+      "open_date": "2023-01-23",
+      "domicile_country": "US",
+      "domicile_state": "CA",
+      "home_branch_id": "SYNTH-BR-CA-005",
+      "status": "ACTIVE",
+      "ownership_type": "INDIVIDUAL",
+      "authorized_signers": [
+        {
+          "name": "Jordan Alexei Pemberton-Nakamura",
+          "role": "Owner and primary signer"
+        }
+      ],
+      "expected_transaction_types": [
+        "ach_credit",
+        "ach_debit",
+        "debit_card_purchase",
+        "atm_withdrawal",
+        "check",
+        "wire_out"
+      ],
+      "capabilities": {
+        "allows_cash": true,
+        "allows_ach": true,
+        "allows_checks": true,
+        "allows_domestic_wires": true,
+        "allows_international_wires": false
+      },
+      "expected_balance_range_usd": {
+        "min": 3000,
+        "max": 60000
+      },
+      "synthetic_routing_identifier": "SYNTH-ABA-005",
+      "synthetic_masked_account_number": "SYNTH-XXXX-0005"
+    }
+  ]
+}
