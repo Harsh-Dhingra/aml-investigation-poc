@@ -120,3 +120,17 @@ NODE_DISABLE_COMPILE_CACHE=1 npm run build --prefix kyc-dashboard
 Restart the Python services after the initial build. Unknown screening, review and balance fields remain unknown; no verification is inferred from missing data. Monthly comparisons exclude the first and last observed months conservatively. The reference dashboard's review-cycle values are demonstration settings, not a bank-approved policy.
 
 Only synthetic datasets are included. API keys, local runtime databases, reports, screenshots, virtual environments and frontend dependencies are excluded from Git.
+
+## Current dashboard source package
+
+The canonical supplied source is now `kyc-dashboard-share (2)`. Its React frontend lives in `kyc-dashboard/`; its PostgreSQL API, schema and loader are preserved in `kyc-postgres/`. The frontend is identical to the preceding supplied version. The app continues serving it through the local operational-data adapter until a PostgreSQL connection is configured.
+
+The PostgreSQL loader expects an additional `aml_demo_data_cleaned/` directory containing nested `kyc_profile` records. Those enriched records and database credentials were not included in the package. **Do not run the loader against an existing database without a backup and explicit intent to replace its tables: it drops and recreates them.** The loader is never run automatically by this app.
+
+Two integration adjustments are retained: the `/kyc-assets/` build path and an explicit unknown PEP state when screening data is absent.
+
+### PostgreSQL connection
+
+Set `AML_KYC_SOURCE=postgres` and the `DB_*` variables in the ignored `.env`, then restart `./run.sh serve`. The embedded dashboard uses the supplied PostgreSQL queries; local AML replay and investigation storage remain unchanged. Connections enforce read-only transactions and a 15-second statement timeout. No loader or schema migration runs automatically. Connection failures produce HTTP 503; the dashboard does not silently substitute local data.
+
+The deployment must allow this machine to reach the database on its configured port. Credentials are local only. The PostgreSQL source was wired and the frontend build verified, but the supplied RDS endpoint timed out during the initial connection check; live database results remain unverified until network access is available.

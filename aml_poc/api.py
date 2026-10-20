@@ -216,12 +216,33 @@ def create_app(service=None):
             generate(), media_type="text/event-stream", headers={"Cache-Control": "no-cache"}
         )
 
+    import os
     from pathlib import Path
 
+    from dotenv import load_dotenv
     from fastapi.responses import FileResponse
     from fastapi.staticfiles import StaticFiles
 
     from . import kyc_adapter
+    from .config import ROOT
+
+    load_dotenv(ROOT / ".env")
+    if os.environ.get("AML_KYC_SOURCE") == "postgres":
+        import psycopg2
+        from fastapi.responses import JSONResponse
+
+        from .kyc_postgres import app as kyc_app
+
+        @app.exception_handler(psycopg2.OperationalError)
+        async def kyc_connection_error(request, error):
+            return JSONResponse(
+                status_code=503,
+                content={
+                    "detail": "KYC database unavailable. Check that PostgreSQL is running and reachable on port 5432 from this machine."
+                },
+            )
+
+        app.include_router(kyc_app.router)
 
     @app.get("/api/customers")
     def dashboard_customers(request: Request):
